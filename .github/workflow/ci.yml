@@ -1,0 +1,32 @@
+name: JWC Frontend Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout projeto
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar ESLint
+        run: npm run lint
+
+      - name: Build React
+        run: npm run build
+
+      - name: Build Docker
+        run: docker build -t frontend-jwc .
