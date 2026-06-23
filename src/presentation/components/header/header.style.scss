@@ -3,4 +3,11 @@
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
+
+    width: 100%;
+    height: auto;
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }

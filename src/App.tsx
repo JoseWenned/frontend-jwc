@@ -1,4 +1,5 @@
-import { HomePage } from "./presentation/pages/home/home.page"
+import "./presentation/styles/root.style.scss";
+import { HomePage } from "./presentation/pages/home/home.page";
 
 function App() {
   return (
