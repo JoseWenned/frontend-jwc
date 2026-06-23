@@ -9,7 +9,7 @@ export const HomePage = () => {
         <>
             <Header/>
             <section className="containerBannerOne">
-                <img className="imageBannerOne" src={BannerOne} alt="Banner 1"/>
+                <img className="imageBannerOne" src={BannerOne} alt="Banner 1 Tamamho L2560PX A1902PX"/>
             </section>
             <section>
                 <h2>Buscamos distribuidores parceiros em todo o Nordeste</h2>

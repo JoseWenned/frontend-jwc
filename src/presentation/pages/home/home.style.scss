@@ -7,8 +7,12 @@
 }
 
 .imageBannerOne {
-    width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
 
-    z-index: -1;
+    z-index: 0;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
