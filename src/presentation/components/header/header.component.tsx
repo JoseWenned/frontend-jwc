@@ -5,7 +5,7 @@ export const Header = () => {
         <>
             <h1>JWC Distribuição Logística</h1>
             <Navigation/>
-            <button><img src="path/to/icon.png" alt="Fale conosco"/>Fale conosco</button>
+            <button><img src="path/to/icon.png"/>Fale conosco</button>
         </>
     )
 }
