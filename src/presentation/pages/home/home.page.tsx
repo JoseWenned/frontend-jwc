@@ -1,3 +1,5 @@
+import "./home.style.scss";
+
 //Images
 import BannerOne from '../../../assets/images/Banners/BannerOne.png';
 import { Header } from '../../components/header/header.component';
@@ -6,10 +8,8 @@ export const HomePage = () => {
     return (
         <>
             <Header/>
-            <section>
-                <figure>
-                    <img src={BannerOne} alt="Banner 1"/>
-                </figure>
+            <section className="containerBannerOne">
+                <img className="imageBannerOne" src={BannerOne} alt="Banner 1"/>
             </section>
             <section>
                 <h2>Buscamos distribuidores parceiros em todo o Nordeste</h2>
