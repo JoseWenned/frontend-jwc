@@ -1,8 +1,10 @@
+import "./navigation.style.scss";
+
 export const Navigation = () => {
     return (
         <>
             <nav>
-                <ul>
+                <ul className="containerNavigation">
                     <li><a href="/">Início</a></li>
                     <li><a href="/sobre">Sobre nós</a></li>
                     <li><a href="/vantagens">Vantagens</a></li>

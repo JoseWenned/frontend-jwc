@@ -1,18 +1,47 @@
 .containerBannerOne {
     width: 100%;
-    height: auto;
-
+    position: relative;
     overflow: hidden;
-    margin: 0;
 }
 
 .imageBannerOne {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    display: block;
+}
 
-    z-index: 0;
+.containerLogo {
+    position: absolute;
 
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    top: 40%;
+    left: 40%;
+
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.textLogo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: start;
+    margin-top: 10px;
+
+    z-index: 1;
+}
+
+.buttonFaleConoscoOne {
+    position: absolute;
+
+    top: 55%;
+    left: 32%;
+
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
 }

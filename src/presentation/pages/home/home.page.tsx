@@ -2,7 +2,14 @@ import "./home.style.scss";
 
 //Images
 import BannerOne from '../../../assets/images/Banners/BannerOne.png';
+import logo from '../../../assets/images/Banners/logo.png';
+import slogKipolpas from "../../../assets/images/slog/LOGOCOMTRAÇADO.png"
+import slogAmazon from "../../../assets/images/slog/amazon-acai.png"
+import slogPeterFrut from "../../../assets/images/slog/slogan-perterfrut.png"
+
+//Components
 import { Header } from '../../components/header/header.component';
+
 
 export const HomePage = () => {
     return (
@@ -10,6 +17,21 @@ export const HomePage = () => {
             <Header/>
             <section className="containerBannerOne">
                 <img className="imageBannerOne" src={BannerOne} alt="Banner 1 Tamamho L2560PX A1902PX"/>
+
+                <div className="containerLogo">
+                    <img className="imageLogo" src={logo} alt="Logo"/>                    
+                </div>
+
+                <p className="textLogo">SEU MELHOR PARCEIRO EM SOLUÇÕES COMPLETAS NA DISTRIBUIÇÃO DE ALIMENTOS CONGELADOS NO CE E RN</p>
+
+                <button className="buttonFaleConoscoOne">FALE CONOSCO</button>
+            </section>
+            <section>
+                <figure>
+                    <img src={slogKipolpas} alt="Slog Kipolpas"/>
+                    <img src={slogAmazon} alt="Slog Amazon"/>
+                    <img src={slogPeterFrut} alt="Slog Peter Frut"/>
+                </figure>
             </section>
             <section>
                 <h2>Buscamos distribuidores parceiros em todo o Nordeste</h2>

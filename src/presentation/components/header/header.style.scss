@@ -5,16 +5,49 @@
     background-color: transparent;
 
     width: 100%;
-    height: auto;
+    min-height: 100px;
 
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.containerHeader__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .containerHeader.scrolled {
     background-color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+//Icons 
+
+.containerHeader__content__socialMedia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon {
+    width: 36px;
+    height: auto;
+
+    margin: 0;
+}
+
+.iconFacebook {
+    width: 42px;
+    height: auto;
+
+    margin: 0;
 }
