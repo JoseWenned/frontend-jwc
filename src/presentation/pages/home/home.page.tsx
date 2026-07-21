@@ -6,12 +6,21 @@ import logo from '../../../assets/images/Banners/logo.png';
 import slogKipolpas from "../../../assets/images/slog/LOGOCOMTRAÇADO.png"
 import slogAmazon from "../../../assets/images/slog/amazon-acai.png"
 import slogPeterFrut from "../../../assets/images/slog/slogan-perterfrut.png"
+import iconParceria from "../../../assets/images/icons/icon-parceira.png"
+import iconDiamante from "../../../assets/images/icons/icon-diamante.png"
+import iconSeta from "../../../assets/images/icons/icon-set-right.svg"
+import iconSetaComCirculo from "../../../assets/images/icons/icon-seta-com-circulo.svg"
 
 //Components
 import { Header } from '../../components/header/header.component';
 
+//Hooks
+import { useSlogans } from '../../hooks/slogans.hook';
+
 
 export const HomePage = () => {
+    const { sectionRef, isVisible } = useSlogans();
+
     return (
         <>
             <Header/>
@@ -26,14 +35,47 @@ export const HomePage = () => {
 
                 <button className="buttonFaleConoscoOne">FALE CONOSCO</button>
             </section>
-            <section>
-                <figure>
-                    <img src={slogKipolpas} alt="Slog Kipolpas"/>
-                    <img src={slogAmazon} alt="Slog Amazon"/>
-                    <img src={slogPeterFrut} alt="Slog Peter Frut"/>
+            <section
+                ref={sectionRef}
+                className={`containerSlogans ${isVisible ? "show" : ""}`}
+            >
+                <figure className="containerSlog">
+                    <img className="imageSlogCompany" src={slogKipolpas} alt="Kipolpas" />
+                    <img className="imageSlogCompany" src={slogAmazon} alt="Amazon Açaí" />
+                    <img className="imageSlogCompany" src={slogPeterFrut} alt="Peter Frut" />
                 </figure>
             </section>
-            <section>
+            <section className="containerParceiroIdeal">
+                <div className="containerParceiroIdealContent">
+                    <h2>PORQUE A JWC É SEU PARCEIRO E DISTRIBUIDOR IDEAL?</h2>
+                    <article>
+                        <img src={iconParceria} alt="icone parceria" />
+                        <h3>REDE DE CLIENTES E PARCEIROS</h3>
+                        <p>Nos destacamos pela versatilidade para atuar nas necessidades dos fornecedores e clientes.</p>
+                    </article>
+                    <article>
+                        <img src={iconDiamante} alt="icone experiência e excelência" />
+                        <h3>EXPERIÊNCIA E EXCELÊNCIA</h3>
+                        <p>Reunimos infraestrutura de excelência e uma equipe experiente que é referência nos estados do Ceará e do Rio Grande do Norte.</p>
+                    </article>
+                    {/* <button>saiba mais <img src={iconSeta} alt="icone seta"/></button> */}
+                    <button className="buttonSaibaMais">
+                        <span>Saiba mais</span>
+                        <img
+                            className="iconArrow"
+                            src={iconSeta}
+                            alt="Seta"
+                        />
+
+                        <img
+                            className="iconCircle"
+                            src={iconSetaComCirculo}
+                            alt="Seta com círculo"
+                        />
+                    </button>
+                </div>
+            </section>
+            {/* <section>
                 <h2>Buscamos distribuidores parceiros em todo o Nordeste</h2>
                 <button><img src="path/to/icon.png"/>Fale conosco</button>
                 <button>Receber tabela de preços</button>
@@ -64,7 +106,7 @@ export const HomePage = () => {
                         <p>Apoio completo da nossa equipe para impulsionar suas vendas.</p>
                     </li>
                 </ul>
-            </section>
+            </section> */}
         </>
     )
 }
