@@ -8,6 +8,7 @@ import slogAmazon from "../../../assets/images/slog/amazon-acai.png"
 import slogPeterFrut from "../../../assets/images/slog/slogan-perterfrut.png"
 import iconParceria from "../../../assets/images/icons/icon-parceira.png"
 import iconDiamante from "../../../assets/images/icons/icon-diamante.png"
+import iconTruck from "../../../assets/images/icons/icons8-em-trânsito-50.svg"
 import iconSeta from "../../../assets/images/icons/icon-set-right.svg"
 import iconSetaComCirculo from "../../../assets/images/icons/icon-seta-com-circulo.svg"
 
@@ -20,6 +21,7 @@ import { useSlogans } from '../../hooks/slogans.hook';
 
 export const HomePage = () => {
     const { sectionRef, isVisible } = useSlogans();
+    const { sectionRef: parceiroRef, isVisible: parceiroVisible } = useSlogans();
 
     return (
         <>
@@ -47,19 +49,44 @@ export const HomePage = () => {
             </section>
             <section className="containerParceiroIdeal">
                 <div className="containerParceiroIdealContent">
-                    <h2>PORQUE A JWC É SEU PARCEIRO E DISTRIBUIDOR IDEAL?</h2>
-                    <article>
-                        <img src={iconParceria} alt="icone parceria" />
-                        <h3>REDE DE CLIENTES E PARCEIROS</h3>
-                        <p>Nos destacamos pela versatilidade para atuar nas necessidades dos fornecedores e clientes.</p>
-                    </article>
-                    <article>
-                        <img src={iconDiamante} alt="icone experiência e excelência" />
-                        <h3>EXPERIÊNCIA E EXCELÊNCIA</h3>
-                        <p>Reunimos infraestrutura de excelência e uma equipe experiente que é referência nos estados do Ceará e do Rio Grande do Norte.</p>
-                    </article>
+                    <h2 className={`titleParceiro ${parceiroVisible ? "show" : ""}`}>PORQUE A JWC É SEU PARCEIRO E DISTRIBUIDOR IDEAL?</h2>
+                    <div
+                        ref={parceiroRef}
+                        className="containerParceiroIdealContentArticles"
+                    >
+                        <article 
+                            className={`articleParceiroIdeal ${parceiroVisible ? "show" : ""}`}
+                        >
+                            <div className="containerIconParceiroIdeal">
+                                <img className="icons" src={iconParceria} alt="icone parceiros comerciais" />
+                            </div>
+                            <h3 className="titlecomercial">PARCEIROS COMERCIAIS</h3>
+                            <p className="descriptioncomercial">trabalha inicialmente com a distribuição dos produtos Kipolpas, Amazon Açaí e Peter Frut, oferecendo ao mercado uma linha completa de polpas, açaí, frutas congeladas com elevado padrão de qualidade e excelente aceitação pelos consumidores.</p>
+                        </article>
+                        <article 
+                            className={`articleParceiroIdeal ${parceiroVisible ? "show" : ""}`}
+                        >
+                            <div className="containerIconParceiroIdeal">
+                                <img className="icons" src={iconTruck} alt="icone área de atuação" />
+                            </div>
+                            <h3 className="titlecomercial">ÁREA DE ATUAÇÃO</h3>
+                            <p className="descriptioncomercial">Atendimento inicial na região do Vale do Jaguaribe, Oeste Potiguar e cidades estratégicas do Ceará e Rio Grande do Norte, com expansão gradual conforme o crescimento das operações.</p>
+                        </article>
+                        <article 
+                            className={`articleParceiroIdeal ${parceiroVisible ? "show" : ""}`}
+                        >
+                            <div className="containerIconParceiroIdeal">
+                                <img className="icons" src={iconDiamante} alt="icone experiência e excelência" />
+                            </div>
+                            <h3 className="titlecomercial">COMPROMISSO COM NOSSOS CLIENTES</h3>
+                            <p className="descriptioncomercial">Nosso compromisso é oferecer produtos de qualidade, atendimento ágil, logística confiável e condições comerciais que contribuam para o sucesso dos nossos parceiros.</p>
+                        </article>
+                    </div>
                     {/* <button>saiba mais <img src={iconSeta} alt="icone seta"/></button> */}
-                    <button className="buttonSaibaMais">
+                 
+                    <button
+                        className={`buttonSaibaMais ${parceiroVisible ? "show" : ""}`}
+                    >
                         <span>Saiba mais</span>
                         <img
                             className="iconArrow"
@@ -72,7 +99,7 @@ export const HomePage = () => {
                             src={iconSetaComCirculo}
                             alt="Seta com círculo"
                         />
-                    </button>
+                    </button>                
                 </div>
             </section>
             {/* <section>
