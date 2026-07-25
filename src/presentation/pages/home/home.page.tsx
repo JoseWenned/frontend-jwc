@@ -18,6 +18,7 @@ import { Header } from '../../components/header/header.component';
 //Hooks
 import { useSlogans } from '../../hooks/slogans.hook';
 import { SectionThree } from "../../components/Sections/sectionThree.component";
+import { Footer } from "../../components/footer/footer.component";
 
 
 export const HomePage = () => {
@@ -104,6 +105,7 @@ export const HomePage = () => {
                 </div>
             </section>
             <SectionThree/>
+            <Footer/>
         </>
     )
 }
