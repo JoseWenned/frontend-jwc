@@ -1,0 +1,80 @@
+.containerSectionThree {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background: #f5f5f5;
+}
+
+.containerSectionThreeContent {
+    width: 1440px;
+    margin: 0 auto;
+
+    display: flex;
+
+    padding: 80px 0;
+}
+
+.containerSectionThreeContentArticles {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-between;
+}
+
+.containerSectionThreeContentMap {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSectionThree {
+    width: 100%;
+}
+
+.articleSectionThree {
+    width: 50%;
+    opacity: 0;
+    transition: all .8s ease;
+}
+
+.articleSectionThree:nth-child(1){
+    transform: translateX(-80px);
+}
+
+.articleSectionThree:nth-child(2){
+    transform: translateY(80px);
+}
+
+.articleSectionThree:nth-child(3){
+    transform: translateX(80px);
+}
+
+.articleSectionThree.show{
+    opacity:1;
+    transform:translate(0,0);
+}
+
+.articleSectionThree.show:nth-child(1) {
+    transition-delay: .2s;
+}
+
+.articleSectionThree.show:nth-child(2) {
+    transition-delay: .4s;
+}
+
+.articleSectionThree.show:nth-child(3) {
+    transition-delay: .6s;
+}
+
+.containerSectionThreeContentArticlesTitle {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
