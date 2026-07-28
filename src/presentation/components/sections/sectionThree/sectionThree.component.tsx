@@ -1,11 +1,11 @@
 import "./sectionThree.style.scss";
 //Imagens icons
-import iconMissao from '../../../assets/images/icons/icons8-troféu-30.svg';
-import iconVisao from '../../../assets/images/icons/icons8-olho-30.svg';
-import iconValores from '../../../assets/images/icons/icons8-estrela-30.svg';
-import iconMapa from '../../../assets/images/icons/ChatGPT_Image_24_de_jul._de_2026__23_58_59-removebg-preview.png';
+import iconMissao from '../../../../assets/images/icons/icons8-troféu-30.svg';
+import iconVisao from '../../../../assets/images/icons/icons8-olho-30.svg';
+import iconValores from '../../../../assets/images/icons/icons8-estrela-30.svg';
+import iconMapa from '../../../../assets/images/icons/ChatGPT_Image_24_de_jul._de_2026__23_58_59-removebg-preview.png';
 
-import { useSlogans } from "../../hooks/slogans.hook";
+import { useSlogans } from "../../../hooks/slogans.hook";
 
 export const SectionThree = () => {
     const { sectionRef, isVisible } = useSlogans();

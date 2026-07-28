@@ -17,8 +17,9 @@ import { Header } from '../../components/header/header.component';
 
 //Hooks
 import { useSlogans } from '../../hooks/slogans.hook';
-import { SectionThree } from "../../components/Sections/sectionThree.component";
+import { SectionThree } from "../../components/sections/sectionThree/sectionThree.component";
 import { Footer } from "../../components/footer/footer.component";
+import { SectionFour } from "../../components/sections/sectionFour/sectionFour.component";
 
 
 export const HomePage = () => {
@@ -105,6 +106,7 @@ export const HomePage = () => {
                 </div>
             </section>
             <SectionThree/>
+            <SectionFour/>
             <Footer/>
         </>
     )
