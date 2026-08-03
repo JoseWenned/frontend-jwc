@@ -20,6 +20,7 @@ import { useSlogans } from '../../hooks/slogans.hook';
 import { SectionThree } from "../../components/sections/sectionThree/sectionThree.component";
 import { Footer } from "../../components/footer/footer.component";
 import { SectionFour } from "../../components/sections/sectionFour/sectionFour.component";
+import { SectionFive } from "../../components/sections/sectionFive/sectionFive.component";
 
 
 export const HomePage = () => {
@@ -107,6 +108,7 @@ export const HomePage = () => {
             </section>
             <SectionThree/>
             <SectionFour/>
+            <SectionFive/>
             <Footer/>
         </>
     )
