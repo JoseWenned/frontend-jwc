@@ -1,4 +1,4 @@
-import "./sectionFout.style.scss";
+import "./sectionFour.style.scss";
 
 //Imagens 
 import imagemDistribuidora from "../../../../assets/images/Banners/filantropia-corporativa-apoia-os-esforcos-locais-do-banco-de-alimentos-para-aliviar-a-fome_38013-94227.avif"
