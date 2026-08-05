@@ -2,16 +2,20 @@ import "./header.style.scss"
 import { Navigation } from "../navigation/navigation.component"
 import { useEffect, useState } from "react";
 
+//Components
+import { MobileMenu } from "../mobileMenu/mobileMenu.component";
+
+//Icons
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+
 //Images
-import facebookIconWhite from "../../../assets/images/icons/iconFacebookWhite.png";
 import facebookIconGray from "../../../assets/images/icons/iconFacebookGray.png";
-import linkedinIconWhite from "../../../assets/images/icons/iconLinkedinWhite.png";
 import linkedinIconGray from "../../../assets/images/icons/iconLinkedinGray.png";
-import instagramIconWhite from "../../../assets/images/icons/iconInstagramWhite.png";
 import instagramIconGray from "../../../assets/images/icons/iconInstagramGray.png";
 
 export const Header = () => {
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -34,15 +38,51 @@ export const Header = () => {
             <section className={`containerHeader ${scrolled ? "scrolled" : ""}`}>
                 <div className="containerHeader__content">
                     <h1>JWC</h1>
-                    <Navigation/>
-
+                    <div className="containerHeader__navigation">
+                        <Navigation />
+                    </div>
+                    <button
+                        className="containerHeader__menuButton"
+                        onClick={() => setMenuOpen(true)}
+                        aria-label="Abrir menu"
+                    >
+                        <HiOutlineMenuAlt3 />
+                    </button>
                     <ul className="containerHeader__content__socialMedia">
-                        <li><a href="#"><img className="iconFacebook" src={scrolled ? facebookIconGray : facebookIconWhite} alt="Facebook" /></a></li>
-                        <li><a href="#"><img className="icon" src={scrolled ? linkedinIconGray : linkedinIconWhite} alt="LinkedIn" /></a></li>
-                        <li><a href="#"><img className="icon" src={scrolled ? instagramIconGray : instagramIconWhite} alt="Instagram" /></a></li>
+                        <li>
+                            <a href="#" className="socialLink">
+                                <img
+                                    className="socialIcon socialIconFacebook"
+                                    src={facebookIconGray}
+                                    alt="Facebook"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="socialLink">
+                                <img
+                                    className="socialIcon"
+                                    src={linkedinIconGray}
+                                    alt="LinkedIn"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="socialLink">
+                                <img
+                                    className="socialIcon"
+                                    src={instagramIconGray}
+                                    alt="Instagram"
+                                />
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </section>
+            <MobileMenu
+                isOpen={menuOpen}
+                onClose={() => setMenuOpen(false)}
+            />
         </>
     )
 }

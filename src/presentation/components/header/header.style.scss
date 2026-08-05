@@ -1,18 +1,29 @@
+/* ===========================================================
+   Header
+=========================================================== */
+
 .containerHeader {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
 
     width: 100%;
     min-height: 100px;
 
+    background-color: transparent;
+
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 1000;
 
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    transition:
+        background-color .3s ease,
+        box-shadow .3s ease;
 }
+
+/* ===========================================================
+   Conteúdo
+=========================================================== */
 
 .containerHeader__content {
     display: flex;
@@ -21,33 +32,182 @@
 
     width: 100%;
     max-width: 1440px;
+
     margin: 0 auto;
     padding: 0 20px;
 }
 
+/* ===========================================================
+   Estado Scroll
+=========================================================== */
+
 .containerHeader.scrolled {
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
 }
 
-//Icons 
+/* ===========================================================
+   Redes Sociais
+=========================================================== */
 
 .containerHeader__content__socialMedia {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
 
-.icon {
-    width: 36px;
-    height: auto;
+    gap: 1rem;
 
     margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
 
-.iconFacebook {
-    width: 42px;
+.containerHeader__content__socialMedia li {
+    display: flex;
+}
+
+.socialLink {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+    border: 1px solid #dddddd;
+
+    transition: all .3s ease;
+}
+
+.socialLink:hover {
+    background: #f3f3f3;
+
+    border-color: #d91f26;
+
+    transform: translateY(-5px);
+}
+
+.socialIcon {
+    width: 22px;
     height: auto;
-
-    margin: 0;
 }
+
+.socialIconFacebook {
+    width: 25px;
+}
+
+/* ===========================================================
+   Botão Menu Mobile
+=========================================================== */
+
+.containerHeader__menuButton {
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 48px;
+    height: 48px;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 2rem;
+
+    color: #1d1d1d;
+
+    transition: .3s;
+}
+
+.containerHeader__menuButton:hover {
+    color: #d91f26;
+}
+
+/* ===========================================================
+   Responsividade
+=========================================================== */
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 992px) {
+
+    .containerHeader {
+        min-height: 90px;
+    }
+
+    .containerHeader__content {
+        padding: 0 25px;
+    }
+
+    .containerHeader__content__socialMedia {
+        gap: .8rem;
+    }
+
+    .socialLink {
+        width: 44px;
+        height: 44px;
+    }
+
+    .socialIcon {
+        width: 20px;
+    }
+
+    .socialIconFacebook {
+        width: 23px;
+    }
+
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 768px) {
+
+    .containerHeader {
+        min-height: 80px;
+    }
+
+    .containerHeader__content {
+        padding: 0 20px;
+    }
+
+    .socialLink {
+        width: 40px;
+        height: 40px;
+    }
+
+    .socialIcon {
+        width: 18px;
+    }
+
+    .socialIconFacebook {
+        width: 21px;
+    }
+
+
+    /* Esconde a navegação */
+
+    .containerHeader__navigation {
+        display: none;
+    }
+
+    /* Esconde as redes sociais */
+
+    .containerHeader__content__socialMedia {
+        display: none;
+        gap: .6rem;
+    }
+
+    /* Mostra o botão do menu */
+
+    .containerHeader__menuButton {
+        display: flex;
+    }
+
+}
+

@@ -1,0 +1,140 @@
+/* ===========================================================
+   Mobile Menu
+=========================================================== */
+
+.mobileMenu {
+    position: fixed;
+    inset: 0;
+
+    z-index: 2000;
+}
+
+/* ===========================================================
+   Overlay
+=========================================================== */
+
+.mobileMenu__overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, .45);
+}
+
+/* ===========================================================
+   Conteúdo
+=========================================================== */
+
+.mobileMenu__content {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 300px;
+    max-width: 85vw;
+
+    height: 100vh;
+
+    background: #ffffff;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===========================================================
+   Botão Fechar
+=========================================================== */
+
+.mobileMenu__close {
+    align-self: flex-end;
+
+    background: none;
+    border: none;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+/* ===========================================================
+   Logo
+=========================================================== */
+
+.mobileMenu__brand {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ececec;
+}
+
+.mobileMenu__brand h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #d91f26;
+}
+
+.mobileMenu__brand span {
+    color: #666;
+    font-size: .95rem;
+}
+
+/* ===========================================================
+   Navegação
+=========================================================== */
+
+.mobileMenu__navigation {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.mobileMenu__navigation a {
+    padding: 1rem 0;
+    text-decoration: none;
+    color: #222;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-bottom: 1px solid #f2f2f2;
+    transition: .3s;
+}
+
+.mobileMenu__navigation a:hover {
+    color: #d91f26;
+    padding-left: .8rem;
+}
+
+/* ===========================================================
+   Redes Sociais
+=========================================================== */
+
+.mobileMenu__social {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid #ececec;
+}
+
+.mobileMenu__social a {
+    text-decoration: none;
+    color: #555;
+    transition: .3s;
+}
+
+.mobileMenu__social a:hover {
+    color: #d91f26;
+}
+
+/* ===========================================================
+   Footer
+=========================================================== */
+
+.mobileMenu__footer {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #ececec;
+    text-align: center;
+    font-size: .85rem;
+    color: #999;
+}
