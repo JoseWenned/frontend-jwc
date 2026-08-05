@@ -9,8 +9,6 @@ import slogPeterFrut from "../../../assets/images/slog/slogan-perterfrut.png"
 import iconParceria from "../../../assets/images/icons/icon-parceira.png"
 import iconDiamante from "../../../assets/images/icons/icon-diamante.png"
 import iconTruck from "../../../assets/images/icons/icons8-em-trânsito-50.svg"
-import iconSeta from "../../../assets/images/icons/icon-set-right.svg"
-import iconSetaComCirculo from "../../../assets/images/icons/icon-seta-com-circulo.svg"
 
 //Components
 import { Header } from '../../components/header/header.component';
@@ -21,6 +19,8 @@ import { SectionThree } from "../../components/sections/sectionThree/sectionThre
 import { Footer } from "../../components/footer/footer.component";
 import { SectionFour } from "../../components/sections/sectionFour/sectionFour.component";
 import { SectionFive } from "../../components/sections/sectionFive/sectionFive.component";
+import { ButtonSaibaMais } from "../../fragments/buttons/buttonSaibaMais/buttonSaibaMais.fragments";
+import { SectionSix } from "../../components/sections/sectionSix/sectionSix.component";
 
 
 export const HomePage = () => {
@@ -87,28 +87,17 @@ export const HomePage = () => {
                         </article>
                     </div>
                     {/* <button>saiba mais <img src={iconSeta} alt="icone seta"/></button> */}
-                 
-                    <button
-                        className={`buttonSaibaMais ${parceiroVisible ? "show" : ""}`}
-                    >
-                        <span>Saiba mais</span>
-                        <img
-                            className="iconArrow"
-                            src={iconSeta}
-                            alt="Seta"
-                        />
 
-                        <img
-                            className="iconCircle"
-                            src={iconSetaComCirculo}
-                            alt="Seta com círculo"
-                        />
-                    </button>                
+                    <ButtonSaibaMais
+                        visible={parceiroVisible}
+                        onClick={() => console.log("clicou")}
+                    />
                 </div>
             </section>
             <SectionThree/>
             <SectionFour/>
             <SectionFive/>
+            <SectionSix/>
             <Footer/>
         </>
     )

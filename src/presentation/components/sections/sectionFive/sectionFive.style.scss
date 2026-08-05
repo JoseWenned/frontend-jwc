@@ -14,6 +14,8 @@
     width: 100%;
     text-align: center;
     margin-bottom: 70px;
+    opacity: 0;
+    transform: scale(.9);
 }
 
 .titleSectionFive {
@@ -43,6 +45,9 @@
     border-radius: 18px;
 
     transition: .35s ease;
+
+    opacity: 0;
+    transform: translateY(60px);
 }
 
 .cardSectionFive:hover {
@@ -87,6 +92,59 @@
 
 .buttonCardSectionFive:hover {
     background: #C00000;
+}
+
+
+//Efeitos de animação
+.containerSectionFive.show {
+
+    .containerSectionFiveTitle {
+        animation: zoomFade .9s ease forwards;
+    }
+
+    .cardSectionFive:nth-child(1) {
+        animation: cardUp .7s ease forwards;
+        animation-delay: .2s;
+    }
+
+    .cardSectionFive:nth-child(2) {
+        animation: cardUp .7s ease forwards;
+        animation-delay: .45s;
+    }
+
+    .cardSectionFive:nth-child(3) {
+        animation: cardUp .7s ease forwards;
+        animation-delay: .7s;
+    }
+
+}
+
+@keyframes zoomFade {
+
+    from {
+        opacity: 0;
+        transform: scale(.85);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@keyframes cardUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
 }
 
 //Responsivo
