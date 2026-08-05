@@ -6,9 +6,7 @@ import logo from '../../../assets/images/Banners/logo.png';
 import slogKipolpas from "../../../assets/images/slog/LOGOCOMTRAÇADO.png"
 import slogAmazon from "../../../assets/images/slog/amazon-acai.png"
 import slogPeterFrut from "../../../assets/images/slog/slogan-perterfrut.png"
-import iconParceria from "../../../assets/images/icons/icon-parceira.png"
-import iconDiamante from "../../../assets/images/icons/icon-diamante.png"
-import iconTruck from "../../../assets/images/icons/icons8-em-trânsito-50.svg"
+
 
 //Components
 import { Header } from '../../components/header/header.component';
@@ -19,13 +17,12 @@ import { SectionThree } from "../../components/sections/sectionThree/sectionThre
 import { Footer } from "../../components/footer/footer.component";
 import { SectionFour } from "../../components/sections/sectionFour/sectionFour.component";
 import { SectionFive } from "../../components/sections/sectionFive/sectionFive.component";
-import { ButtonSaibaMais } from "../../fragments/buttons/buttonSaibaMais/buttonSaibaMais.fragments";
 import { SectionSix } from "../../components/sections/sectionSix/sectionSix.component";
+import { SectionTwo } from "../../components/sections/sectionTwo/sectionTwo.component";
 
 
 export const HomePage = () => {
     const { sectionRef, isVisible } = useSlogans();
-    const { sectionRef: parceiroRef, isVisible: parceiroVisible } = useSlogans();
 
     return (
         <>
@@ -51,49 +48,7 @@ export const HomePage = () => {
                     <img className="imageSlogCompany" src={slogPeterFrut} alt="Peter Frut" />
                 </figure>
             </section>
-            <section className="containerParceiroIdeal">
-                <div className="containerParceiroIdealContent">
-                    <h2 className={`titleParceiro ${parceiroVisible ? "show" : ""}`}>PORQUE A JWC É SEU PARCEIRO E DISTRIBUIDOR IDEAL?</h2>
-                    <div
-                        ref={parceiroRef}
-                        className="containerParceiroIdealContentArticles"
-                    >
-                        <article 
-                            className={`articleParceiroIdeal ${parceiroVisible ? "show" : ""}`}
-                        >
-                            <div className="containerIconParceiroIdeal">
-                                <img className="icons" src={iconParceria} alt="icone parceiros comerciais" />
-                            </div>
-                            <h3 className="titlecomercial">PARCEIROS COMERCIAIS</h3>
-                            <p className="descriptioncomercial">trabalha inicialmente com a distribuição dos produtos Kipolpas, Amazon Açaí e Peter Frut, oferecendo ao mercado uma linha completa de polpas, açaí, frutas congeladas com elevado padrão de qualidade e excelente aceitação pelos consumidores.</p>
-                        </article>
-                        <article 
-                            className={`articleParceiroIdeal ${parceiroVisible ? "show" : ""}`}
-                        >
-                            <div className="containerIconParceiroIdeal">
-                                <img className="icons" src={iconTruck} alt="icone área de atuação" />
-                            </div>
-                            <h3 className="titlecomercial">ÁREA DE ATUAÇÃO</h3>
-                            <p className="descriptioncomercial">Atendimento inicial na região do Vale do Jaguaribe, Oeste Potiguar e cidades estratégicas do Ceará e Rio Grande do Norte, com expansão gradual conforme o crescimento das operações.</p>
-                        </article>
-                        <article 
-                            className={`articleParceiroIdeal ${parceiroVisible ? "show" : ""}`}
-                        >
-                            <div className="containerIconParceiroIdeal">
-                                <img className="icons" src={iconDiamante} alt="icone experiência e excelência" />
-                            </div>
-                            <h3 className="titlecomercial">COMPROMISSO COM NOSSOS CLIENTES</h3>
-                            <p className="descriptioncomercial">Nosso compromisso é oferecer produtos de qualidade, atendimento ágil, logística confiável e condições comerciais que contribuam para o sucesso dos nossos parceiros.</p>
-                        </article>
-                    </div>
-                    {/* <button>saiba mais <img src={iconSeta} alt="icone seta"/></button> */}
-
-                    <ButtonSaibaMais
-                        visible={parceiroVisible}
-                        onClick={() => console.log("clicou")}
-                    />
-                </div>
-            </section>
+            <SectionTwo/>
             <SectionThree/>
             <SectionFour/>
             <SectionFive/>

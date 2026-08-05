@@ -1,0 +1,232 @@
+/* ===========================================================
+   Section Two
+   Parceiro Ideal
+=========================================================== */
+
+.containerParceiroIdeal {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background: #ffffff;
+}
+
+
+/* ===========================================================
+   Container Principal
+=========================================================== */
+
+.containerParceiroIdealContent {
+    width: min(90%, 1440px);
+
+    margin: 0 auto;
+
+    padding: 90px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ===========================================================
+   Título
+=========================================================== */
+
+.titleParceiro {
+    max-width:700px;
+
+    text-align:left;
+
+    margin-bottom:70px;
+
+    font-size:2.5rem;
+
+    line-height:1.4;
+}
+
+
+/* ===========================================================
+   Container dos Cards
+=========================================================== */
+
+.containerParceiroIdealContentArticles {
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:4rem;
+}
+
+
+/* ===========================================================
+   Card
+=========================================================== */
+
+.articleParceiroIdeal {
+    padding:0;
+
+    border:none;
+
+    background:transparent;
+
+    box-shadow:none;
+
+    text-align:left;
+}
+
+
+/* ===========================================================
+   Ícone
+=========================================================== */
+
+.containerIconParceiroIdeal {
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    border:1px solid #ececec;
+
+    background:#fff;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-bottom:2rem;
+}
+
+.icons {
+
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+}
+
+
+/* ===========================================================
+   Tipografia
+=========================================================== */
+
+.titlecomercial {
+    margin-bottom:1rem;
+
+    font-size:1.3rem;
+
+    color:#2b2b2b;
+}
+
+.descriptioncomercial {
+    color:#6b6b6b;
+
+    line-height:1.9;
+}
+
+
+/* ===========================================================
+   Botão
+=========================================================== */
+
+
+/* ===========================================================
+   Responsividade
+=========================================================== */
+
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 992px) {
+
+    .titleParceiro {
+
+        font-size: 2rem;
+    }
+
+    .containerParceiroIdealContentArticles {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+
+    .containerParceiroIdealContent {
+
+        padding: 70px 0;
+    }
+
+    .titleParceiro {
+
+        font-size: 1.7rem;
+
+        margin-bottom: 3rem;
+    }
+
+    .containerParceiroIdealContentArticles {
+
+        grid-template-columns: 1fr;
+
+        gap: 1.8rem;
+    }
+
+    .articleParceiroIdeal {
+
+        padding: 2rem 1.5rem;
+    }
+
+}
+
+
+/* ===========================
+   Smartphones Pequenos
+=========================== */
+
+@media (max-width: 480px) {
+
+    .containerParceiroIdealContent {
+
+        width: 92%;
+    }
+
+    .titleParceiro {
+
+        font-size: 1.45rem;
+    }
+
+    .containerIconParceiroIdeal {
+
+        width: 75px;
+        height: 75px;
+    }
+
+    .icons {
+
+        width: 36px;
+        height: 36px;
+    }
+
+    .titlecomercial {
+
+        font-size: 1.1rem;
+    }
+
+    .descriptioncomercial {
+
+        font-size: .92rem;
+
+        line-height: 1.7;
+    }
+
+}

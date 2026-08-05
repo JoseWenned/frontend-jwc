@@ -1,33 +1,87 @@
+/* ===========================================================
+   Botão
+=========================================================== */
+
 .buttonSaibaMais {
-    margin: 50px auto 0;
+
+    margin-top: 50px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.2rem;
+    gap: 1rem;
 
-    background: transparent;
     border: none;
-
-    font-size: 17px;
-    font-weight: 600;
+    background: transparent;
 
     cursor: pointer;
 
-    opacity: 1;
-    transform: translateY(40px);
+    span{
+        font-size:18px;
+        font-weight:600;
+        color:#000;
 
-    span {
-        color: #000;
+        transition:.35s;
     }
 
-    img {
-        width: 24px;
-        height: 24px;
+}
+
+
+/* ===========================================================
+   Container do Ícone
+=========================================================== */
+
+.buttonSaibaMaisIcon{
+
+    position:relative;
+
+    width:32px;
+    height:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.iconArrow{
+
+    position:absolute;
+
+    width:18px;
+    height:18px;
+
+    transition:all .35s ease;
+
+    transform:translateX(0);
+
+    opacity:1;
+}
+
+.iconCircle{
+
+    position:absolute;
+
+    width:28px;
+    height:28px;
+
+    transition:all .35s ease;
+
+    transform:translateX(-18px);
+
+    opacity:0;
+}
+
+.buttonSaibaMais:hover{
+    .iconArrow{
+        transform:translateX(18px);
+
+        opacity:0;
     }
 
-    &.show {
-        animation: fadeUp .8s ease forwards;
-        animation-delay: .8s;
+    .iconCircle{
+        transform:translateX(0);
+
+        opacity:1;
     }
 }
