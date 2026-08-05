@@ -1,31 +1,35 @@
 .sectionSix {
     width: 100%;
-    height: 260px;
+    min-height: 260px;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     position: relative;
-}
-
-.sectionSixOverlay {
-    width: 100%;
-    height: 100%;
-
-    background: rgba(0, 0, 0, 0.45);
-
-    display: flex;
-    align-items: center;
+    overflow: hidden;
 }
 
 .sectionSixContainer {
+    position: relative;
+    z-index: 2;
+
     width: 90%;
     max-width: 1300px;
     margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.sectionSixOverlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    display: flex;
     align-items: center;
 }
 
@@ -64,4 +68,40 @@
 .sectionSixButton:hover {
     background: #d91010;
     transform: translateY(-2px);
+}
+
+
+// RESPONSIVE //
+
+@media (max-width: 768px) {
+    .sectionSix {
+        min-height: 380px;
+    }
+
+    .sectionSixContainer {
+        width: 90%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 35px;
+
+        text-align: center;
+    }
+
+    .sectionSixContent {
+        max-width: 100%;
+    }
+
+    .sectionSixTitle {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .sectionSixButton {
+        width: 230px;
+        height: 60px;
+    }
 }

@@ -1,48 +1,111 @@
 import "./sectionThree.style.scss";
+import { motion, type Variants } from "framer-motion";
 //Imagens icons
 import iconMissao from '../../../../assets/images/icons/icons8-troféu-30.svg';
 import iconVisao from '../../../../assets/images/icons/icons8-olho-30.svg';
 import iconValores from '../../../../assets/images/icons/icons8-estrela-30.svg';
 import iconMapa from '../../../../assets/images/icons/ChatGPT_Image_24_de_jul._de_2026__23_58_59-removebg-preview.png';
 
-import { useSlogans } from "../../../hooks/slogans.hook";
-
 export const SectionThree = () => {
-    const { sectionRef, isVisible } = useSlogans();
+    //Animacão com frame motion
     
+    const cardVariants: Variants = {
+        hidden: {
+            opacity: 0,
+            y: 40,
+        },
+        visible: (index: number) => ({
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.7,
+                delay: index * 0.2,
+            },
+        }),
+    };
+
+    const mapVariants: Variants = {
+        hidden: {
+            opacity: 0,
+            x: 80,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1,
+            },
+        },
+    };
     return (
-        <section 
-            ref={sectionRef}
-            className="containerSectionThree"
-        >
+        <section className="containerSectionThree">
             <div className="containerSectionThreeContent">
                 <div className="containerSectionThreeContentArticles">
-                    <article className={`articleSectionThree ${isVisible ? "show" : ""}`}>
+                    <motion.article
+                        className="articleSectionThree"
+                        variants={cardVariants}
+                        custom={0}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{
+                            once: true,
+                            amount: 0.4,
+                        }}
+                    >
                         <div className="containerSectionThreeContentArticlesTitle">
                             <img src={iconMissao} alt="icone missão" />
                             <h2 className="titleSectionThree">MISSÃO</h2>   
                         </div>
                         <p className="textSectionThree">Distribuir produtos de qualidade com eficiência logística, fortalecendo parcerias comerciais e contribuindo para o desenvolvimento econômico.</p>
-                    </article>
-                    <article className={`articleSectionThree ${isVisible ? "show" : ""}`}>
+                    </motion.article>
+                    <motion.article
+                        className="articleSectionThree"
+                        variants={cardVariants}
+                        custom={1}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{
+                            once: true,
+                            amount: 0.4,
+                        }}
+                    >
                         <div className="containerSectionThreeContentArticlesTitle">
                             <img src={iconVisao} alt="icone visão" />
                             <h2 className="titleSectionThree">VISÃO</h2>
                         </div>
                         <p className="textSectionThree">Ser reconhecida como uma das principais distribuidoras da região Nordeste, destacando-se pela excelência operacional, confiança e compromisso com clientes, fornecedores e parceiros.</p>
-                    </article>
-                    <article className={`articleSectionThree ${isVisible ? "show" : ""}`}>
+                    </motion.article>
+                    <motion.article
+                        className="articleSectionThree"
+                        variants={cardVariants}
+                        custom={2}
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{
+                            once: true,
+                            amount: 0.4,
+                        }}
+                    >
                         <div className="containerSectionThreeContentArticlesTitle">
                             <img src={iconValores} alt="icone valores" />
                             <h2 className="titleSectionThree">VALORES</h2>
                         </div>
                         <p className="textSectionThree">Trabalho, comprometimento, qualidade, sustentabilidade com ética e transparência.</p>
-                    </article>
+                    </motion.article>
                 </div>
-
-                <div className={`containerSectionThreeContentMap ${isVisible ? "show" : ""}`}>
+                
+                <motion.div
+                    className="articleSectionThree"
+                    variants={mapVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{
+                        once: true,
+                        amount: 0.4,
+                    }}
+                >
                     <img className="imgSectionThree" src={iconMapa} alt="icone mapa" />
-                </div>
+                </motion.div>
             </div>
         </section>
     )

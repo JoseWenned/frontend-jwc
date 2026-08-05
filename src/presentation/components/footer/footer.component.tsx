@@ -1,4 +1,5 @@
 import "./footer.style.scss"
+import { Link } from "react-router-dom";
 
 //Imagens 
 import iconLinkedin from '../../../assets/images/icons/iconLinkedinGray.png'
@@ -18,12 +19,33 @@ export const Footer = () => {
                 </div>
                 <div className="containerFooterContentInfomation">
                     <h3 className="textFooter">Navegue:</h3>
-                    <button>Início</button>
-                    <button>Sobre Nós</button>
-                    <button>Vantagens</button>
-                    <button>Produtos</button>
-                    <button>Como funciona</button>
-                    <button>Contato</button>
+                    <Link className="footerLink" to="/">
+                        Início
+                    </Link>
+                    <Link className="footerLink" to="/sobre">
+                        Sobre Nós
+                    </Link>
+                    <Link className="footerLink" to="/vantagens">
+                        Vantagens
+                    </Link>
+                    <Link className="footerLink" to="/vantagens">
+                        Produtos
+                    </Link>
+                    <Link className="footerLink" to="/vantagens">
+                        Como Funciona
+                    </Link>
+                    <Link className="footerLink" to="/vantagens">
+                        Contato
+                    </Link>
+                </div>
+                <div className="containerFooterContentContact">
+                    <h3 className="textFooter">Contato:</h3>
+                    <p className="footerContactText">
+                        +55 (88) 9 8896-5616
+                    </p>
+                    <p className="footerContactText">
+                        jwcdistribuicaoelogisticaltda@gmail.com
+                    </p>
                 </div>
                 <div className="containerFooterContentInfomationAtendimento">
                     <h3 className="textFooter">Atendimento:</h3>

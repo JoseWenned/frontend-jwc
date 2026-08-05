@@ -1,80 +1,171 @@
+/* ===========================================================
+   Section Three
+   Missão • Visão • Valores
+=========================================================== */
+
 .containerSectionThree {
     width: 100%;
+
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
 
     background: #f5f5f5;
 }
 
+/* ===========================================================
+   Container Principal
+=========================================================== */
+
 .containerSectionThreeContent {
-    width: 1440px;
+    width: min(90%, 1440px);
+
     margin: 0 auto;
 
-    display: flex;
-
     padding: 80px 0;
-}
 
-.containerSectionThreeContentArticles {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    // align-items: center;
-    justify-content: space-between;
-}
-
-.containerSectionThreeContentMap {
-    width: 50%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    gap: 4rem;
 }
 
-.imgSectionThree {
-    width: 100%;
+/* ===========================================================
+   Coluna Esquerda
+=========================================================== */
+
+.containerSectionThreeContentArticles {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 3rem;
 }
+
+
+/* ===========================================================
+   Card
+=========================================================== */
 
 .articleSectionThree {
-    width: 50%;
-    opacity: 0;
-    transition: all .8s ease;
+    max-width: 520px;
 }
 
-.articleSectionThree:nth-child(1){
-    transform: translateX(-80px);
-}
-
-.articleSectionThree:nth-child(2){
-    transform: translateY(80px);
-}
-
-.articleSectionThree:nth-child(3){
-    transform: translateX(80px);
-}
-
-.articleSectionThree.show{
-    opacity:1;
-    transform:translate(0,0);
-}
-
-.articleSectionThree.show:nth-child(1) {
-    transition-delay: .2s;
-}
-
-.articleSectionThree.show:nth-child(2) {
-    transition-delay: .4s;
-}
-
-.articleSectionThree.show:nth-child(3) {
-    transition-delay: .6s;
-}
+/* ===========================================================
+   Cabeçalho do Card
+=========================================================== */
 
 .containerSectionThreeContentArticlesTitle {
     display: flex;
     align-items: center;
+
     gap: 1rem;
 
     margin-bottom: 1rem;
+}
+
+.containerSectionThreeContentArticlesTitle img {
+    width: 36px;
+    height: 36px;
+}
+
+/* ===========================================================
+   Tipografia
+=========================================================== */
+
+.titleSectionThree {
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    color: #1d1d1d;
+}
+
+.textSectionThree {
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: #666;
+}
+
+/* ===========================================================
+   Coluna Direita (Mapa)
+=========================================================== */
+
+.containerSectionThreeContentMap {
+    flex: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSectionThree {
+    width: 100%;
+    max-width: 520px;
+
+    object-fit: contain;
+}
+
+/* ===========================================================
+   Tablet
+=========================================================== */
+
+@media (max-width:992px){
+    .containerSectionThreeContent{
+        gap:2rem;
+    }
+
+    .titleSectionThree{
+        font-size:1.4rem;
+    }
+
+    .textSectionThree{
+        font-size:.95rem;
+    }
+
+    .imgSectionThree{
+        max-width:420px;
+    }
+}
+
+/* ===========================================================
+   Mobile
+=========================================================== */
+
+@media (max-width:768px){
+    .containerSectionThreeContent{
+        flex-direction:column;
+
+        padding:60px 0;
+
+        gap:4rem;
+    }
+
+    .containerSectionThreeContentArticles{
+        width:100%;
+
+        align-items:center;
+    }
+
+    .articleSectionThree{
+        max-width:100%;
+
+        text-align:center;
+    }
+
+    .containerSectionThreeContentArticlesTitle{
+        justify-content:center;
+    }
+
+    .containerSectionThreeContentMap{
+        width:100%;
+    }
+
+    .imgSectionThree{
+        width:80%;
+
+        max-width:340px;
+    }
+
 }
