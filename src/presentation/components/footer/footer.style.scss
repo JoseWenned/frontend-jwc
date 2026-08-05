@@ -5,8 +5,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    padding: 2rem 0;
 }
 
 .containerFooterContent {
@@ -50,11 +48,25 @@
     gap: 0.5rem;
 }
 
+.containerFooterContentBottom {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #a09f9f;
+}
+
+.containerFooterBarraTextFooter {
+    width: 1440px;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
 
 .textFooter {
-    font-size: 1.2rem;
-
-    margin-top: 3rem;
+    font-size: 1rem;
 }
 
 .imageLogoFooter {

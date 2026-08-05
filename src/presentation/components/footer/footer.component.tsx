@@ -40,8 +40,8 @@ export const Footer = () => {
                     </ul>
                 </div>
             </section>
-            <section className="containerFooterContent">
-                <div>
+            <section className="containerFooterContentBottom">
+                <div className="containerFooterBarraTextFooter">
                     <p className="textFooter">© 2026 JWC Distribuição e Logística. Todos os direitos reservados.</p>
                 </div>
             </section>
