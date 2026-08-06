@@ -1,9 +1,6 @@
 import "./home.style.scss";
 
 //Images
-import BannerOne from '../../../assets/images/Banners/BannerOne.png';
-import logo from '../../../assets/images/Banners/logo.png';
-
 
 //Components
 import { Header } from '../../components/header/header.component';
@@ -16,23 +13,14 @@ import { SectionFive } from "../../components/sections/sectionFive/sectionFive.c
 import { SectionSix } from "../../components/sections/sectionSix/sectionSix.component";
 import { SectionTwo } from "../../components/sections/sectionTwo/sectionTwo.component";
 import { SectionOne } from "../../components/sections/sectionOne/sectionOne.component";
+import { BannnerPrincipal } from "../../components/bannerPrincipal/bannerPrincipal.component";
 
 
 export const HomePage = () => {
     return (
         <>
             <Header/>
-            <section className="containerBannerOne">
-                <img className="imageBannerOne" src={BannerOne} alt="Banner 1 Tamamho L2560PX A1902PX"/>
-
-                <div className="containerLogo">
-                    <img className="imageLogo" src={logo} alt="Logo"/>                    
-                </div>
-
-                <p className="textLogo">SEU MELHOR PARCEIRO EM SOLUÇÕES COMPLETAS NA DISTRIBUIÇÃO DE ALIMENTOS CONGELADOS NO CE E RN</p>
-
-                <button className="buttonFaleConoscoOne">FALE CONOSCO</button>
-            </section>
+            <BannnerPrincipal/>
             <SectionOne/>
             <SectionTwo/>
             <SectionThree/>
