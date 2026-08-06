@@ -3,27 +3,22 @@ import "./home.style.scss";
 //Images
 import BannerOne from '../../../assets/images/Banners/BannerOne.png';
 import logo from '../../../assets/images/Banners/logo.png';
-import slogKipolpas from "../../../assets/images/slog/LOGOCOMTRAÇADO.png"
-import slogAmazon from "../../../assets/images/slog/amazon-acai.png"
-import slogPeterFrut from "../../../assets/images/slog/slogan-perterfrut.png"
 
 
 //Components
 import { Header } from '../../components/header/header.component';
 
 //Hooks
-import { useSlogans } from '../../hooks/slogans.hook';
 import { SectionThree } from "../../components/sections/sectionThree/sectionThree.component";
 import { Footer } from "../../components/footer/footer.component";
 import { SectionFour } from "../../components/sections/sectionFour/sectionFour.component";
 import { SectionFive } from "../../components/sections/sectionFive/sectionFive.component";
 import { SectionSix } from "../../components/sections/sectionSix/sectionSix.component";
 import { SectionTwo } from "../../components/sections/sectionTwo/sectionTwo.component";
+import { SectionOne } from "../../components/sections/sectionOne/sectionOne.component";
 
 
 export const HomePage = () => {
-    const { sectionRef, isVisible } = useSlogans();
-
     return (
         <>
             <Header/>
@@ -38,16 +33,7 @@ export const HomePage = () => {
 
                 <button className="buttonFaleConoscoOne">FALE CONOSCO</button>
             </section>
-            <section
-                ref={sectionRef}
-                className={`containerSlogans ${isVisible ? "show" : ""}`}
-            >
-                <figure className="containerSlog">
-                    <img className="imageSlogCompany" src={slogKipolpas} alt="Kipolpas" />
-                    <img className="imageSlogCompany" src={slogAmazon} alt="Amazon Açaí" />
-                    <img className="imageSlogCompany" src={slogPeterFrut} alt="Peter Frut" />
-                </figure>
-            </section>
+            <SectionOne/>
             <SectionTwo/>
             <SectionThree/>
             <SectionFour/>
