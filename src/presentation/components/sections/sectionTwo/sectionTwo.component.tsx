@@ -1,13 +1,15 @@
 import "./sectionTwo.style.scss";
 import { motion, type Variants } from "framer-motion";
+import {
+    FaHandshake,
+    FaTruck,
+    FaAward,
+} from "react-icons/fa";
 
 //Fragements
 import { ButtonSaibaMais } from "../../../fragments/buttons/buttonSaibaMais/buttonSaibaMais.fragments";
 
 //Imagens
-import iconParceria from "../../../../assets/images/icons/icon-parceira.png"
-import iconDiamante from "../../../../assets/images/icons/icon-diamante.png"
-import iconTruck from "../../../../assets/images/icons/icons8-em-trânsito-50.svg"
 
 export const SectionTwo = () => {
     const titleVariants: Variants = {
@@ -82,7 +84,7 @@ export const SectionTwo = () => {
                         }}
                     >
                         <div className="containerIconParceiroIdeal">
-                            <img className="icons" src={iconParceria} alt="icone parceiros comerciais" />
+                            <FaHandshake className="icons" />
                         </div>
                         <h3 className="titlecomercial">PARCEIROS COMERCIAIS</h3>
                         <p className="descriptioncomercial">trabalha inicialmente com a distribuição dos produtos Kipolpas, Amazon Açaí e Peter Frut, oferecendo ao mercado uma linha completa de polpas, açaí, frutas congeladas com elevado padrão de qualidade e excelente aceitação pelos consumidores.</p>
@@ -99,7 +101,7 @@ export const SectionTwo = () => {
                         }}
                     >
                         <div className="containerIconParceiroIdeal">
-                            <img className="icons" src={iconTruck} alt="icone área de atuação" />
+                            <FaTruck className="icons" />
                         </div>
                         <h3 className="titlecomercial">ÁREA DE ATUAÇÃO</h3>
                         <p className="descriptioncomercial">Atendimento inicial na região do Vale do Jaguaribe, Oeste Potiguar e cidades estratégicas do Ceará e Rio Grande do Norte, com expansão gradual conforme o crescimento das operações.</p>
@@ -116,7 +118,7 @@ export const SectionTwo = () => {
                         }}
                     >
                         <div className="containerIconParceiroIdeal">
-                                <img className="icons" src={iconDiamante} alt="icone experiência e excelência" />
+                            <FaAward className="icons" />
                         </div>
                         <h3 className="titlecomercial">COMPROMISSO COM NOSSOS CLIENTES</h3>
                         <p className="descriptioncomercial">Nosso compromisso é oferecer produtos de qualidade, atendimento ágil, logística confiável e condições comerciais que contribuam para o sucesso dos nossos parceiros.</p>

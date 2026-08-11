@@ -1,0 +1,1001 @@
+/* ==========================================================
+HERO - SOBRE NÓS
+========================================================== */
+
+.sobreNosHero {
+    position: relative;
+
+    width: 100%;
+    height: 420px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ==========================================================
+PRESENTATION
+========================================================== */
+
+.sobreNosPresentation {
+    width: 100%;
+
+    padding: 100px 0;
+
+    background: #FFFFFF;
+}
+
+
+/* ==========================================================
+IMAGEM DE FUNDO
+========================================================== */
+
+.sobreNosHeroImage {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: -2;
+}
+
+
+/* ==========================================================
+OVERLAY
+========================================================== */
+
+.sobreNosHero::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, .45);
+
+    z-index: -1;
+}
+
+
+/* ==========================================================
+CONTEÚDO DO HERO
+========================================================== */
+
+.sobreNosHeroContent {
+    width: 100%;
+    max-width: 1440px;
+
+    padding: 0 7%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+
+/* ==========================================================
+CONTAINER DA PRESENTATION
+========================================================== */
+
+.sobreNosPresentationContainer {
+    width: 100%;
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    padding: 0 7%;
+}
+
+
+/* ==========================================================
+CONTEÚDO DA PRESENTATION
+========================================================== */
+
+.sobreNosPresentationContent {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+
+/* ==========================================================
+SUBTÍTULO DO HERO
+========================================================== */
+
+.sobreNosHeroSubtitle {
+    margin-bottom: 1rem;
+
+    font-size: .95rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+
+    color: #FFFFFF;
+}
+
+
+/* ==========================================================
+TÍTULO PRINCIPAL DO HERO
+========================================================== */
+
+.sobreNosHeroTitle {
+    max-width: 800px;
+
+    color: #FFFFFF;
+
+    font-size: clamp(2.2rem, 5vw, 3.3rem);
+    font-weight: 700;
+    line-height: 1.2;
+
+    text-align: left;
+}
+
+
+/* ==========================================================
+TÍTULO DA PRESENTATION
+========================================================== */
+
+.sobreNosPresentationTitle {
+    margin-bottom: 2rem;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: #1F2937;
+
+    text-align: left;
+}
+
+
+/* ==========================================================
+DESCRIÇÃO
+========================================================== */
+
+.sobreNosPresentationDescription {
+    margin-bottom: 3rem;
+
+    font-size: 1.05rem;
+    line-height: 2;
+
+    color: #6B7280;
+
+    text-align: left;
+}
+
+
+/* ==========================================================
+BOTÃO
+========================================================== */
+
+.sobreNosPresentationButton {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    gap: .8rem;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: .95rem;
+    font-weight: 500;
+
+    color: #1F2937;
+}
+
+
+/* ==========================================================
+TEXTO DO BOTÃO
+========================================================== */
+
+.sobreNosPresentationButtonText {
+    transition: color .3s ease;
+}
+
+
+/* ==========================================================
+CONTAINER DOS ÍCONES
+========================================================== */
+
+.sobreNosPresentationButtonIcon {
+    position: relative;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+ÍCONES
+========================================================== */
+
+.sobreNosPresentationButtonArrow,
+.sobreNosPresentationButtonCircle {
+    position: absolute;
+
+    width: 26px;
+    height: 26px;
+
+    object-fit: contain;
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+}
+
+
+/* ==========================================================
+SETA INICIAL
+========================================================== */
+
+.sobreNosPresentationButtonArrow {
+    transform: translateX(0);
+
+    opacity: 1;
+}
+
+
+/* ==========================================================
+SETA CIRCULAR
+========================================================== */
+
+.sobreNosPresentationButtonCircle {
+    transform: translateX(-30px);
+
+    opacity: 0;
+}
+
+
+/* ==========================================================
+HOVER
+========================================================== */
+
+.sobreNosPresentationButton:hover
+.sobreNosPresentationButtonText {
+    color: #E50000;
+}
+
+.sobreNosPresentationButton:hover
+.sobreNosPresentationButtonArrow {
+    transform: translateX(30px);
+
+    opacity: 0;
+}
+
+.sobreNosPresentationButton:hover
+.sobreNosPresentationButtonCircle {
+    transform: translateX(0);
+
+    opacity: 1;
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .sobreNosHero {
+        height: 360px;
+    }
+
+    .sobreNosHeroContent {
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .sobreNosHeroSubtitle {
+        font-size: .9rem;
+    }
+
+    .sobreNosHeroTitle {
+        font-size: 2.4rem;
+
+        text-align: center;
+    }
+
+    .sobreNosPresentation {
+        padding: 80px 0;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .sobreNosHero {
+        height: 320px;
+    }
+
+    .sobreNosHeroContent {
+        padding: 0 5%;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+    .sobreNosHeroTitle {
+        max-width: 100%;
+
+        font-size: 1.9rem;
+
+        text-align: center;
+    }
+
+    .sobreNosHeroSubtitle {
+        font-size: .85rem;
+    }
+
+    .sobreNosPresentation {
+        padding: 70px 0;
+    }
+
+    .sobreNosPresentationContainer {
+        padding: 0 5%;
+    }
+
+    .sobreNosPresentationTitle {
+        font-size: 2rem;
+    }
+
+    .sobreNosPresentationDescription {
+        font-size: .95rem;
+        line-height: 1.9;
+    }
+
+}
+
+/* ==========================================================
+SECTION - COMERCIAL
+========================================================== */
+
+.comercialSection {
+    width: 100%;
+
+    background: #FFFFFF;
+}
+
+
+/* ==========================================================
+BANNER
+========================================================== */
+
+.comercialBanner {
+    position: relative;
+
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+IMAGEM
+========================================================== */
+
+.comercialBannerImage {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+/* ==========================================================
+OVERLAY
+========================================================== */
+
+.comercialBannerOverlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, .45);
+
+    z-index: 1;
+}
+
+
+/* ==========================================================
+TÍTULO
+========================================================== */
+
+.comercialBannerTitle {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0;
+
+    color: #FFFFFF;
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+CONTAINER
+========================================================== */
+
+.comercialContainer {
+    width: 100%;
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    padding: 100px 7%;
+}
+
+
+/* ==========================================================
+CONTEÚDO
+========================================================== */
+
+.comercialContent {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+
+/* ==========================================================
+TÍTULO DO CONTEÚDO
+========================================================== */
+
+.comercialContentTitle {
+    margin-bottom: 2rem;
+
+    color: #1F2937;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+
+/* ==========================================================
+DESCRIÇÃO
+========================================================== */
+
+.comercialContentDescription {
+    margin: 0;
+
+    color: #6B7280;
+
+    font-size: 1.05rem;
+    line-height: 2;
+}
+
+/* ==========================================================
+BOTÃO
+========================================================== */
+
+.comercialContentButton {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    margin-top: 2.5rem;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: .95rem;
+    font-weight: 500;
+
+    color: #1F2937;
+}
+
+
+/* ==========================================================
+TEXTO
+========================================================== */
+
+.comercialContentButtonText {
+    transition: color .3s ease;
+}
+
+
+/* ==========================================================
+CONTAINER DOS ÍCONES
+========================================================== */
+
+.comercialContentButtonIcon {
+    position: relative;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+ÍCONES
+========================================================== */
+
+.comercialContentButtonArrow,
+.comercialContentButtonCircle {
+    position: absolute;
+
+    width: 26px;
+    height: 26px;
+
+    object-fit: contain;
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+}
+
+
+/* ==========================================================
+SETA INICIAL
+========================================================== */
+
+.comercialContentButtonArrow {
+    transform: translateX(0);
+
+    opacity: 1;
+}
+
+
+/* ==========================================================
+SETA CIRCULAR
+========================================================== */
+
+.comercialContentButtonCircle {
+    transform: translateX(-30px);
+
+    opacity: 0;
+}
+
+
+/* ==========================================================
+HOVER
+========================================================== */
+
+.comercialContentButton:hover
+.comercialContentButtonText {
+    color: #E50000;
+}
+
+.comercialContentButton:hover
+.comercialContentButtonArrow {
+    transform: translateX(30px);
+
+    opacity: 0;
+}
+
+.comercialContentButton:hover
+.comercialContentButtonCircle {
+    transform: translateX(0);
+
+    opacity: 1;
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .comercialBanner {
+        height: 360px;
+    }
+
+    .comercialContainer {
+        padding: 80px 6%;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .comercialBanner {
+        height: 320px;
+    }
+
+    .comercialBannerTitle {
+        font-size: 2.4rem;
+    }
+
+    .comercialContainer {
+        padding: 70px 5%;
+    }
+
+    .comercialContentTitle {
+        font-size: 2rem;
+    }
+
+    .comercialContentDescription {
+        font-size: .95rem;
+        line-height: 1.9;
+    }
+
+}
+
+/* ==========================================================
+SECTION - OPERAÇÃO E LOGÍSTICA
+========================================================== */
+
+.operacaoSection {
+    width: 100%;
+
+    background: #FFFFFF;
+}
+
+
+/* ==========================================================
+BANNER
+========================================================== */
+
+.operacaoBanner {
+    position: relative;
+
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+IMAGEM
+========================================================== */
+
+.operacaoBannerImage {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+/* ==========================================================
+OVERLAY
+========================================================== */
+
+.operacaoBannerOverlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, .45);
+
+    z-index: 1;
+}
+
+
+/* ==========================================================
+TÍTULO
+========================================================== */
+
+.operacaoBannerTitle {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0;
+
+    color: #FFFFFF;
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+
+    text-align: center;
+}
+
+
+/* ==========================================================
+CONTAINER
+========================================================== */
+
+.operacaoContainer {
+    width: 100%;
+    max-width: 1440px;
+
+    margin: 0 auto;
+
+    padding: 100px 7%;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+CONTEÚDO
+========================================================== */
+
+.operacaoContent {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    text-align: left;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+TÍTULO DO CONTEÚDO
+========================================================== */
+
+.operacaoContentTitle {
+    width: 100%;
+
+    margin-bottom: 2rem;
+
+    color: #1F2937;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    line-height: 1.2;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+DESCRIÇÃO
+========================================================== */
+
+.operacaoContentDescription {
+    width: 100%;
+
+    margin: 0;
+
+    color: #6B7280;
+
+    font-size: 1.05rem;
+    line-height: 2;
+
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================
+BOTÃO
+========================================================== */
+
+.operacaoContentButton {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    margin-top: 2.5rem;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    font-size: .95rem;
+    font-weight: 500;
+
+    color: #1F2937;
+}
+
+
+/* ==========================================================
+TEXTO
+========================================================== */
+
+.operacaoContentButtonText {
+    transition: color .3s ease;
+}
+
+
+/* ==========================================================
+CONTAINER DOS ÍCONES
+========================================================== */
+
+.operacaoContentButtonIcon {
+    position: relative;
+
+    width: 28px;
+    height: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================================
+ÍCONES
+========================================================== */
+
+.operacaoContentButtonArrow,
+.operacaoContentButtonCircle {
+    position: absolute;
+
+    width: 26px;
+    height: 26px;
+
+    object-fit: contain;
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+}
+
+
+/* ==========================================================
+SETA INICIAL
+========================================================== */
+
+.operacaoContentButtonArrow {
+    transform: translateX(0);
+
+    opacity: 1;
+}
+
+
+/* ==========================================================
+SETA CIRCULAR
+========================================================== */
+
+.operacaoContentButtonCircle {
+    transform: translateX(-30px);
+
+    opacity: 0;
+}
+
+
+/* ==========================================================
+HOVER
+========================================================== */
+
+.operacaoContentButton:hover
+.operacaoContentButtonText {
+    color: #E50000;
+}
+
+.operacaoContentButton:hover
+.operacaoContentButtonArrow {
+    transform: translateX(30px);
+
+    opacity: 0;
+}
+
+.operacaoContentButton:hover
+.operacaoContentButtonCircle {
+    transform: translateX(0);
+
+    opacity: 1;
+}
+
+
+/* ==========================================================
+TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .operacaoBanner {
+        height: 360px;
+    }
+
+    .operacaoContainer {
+        padding: 80px 6%;
+    }
+
+}
+
+
+/* ==========================================================
+MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .operacaoBanner {
+        height: 320px;
+    }
+
+    .operacaoBannerTitle {
+        font-size: 2.4rem;
+    }
+
+    .operacaoContainer {
+        padding: 70px 5%;
+    }
+
+    .operacaoContent {
+        width: 100%;
+    }
+
+    .operacaoContentTitle {
+        font-size: 2rem;
+    }
+
+    .operacaoContentDescription {
+        font-size: .95rem;
+        line-height: 1.9;
+    }
+
+    .operacaoContentButton {
+        margin-top: 2rem;
+    }
+
+}

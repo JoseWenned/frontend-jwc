@@ -1,10 +1,10 @@
 import "./presentation/styles/root.style.scss";
-import { HomePage } from "./presentation/pages/home/home.page";
+import { AppRoutes } from "./presentation/routes/AppRoute";
 
 function App() {
   return (
     <>
-      <HomePage/>
+      <AppRoutes/>
     </>
   )
 }

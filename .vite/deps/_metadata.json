@@ -2,7 +2,7 @@
   "hash": "e560fa07",
   "configHash": "6c8808fe",
   "lockfileHash": "c7ea2e93",
-  "browserHash": "9a3250bb",
+  "browserHash": "6ccf8bd7",
   "optimized": {
     "framer-motion": {
       "src": "../../node_modules/framer-motion/dist/es/index.mjs",
@@ -22,10 +22,16 @@
       "fileHash": "d39c3dc9",
       "needsInterop": true
     },
+    "react-icons/fa": {
+      "src": "../../node_modules/react-icons/fa/index.mjs",
+      "file": "react-icons_fa.js",
+      "fileHash": "dcfacf15",
+      "needsInterop": false
+    },
     "react-icons/hi": {
       "src": "../../node_modules/react-icons/hi/index.mjs",
       "file": "react-icons_hi.js",
-      "fileHash": "d8003f47",
+      "fileHash": "328d4697",
       "needsInterop": false
     },
     "react-router-dom": {
@@ -54,6 +60,10 @@
     }
   },
   "chunks": {
+    "iconBase-CyuIvRxA": {
+      "file": "iconBase-CyuIvRxA.js",
+      "isDynamicEntry": false
+    },
     "react-B6BdZLWZ": {
       "file": "react-B6BdZLWZ.js",
       "isDynamicEntry": false

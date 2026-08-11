@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import iconLinkedin from '../../../assets/images/icons/iconLinkedinGray.png'
 import iconInstagram from '../../../assets/images/icons/iconInstagramGray.png'
 import iconFacebook from '../../../assets/images/icons/iconFacebookGray.png'
-import logo from '../../../assets/images/Banners/logo.png'
+import logo from '../../../assets/images/Banners/689167c3-4937-4691-bb0f-35fba9788737-removebg-preview.png'
 
 export const Footer = () => {
     return (

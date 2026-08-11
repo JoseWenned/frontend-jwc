@@ -1,37 +1,57 @@
+/* ==========================================================
+   SECTION FIVE
+========================================================== */
+
 .containerSectionFive {
     width: 100%;
+
     padding: 100px 7%;
-    background: #FFF;
+
+    background: #FFFFFF;
 }
 
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
 .containerSectionFiveContent {
-    width: 100%;
-    max-width: 1440px;
+    width: min(100%, 1440px);
+
     margin: 0 auto;
 }
 
+/* ==========================================================
+   TÍTULO
+========================================================== */
+
 .containerSectionFiveTitle {
-    width: 100%;
-    text-align: center;
     margin-bottom: 70px;
-    opacity: 0;
-    transform: scale(.9);
+
+    text-align: center;
 }
 
 .titleSectionFive {
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
+
     color: #1F2937;
 }
 
-.containerSectionFiveCards {
-    width: 100%;
+/* ==========================================================
+   CONTAINER DOS CARDS
+========================================================== */
 
+.containerSectionFiveCards {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+
     gap: 2rem;
 }
+
+/* ==========================================================
+   CARD
+========================================================== */
 
 .cardSectionFive {
     flex: 1;
@@ -44,24 +64,40 @@
     border: 1px solid #E5E7EB;
     border-radius: 18px;
 
-    transition: .35s ease;
+    background: #FFFFFF;
 
-    opacity: 0;
-    transform: translateY(60px);
+    text-decoration: none;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
 }
 
 .cardSectionFive:hover {
     transform: translateY(-8px);
+
+    border-color: #E50000;
+
     box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
 }
+
+/* ==========================================================
+   TÍTULO DO CARD
+========================================================== */
 
 .titleCardSectionFive {
     margin-bottom: 20px;
 
     font-size: 1.6rem;
     font-weight: 700;
+
     color: #111827;
 }
+
+/* ==========================================================
+   DESCRIÇÃO
+========================================================== */
 
 .descriptionCardSectionFive {
     flex: 1;
@@ -70,84 +106,41 @@
 
     font-size: 1rem;
     line-height: 1.8;
+
     color: #6B7280;
 }
 
-.buttonCardSectionFive {
-    width: fit-content;
+/* ==========================================================
+   LINK "SAIBA MAIS"
+========================================================== */
 
-    padding: 14px 28px;
+.cardSectionFive span {
+    display: flex;
+    align-items: center;
 
-    border: none;
-    border-radius: 10px;
+    gap: .75rem;
 
-    background: #E50000;
-    color: #FFF;
+    margin-top: auto;
 
     font-weight: 600;
 
-    cursor: pointer;
-    transition: .3s;
+    color: #E50000;
 }
 
-.buttonCardSectionFive:hover {
-    background: #C00000;
+.cardSectionFive span img {
+    width: 22px;
+    height: 22px;
+
+    transition: transform .3s ease;
 }
 
-
-//Efeitos de animação
-.containerSectionFive.show {
-
-    .containerSectionFiveTitle {
-        animation: zoomFade .9s ease forwards;
-    }
-
-    .cardSectionFive:nth-child(1) {
-        animation: cardUp .7s ease forwards;
-        animation-delay: .2s;
-    }
-
-    .cardSectionFive:nth-child(2) {
-        animation: cardUp .7s ease forwards;
-        animation-delay: .45s;
-    }
-
-    .cardSectionFive:nth-child(3) {
-        animation: cardUp .7s ease forwards;
-        animation-delay: .7s;
-    }
-
+.cardSectionFive:hover span img {
+    transform: translateX(5px);
 }
 
-@keyframes zoomFade {
-
-    from {
-        opacity: 0;
-        transform: scale(.85);
-    }
-
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-}
-
-@keyframes cardUp {
-
-    from {
-        opacity: 0;
-        transform: translateY(60px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-}
-
-//Responsivo
+/* ==========================================================
+   RESPONSIVIDADE - TABLET
+========================================================== */
 
 @media (max-width: 991px) {
 
@@ -160,6 +153,10 @@
     }
 
 }
+
+/* ==========================================================
+   RESPONSIVIDADE - MOBILE
+========================================================== */
 
 @media (max-width: 768px) {
 
@@ -177,6 +174,14 @@
 
     .cardSectionFive {
         width: 100%;
+    }
+
+    .titleCardSectionFive {
+        font-size: 1.4rem;
+    }
+
+    .descriptionCardSectionFive {
+        font-size: .95rem;
     }
 
 }

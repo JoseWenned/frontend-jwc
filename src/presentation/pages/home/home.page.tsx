@@ -14,6 +14,7 @@ import { SectionSix } from "../../components/sections/sectionSix/sectionSix.comp
 import { SectionTwo } from "../../components/sections/sectionTwo/sectionTwo.component";
 import { SectionOne } from "../../components/sections/sectionOne/sectionOne.component";
 import { BannnerPrincipal } from "../../components/bannerPrincipal/bannerPrincipal.component";
+import { ButtonWhatsApp } from "../../fragments/buttons/buttonWhatsApp/buttonWhatsApp.component";
 
 
 export const HomePage = () => {
@@ -28,6 +29,7 @@ export const HomePage = () => {
             <SectionFive/>
             <SectionSix/>
             <Footer/>
+            <ButtonWhatsApp/>
         </>
     )
 }

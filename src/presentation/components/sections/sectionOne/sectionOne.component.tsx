@@ -2,9 +2,11 @@ import "./sectionOne.style.scss";
 import { motion } from "framer-motion";
 
 // Imagens
-import slogKipolpas from "../../../../assets/images/slog/LOGOCOMTRAÇADO.png"
+import slogKipolpas from "../../../../assets/images/slog/PERFIL 04.png"
 import slogAmazon from "../../../../assets/images/slog/amazon-acai.png"
 import slogPeterFrut from "../../../../assets/images/slog/slogan-perterfrut.png"
+import slogPalamaz from "../../../../assets/images/slog/images__2_-removebg-preview.png"
+import slogPuroSabor from "../../../../assets/images/slog/ChatGPT_Image_10_de_ago._de_2026__15_04_09-removebg-preview.png"
 
 const containerVariants = {
     hidden: {
@@ -49,31 +51,71 @@ export const SectionOne = () => {
                 amount: 0.3,
             }}
         >
-            <motion.figure
+            <motion.div
                 className="sectionOneContainer"
                 variants={containerVariants}
             >
-                <motion.img
-                    variants={itemVariants}
-                    className="sectionOneImage"
-                    src={slogKipolpas}
-                    alt="Kipolpas"
-                />
 
-                <motion.img
+                <motion.div
+                    className="sectionOneItem sectionOneItemKipolpas"
                     variants={itemVariants}
-                    className="sectionOneImage"
-                    src={slogAmazon}
-                    alt="Amazon Açaí"
-                />
+                >
+                    <img
+                        className="sectionOneImage"
+                        src={slogKipolpas}
+                        alt="Kipolpas"
+                    />
+                </motion.div>
 
-                <motion.img
+
+                <motion.div
+                    className="sectionOneItem sectionOneItemAmazon"
                     variants={itemVariants}
-                    className="sectionOneImage"
-                    src={slogPeterFrut}
-                    alt="Peter Frut"
-                />
-            </motion.figure>
+                >
+                    <img
+                        className="sectionOneImage"
+                        src={slogAmazon}
+                        alt="Amazon Açaí"
+                    />
+                </motion.div>
+
+
+                <motion.div
+                    className="sectionOneItem sectionOneItemPeterfrut"
+                    variants={itemVariants}
+                >
+                    <img
+                        className="sectionOneImage"
+                        src={slogPeterFrut}
+                        alt="Peter Frut"
+                    />
+                </motion.div>
+
+
+                <motion.div
+                    className="sectionOneItem sectionOneItemPalamaz"
+                    variants={itemVariants}
+                >
+                    <img
+                        className="sectionOneImage"
+                        src={slogPalamaz}
+                        alt="Palamaz"
+                    />
+                </motion.div>
+
+
+                <motion.div
+                    className="sectionOneItem sectionOneItemPuroSabor"
+                    variants={itemVariants}
+                >
+                    <img
+                        className="sectionOneImage"
+                        src={slogPuroSabor}
+                        alt="Puro Sabor"
+                    />
+                </motion.div>
+
+            </motion.div>
         </motion.section>
     );
 };

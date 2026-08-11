@@ -8,10 +8,7 @@ export const Navigation = () => {
                     <a href="/">Início</a>
                 </li>
                 <li className="containerNavigation__item">
-                    <a href="/sobre">Sobre nós</a>
-                </li>
-                <li className="containerNavigation__item">
-                    <a href="/vantagens">Vantagens</a>
+                    <a href="/sobre-nos">Sobre nós</a>
                 </li>
                 <li className="containerNavigation__item">
                     <a href="/produtos">Produtos</a>

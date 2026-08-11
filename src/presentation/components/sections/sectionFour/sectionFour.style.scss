@@ -1,50 +1,138 @@
-.containerSectionFour{
+/* ==========================================================
+   SECTION FOUR
+========================================================== */
+
+.containerSectionFour {
     width: 100%;
 }
 
+/* ==========================================================
+   BANNER
+========================================================== */
+
 .containerSectionFourContent {
-    width: 100%;
     position: relative;
+
+    width: 100%;
     height: 500px;
+
     overflow: hidden;
 }
+
+/* ==========================================================
+   IMAGEM DE FUNDO
+========================================================== */
 
 .imageDistribuidora {
     width: 100%;
     height: 100%;
-    object-fit: cover; // preenche todo o espaço sem distorcer
+
+    object-fit: cover;
+
     display: block;
 }
 
-.containerArticle {
+/* ==========================================================
+   OVERLAY
+========================================================== */
+
+.containerSectionFourContent::before {
+    content: "";
+
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    z-index: 1;
+}
+
+/* ==========================================================
+   CONTEÚDO
+========================================================== */
+
+.sectionFourContent {
+    position: absolute;
+    inset: 0;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
     text-align: center;
-    color: #fff;
+
+    padding: 0 2rem;
 
     z-index: 2;
 }
 
-//CONTAINER MARQUE INFINITO
+/* ==========================================================
+   TÍTULO
+========================================================== */
+
+.sectionFourTitle {
+    max-width: 850px;
+
+    margin-bottom: 2rem;
+
+    color: #FFFFFF;
+
+    font-size: clamp(2rem, 5vw, 3.8rem);
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* ==========================================================
+   BOTÃO
+========================================================== */
+
+.sectionFourButton {
+    padding: 1rem 2.8rem;
+
+    border: none;
+    border-radius: 50px;
+
+    background: #E30613;
+    color: #FFFFFF;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.sectionFourButton:hover {
+    filter: brightness(.9);
+}
+
+/* ==========================================================
+   MARQUEE
+========================================================== */
+
 .containerMarquee {
     width: 100%;
-    background: #e50000;
+
     overflow: hidden;
+
+    background: #E30613;
+
     white-space: nowrap;
+
     padding: 18px 0;
 }
 
+/* ==========================================================
+   ITENS DO MARQUEE
+========================================================== */
+
 .marquee {
     display: flex;
+
     width: max-content;
+
     animation: marquee 20s linear infinite;
 }
 
@@ -52,13 +140,19 @@
     display: flex;
     align-items: center;
 
-    font-size: 22px;
-    font-weight: 700;
-    color: #fff;
+    padding-right: 5rem;
 
-    padding-right: 80px;
+    color: #FFFFFF;
+
+    font-size: 1.35rem;
+    font-weight: 700;
+
     letter-spacing: 1px;
 }
+
+/* ==========================================================
+   ANIMAÇÃO DO MARQUEE
+========================================================== */
 
 @keyframes marquee {
     from {
@@ -68,4 +162,63 @@
     to {
         transform: translateX(-50%);
     }
+}
+
+/* ==========================================================
+   RESPONSIVIDADE - TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .containerSectionFourContent {
+        height: 420px;
+    }
+
+    .sectionFourTitle {
+        max-width: 700px;
+
+        font-size: 2.8rem;
+    }
+
+    .marquee span {
+        font-size: 1.15rem;
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVIDADE - MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .containerSectionFourContent {
+        height: 380px;
+    }
+
+    .sectionFourContent {
+        padding: 0 1.5rem;
+    }
+
+    .sectionFourTitle {
+        margin-bottom: 1.5rem;
+
+        font-size: 2rem;
+    }
+
+    .sectionFourButton {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .marquee {
+        animation-duration: 15s;
+    }
+
+    .marquee span {
+        padding-right: 3rem;
+
+        font-size: 1rem;
+    }
+
 }

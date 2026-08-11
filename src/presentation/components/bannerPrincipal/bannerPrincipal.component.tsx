@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 // Images
 import BannerOne from "../../../assets/images/Banners/BannerOne.png";
-import logo from "../../../assets/images/Banners/logo.png";
+import logo from "../../../assets/images/Banners/689167c3-4937-4691-bb0f-35fba9788737-removebg-preview.png";
 
 const containerVariants = {
     hidden: {
