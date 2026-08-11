@@ -14,9 +14,6 @@ export const Navigation = () => {
                     <a href="/produtos">Produtos</a>
                 </li>
                 <li className="containerNavigation__item">
-                    <a href="/como-funciona">Como funciona</a>
-                </li>
-                <li className="containerNavigation__item">
                     <a href="/contato">Contato</a>
                 </li>
             </ul>

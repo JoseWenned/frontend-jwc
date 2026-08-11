@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { HomePage } from "../pages/home/home.page";
 import { SobreNosPage } from "../pages/sobreNos/sobreNos.page";
 import { ProdutosPage } from "../pages/produtos/produtos.page";
+import { ContatoPage } from "../pages/contato/contato.page";
 // import { LogisticaPage } from "../pages/Logistica/Logistica.page";
 // import { MerchandisingPage } from "../pages/Merchandising/Merchandising.page";
 // import { SobrePage } from "../pages/Sobre/Sobre.page";
@@ -27,11 +28,13 @@ export const AppRoutes = () => {
                     path="/produtos"
                     element={<ProdutosPage />}
                 />
-{/* 
+
                 <Route
-                    path="/logistica"
-                    element={<LogisticaPage />}
+                    path="/contato"
+                    element={<ContatoPage />}
                 />
+{/* 
+                
 
                 <Route
                     path="/merchandising"
