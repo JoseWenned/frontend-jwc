@@ -6,17 +6,21 @@
     display: flex;
     justify-content: center;
 
-    background-color: #ffffff;
+    background-color: var(--color-white);
+
+    font-family: var(--font-primary);
 }
+
 
 .sectionOneContainer {
     width: 100%;
-    max-width: 1440px;
+    max-width: var(--container-width);
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 /* ==================================================
    ITEM
@@ -34,6 +38,7 @@
     padding: 0 15px;
 }
 
+
 /* ==================================================
    IMAGEM BASE
 ================================================== */
@@ -43,17 +48,18 @@
 
     width: auto;
     height: auto;
+    max-width: 100%;
 
     object-fit: contain;
 
-    transition:
-        transform 0.35s ease,
-        opacity 0.35s ease;
+    transition: transform var(--transition-default);
 }
+
 
 .sectionOneImage:hover {
     transform: scale(1.05);
 }
+
 
 /* ==================================================
    TAMANHO DAS MARCAS
@@ -88,6 +94,7 @@
     width: 225px;
     max-height: 145px;
 }
+
 
 /* ==================================================
    TABLET
@@ -126,6 +133,7 @@
     }
 }
 
+
 /* ==================================================
    MOBILE
 ================================================== */
@@ -163,13 +171,14 @@
     }
 
     .sectionOneItemPalamaz .sectionOneImage {
-        width: 165px;
+        width: 200px;
     }
 
     .sectionOneItemPuroSabor .sectionOneImage {
         width: 175px;
     }
 }
+
 
 /* ==================================================
    MOBILE PEQUENO

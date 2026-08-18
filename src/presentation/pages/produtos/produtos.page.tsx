@@ -108,6 +108,15 @@ export const ProdutosPage = () => {
             />
 
             {/* ==================================================
+                PURO SABOR
+            ================================================== */}
+
+            <BrandProdutos
+                marca="Puro sabor"
+                produtos={produtosPuroSabor.produtos}
+            />
+
+            {/* ==================================================
                 AMAZON
             ================================================== */}
 
@@ -132,15 +141,6 @@ export const ProdutosPage = () => {
             <BrandProdutos
                 marca="Palamaz"
                 produtos={produtosPalamaz.produtos}
-            />
-            
-            {/* ==================================================
-                PURO SABOR
-            ================================================== */}
-
-            <BrandProdutos
-                marca="Puro sabor"
-                produtos={produtosPuroSabor.produtos}
             />
 
             {/* ==================================================

@@ -1,5 +1,5 @@
 /* ===========================================================
-   Navegação
+   NAVEGAÇÃO
 =========================================================== */
 
 .navigation {
@@ -7,8 +7,9 @@
     align-items: center;
 }
 
+
 /* ===========================================================
-   Lista de Navegação
+   LISTA DE NAVEGAÇÃO
 =========================================================== */
 
 .containerNavigation {
@@ -23,8 +24,9 @@
     list-style: none;
 }
 
+
 /* ===========================================================
-   Item da Navegação
+   ITEM
 =========================================================== */
 
 .containerNavigation__item {
@@ -32,8 +34,9 @@
     align-items: center;
 }
 
+
 /* ===========================================================
-   Link
+   LINK
 =========================================================== */
 
 .containerNavigation__item a {
@@ -44,19 +47,35 @@
 
     padding: .75rem 0;
 
-    color: #2B2B2B;
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    letter-spacing: .2px;
 
     text-decoration: none;
 
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: .4px;
-
-    transition: color .3s ease;
+    transition:
+        color var(--transition-default);
 }
 
+
 /* ===========================================================
-   Linha Inferior
+   HEADER COM SCROLL
+=========================================================== */
+
+.containerHeader.scrolled
+.containerNavigation__item a {
+    color: var(--color-primary);
+}
+
+
+/* ===========================================================
+   LINHA INFERIOR
 =========================================================== */
 
 .containerNavigation__item a::after {
@@ -70,21 +89,39 @@
     width: 100%;
     height: 2px;
 
-    background: #D91F26;
+    background-color: var(--color-secondary);
 
     transform: scaleX(0);
+
     transform-origin: left;
 
-    transition: transform .3s ease;
+    transition:
+        transform var(--transition-default);
 }
 
+
 /* ===========================================================
-   Hover
+   HOVER
 =========================================================== */
 
 .containerNavigation__item a:hover {
-    color: #D91F26;
+    color: var(--color-secondary);
 }
+
+
+/* ===========================================================
+   HOVER COM HEADER SCROLLADO
+=========================================================== */
+
+.containerHeader.scrolled
+.containerNavigation__item a:hover {
+    color: var(--color-secondary);
+}
+
+
+/* ===========================================================
+   HOVER — LINHA
+=========================================================== */
 
 .containerNavigation__item a:hover::after {
     transform: scaleX(1);

@@ -24,9 +24,9 @@ export const produtosKipolpas = [
                 "Polpa de abacaxi com sabor refrescante e intenso, ideal para sucos, vitaminas e diversas receitas.",
             imagem: imagemAbacaxi,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -36,9 +36,9 @@ export const produtosKipolpas = [
                 "A combinação refrescante do abacaxi com o toque marcante da hortelã.",
             imagem: imagemAbacaxicomhortela,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -48,9 +48,9 @@ export const produtosKipolpas = [
                 "Polpa de acerola com sabor marcante e refrescante, perfeita para bebidas e preparações.",
             imagem: imagemAcerola,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -60,9 +60,9 @@ export const produtosKipolpas = [
                 "Polpa de ameixa para preparações com sabor intenso e característico.",
             imagem: imagemAmeixa,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -72,9 +72,9 @@ export const produtosKipolpas = [
                 "Polpa de cajá com sabor tropical e marcante.",
             imagem: imagemCaja,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -84,9 +84,9 @@ export const produtosKipolpas = [
                 "Uma combinação de sabores tropicais para bebidas refrescantes.",
             imagem: imagemCajaUmbu,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -96,9 +96,9 @@ export const produtosKipolpas = [
                 "Polpa de caju com sabor característico e excelente para sucos e receitas.",
             imagem: imagemCaju,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -108,9 +108,9 @@ export const produtosKipolpas = [
                 "Polpa de cupuaçu com sabor marcante e textura cremosa.",
             imagem: imagemCupuacu,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -120,9 +120,9 @@ export const produtosKipolpas = [
                 "Polpa de goiaba com sabor doce e marcante.",
             imagem: imagemGoiaba,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -132,9 +132,9 @@ export const produtosKipolpas = [
                 "Polpa de graviola com sabor característico e textura cremosa.",
             imagem: imagemGraviola,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -144,9 +144,9 @@ export const produtosKipolpas = [
                 "Polpa de mamão para bebidas e preparações com sabor suave e tropical.",
             imagem: imagemMamao,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -156,9 +156,9 @@ export const produtosKipolpas = [
                 "Polpa de manga com sabor doce e tropical.",
             imagem: imagemManga,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -168,9 +168,9 @@ export const produtosKipolpas = [
                 "Polpa de maracujá com sabor intenso e marcante.",
             imagem: imagemMaracuja,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -180,9 +180,9 @@ export const produtosKipolpas = [
                 "Polpa de morango para sucos, vitaminas, sobremesas e outras preparações.",
             imagem: imagemMorango,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -192,9 +192,9 @@ export const produtosKipolpas = [
                 "Polpa de sapoti com sabor doce e característico.",
             imagem: imagemSapoti,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -204,9 +204,9 @@ export const produtosKipolpas = [
                 "Polpa de tamarindo com sabor marcante e levemente ácido.",
             imagem: imagemTamarindo,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -216,9 +216,9 @@ export const produtosKipolpas = [
                 "Polpa de uva com sabor intenso e refrescante.",
             imagem: imagemUva,
             informacoes: [
-                "📦 Embalagem: 100g",
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
-                "📅 Validade: 12 meses",
+                "📅 Validade: 06 meses",
             ],
         },
     ];

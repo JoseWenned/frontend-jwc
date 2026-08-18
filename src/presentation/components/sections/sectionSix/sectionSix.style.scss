@@ -1,88 +1,186 @@
+/* ==========================================================
+   SECTION SIX
+========================================================== */
+
 .sectionSix {
+    position: relative;
+
     width: 100%;
     min-height: 260px;
+
+    overflow: hidden;
 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
-    position: relative;
-    overflow: hidden;
 }
 
-.sectionSixContainer {
-    position: relative;
-    z-index: 2;
 
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+/* ==========================================================
+   OVERLAY
+========================================================== */
 
 .sectionSixOverlay {
     position: absolute;
-    inset: 0;
 
-    background: rgba(0, 0, 0, 0.45);
+    inset: 0;
 
     display: flex;
     align-items: center;
+
+    background: rgba(0, 0, 0, 0.45);
 }
+
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.sectionSixContainer {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* ==========================================================
+   CONTEÚDO
+========================================================== */
 
 .sectionSixContent {
     max-width: 500px;
 }
 
+
+/* ==========================================================
+   TÍTULO
+========================================================== */
+
 .sectionSixTitle {
-    color: #fff;
+    margin: 0;
+
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
 
     font-size: 32px;
     font-weight: 700;
+
     line-height: 1.5;
 
     text-transform: uppercase;
 }
 
+
+/* ==========================================================
+   BOTÃO
+========================================================== */
+
 .sectionSixButton {
     width: 250px;
     height: 65px;
 
-    border: none;
-    border-radius: 4px;
+    display: inline-flex;
 
-    background: #ff1a1a;
-    color: #fff;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-secondary);
+    border-radius: var(--radius-sm);
+
+    background: var(--color-secondary);
+
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
 
     font-size: 18px;
     font-weight: 700;
 
     cursor: pointer;
 
-    transition: .3s;
+    transition:
+        background-color var(--transition-default),
+        border-color var(--transition-default),
+        color var(--transition-default),
+        transform var(--transition-default);
 }
 
+
+/* ==========================================================
+   HOVER
+========================================================== */
+
 .sectionSixButton:hover {
-    background: #d91010;
+    background: var(--color-primary);
+
+    border-color: var(--color-primary);
+
+    color: var(--color-white);
+
     transform: translateY(-2px);
 }
 
 
-// RESPONSIVE //
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .sectionSixContainer {
+        padding: 0 var(--container-padding);
+    }
+
+    .sectionSixTitle {
+        font-size: 30px;
+    }
+
+    .sectionSixButton {
+        width: 230px;
+        height: 60px;
+
+        font-size: 16px;
+    }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+========================================================== */
 
 @media (max-width: 768px) {
+
     .sectionSix {
         min-height: 380px;
     }
 
+
+    .sectionSixOverlay {
+        align-items: center;
+    }
+
+
     .sectionSixContainer {
-        width: 90%;
+        width: 100%;
+
+        padding: 40px var(--container-padding);
 
         display: flex;
         flex-direction: column;
+
         justify-content: center;
         align-items: center;
 
@@ -91,17 +189,55 @@
         text-align: center;
     }
 
+
     .sectionSixContent {
         max-width: 100%;
     }
 
+
     .sectionSixTitle {
         font-size: 28px;
+
         line-height: 1.3;
     }
+
 
     .sectionSixButton {
         width: 230px;
         height: 60px;
     }
+
+}
+
+
+/* ==========================================================
+   MOBILE PEQUENO
+========================================================== */
+
+@media (max-width: 480px) {
+
+    .sectionSix {
+        min-height: 360px;
+    }
+
+
+    .sectionSixContainer {
+        padding: 35px var(--container-padding);
+
+        gap: 30px;
+    }
+
+
+    .sectionSixTitle {
+        font-size: 24px;
+    }
+
+
+    .sectionSixButton {
+        width: 220px;
+        height: 58px;
+
+        font-size: 15px;
+    }
+
 }

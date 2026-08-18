@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import iconLinkedin from '../../../assets/images/icons/iconLinkedinGray.png'
 import iconInstagram from '../../../assets/images/icons/iconInstagramGray.png'
 import iconFacebook from '../../../assets/images/icons/iconFacebookGray.png'
-import logo from '../../../assets/images/Banners/689167c3-4937-4691-bb0f-35fba9788737-removebg-preview.png'
+import logo from '../../../assets/images/slog/imagemSlogPrincipal.png';
 
 export const Footer = () => {
     return (
@@ -15,7 +15,7 @@ export const Footer = () => {
                     <img className="imageLogoFooter" src={logo} alt="Logo"/>
 
                     <h3 className="textFooter">Matriz: </h3>
-                    <p>Vereador Efésio Costa N-496</p>
+                    <p>Vereador Efésio Costa | Nº 496</p>
                 </div>
                 <div className="containerFooterContentInfomation">
                     <h3 className="textFooter">Navegue:</h3>
@@ -25,15 +25,15 @@ export const Footer = () => {
                     <Link className="footerLink" to="/sobre">
                         Sobre Nós
                     </Link>
-                    <Link className="footerLink" to="/vantagens">
+                    {/* <Link className="footerLink" to="/vantagens">
                         Vantagens
-                    </Link>
+                    </Link> */}
                     <Link className="footerLink" to="/vantagens">
                         Produtos
                     </Link>
-                    <Link className="footerLink" to="/vantagens">
+                    {/* <Link className="footerLink" to="/vantagens">
                         Como Funciona
-                    </Link>
+                    </Link> */}
                     <Link className="footerLink" to="/vantagens">
                         Contato
                     </Link>

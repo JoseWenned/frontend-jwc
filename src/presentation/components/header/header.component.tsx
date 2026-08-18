@@ -1,29 +1,49 @@
-import "./header.style.scss"
-import { Navigation } from "../navigation/navigation.component"
+import "./header.style.scss";
+
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-//Components
+// Animations
+import {
+    fadeDown,
+    fadeLeft,
+    staggerContainer,
+} from "../../animations";
+
+// Components
+import { Navigation } from "../navigation/navigation.component";
 import { MobileMenu } from "../mobileMenu/mobileMenu.component";
 
-//Icons
+// Icons
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
-//Images
+// Images
 import facebookIconGray from "../../../assets/images/icons/iconFacebookGray.png";
 import linkedinIconGray from "../../../assets/images/icons/iconLinkedinGray.png";
 import instagramIconGray from "../../../assets/images/icons/iconInstagramGray.png";
+import imagemSlogPrincipal from "../../../assets/images/slog/imagemSlogPrincipal.png";
+
 
 export const Header = () => {
+
     const [scrolled, setScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
 
+
+    /* ==================================================
+       SCROLL
+    ================================================== */
+
     useEffect(() => {
+
         const handleScroll = () => {
+
             if (window.scrollY > 50) {
                 setScrolled(true);
             } else {
                 setScrolled(false);
             }
+
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -31,26 +51,96 @@ export const Header = () => {
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
+
     }, []);
+
 
     return (
         <>
-            <section className={`containerHeader ${scrolled ? "scrolled" : ""}`}>
+
+            {/* ==================================================
+                HEADER
+            ================================================== */}
+
+            <motion.section
+                className={`containerHeader ${scrolled ? "scrolled" : ""}`}
+
+                variants={staggerContainer}
+
+                initial="hidden"
+
+                animate="visible"
+            >
+
                 <div className="containerHeader__content">
-                    <h1>JWC</h1>
-                    <div className="containerHeader__navigation">
+
+
+                    {/* ==================================================
+                        SLOGAN
+                    ================================================== */}
+
+                    <motion.div
+                        className="containerHeader__slogan"
+                        variants={fadeDown}
+                    >
+
+                        <img
+                            src={imagemSlogPrincipal}
+                            alt="JWC Distribuição e Logística"
+                        />
+
+                    </motion.div>
+
+
+                    {/* ==================================================
+                        NAVEGAÇÃO
+                    ================================================== */}
+
+                    <motion.div
+                        className="containerHeader__navigation"
+                        variants={fadeDown}
+                    >
+
                         <Navigation />
-                    </div>
-                    <button
+
+                    </motion.div>
+
+
+                    {/* ==================================================
+                        MENU MOBILE
+                    ================================================== */}
+
+                    <motion.button
                         className="containerHeader__menuButton"
+
+                        variants={fadeLeft}
+
                         onClick={() => setMenuOpen(true)}
+
                         aria-label="Abrir menu"
                     >
+
                         <HiOutlineMenuAlt3 />
-                    </button>
-                    <ul className="containerHeader__content__socialMedia">
+
+                    </motion.button>
+
+
+                    {/* ==================================================
+                        REDES SOCIAIS
+                    ================================================== */}
+
+                    <motion.ul
+                        className="containerHeader__content__socialMedia"
+
+                        variants={fadeLeft}
+                    >
+
                         <li>
-                            <a href="#" className="socialLink">
+                            <a
+                                href="#"
+                                className="socialLink"
+                                aria-label="Facebook"
+                            >
                                 <img
                                     className="socialIcon socialIconFacebook"
                                     src={facebookIconGray}
@@ -58,8 +148,14 @@ export const Header = () => {
                                 />
                             </a>
                         </li>
+
+
                         <li>
-                            <a href="#" className="socialLink">
+                            <a
+                                href="#"
+                                className="socialLink"
+                                aria-label="LinkedIn"
+                            >
                                 <img
                                     className="socialIcon"
                                     src={linkedinIconGray}
@@ -67,8 +163,14 @@ export const Header = () => {
                                 />
                             </a>
                         </li>
+
+
                         <li>
-                            <a href="#" className="socialLink">
+                            <a
+                                href="#"
+                                className="socialLink"
+                                aria-label="Instagram"
+                            >
                                 <img
                                     className="socialIcon"
                                     src={instagramIconGray}
@@ -76,13 +178,23 @@ export const Header = () => {
                                 />
                             </a>
                         </li>
-                    </ul>
+
+                    </motion.ul>
+
                 </div>
-            </section>
+
+            </motion.section>
+
+
+            {/* ==================================================
+                MOBILE MENU
+            ================================================== */}
+
             <MobileMenu
                 isOpen={menuOpen}
                 onClose={() => setMenuOpen(false)}
             />
+
         </>
-    )
-}
+    );
+};

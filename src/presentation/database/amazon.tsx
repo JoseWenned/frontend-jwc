@@ -32,6 +32,11 @@ export const produtosAmazon = {
 
             descricao:
                 "Polpa de açaí para o preparo de bebidas, cremes, vitaminas e diversas receitas.",
+            informacoes: [
+                "📦 Embalagem: 500g",
+                "❄️ Conservação: manter congelado",
+                "📅 Validade: 06 meses",
+            ],
 
             imagem: imagemPolpaAcai,
         },

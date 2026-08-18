@@ -14,7 +14,9 @@ export const produtosPuroSabor = {
             imagem: imageAcerola,
 
             informacoes: [
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
+                "📅 Validade: 06 meses",
             ],
         },
     ],

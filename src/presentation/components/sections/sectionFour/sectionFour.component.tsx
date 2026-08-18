@@ -1,10 +1,19 @@
 import "./sectionFour.style.scss";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
+
+// Animations
+import {
+    staggerContainer,
+    fadeDown,
+    zoomIn,
+    orderButton,
+} from "../../../../presentation/animations";
 
 // Imagens
 import imagemDistribuidora from "../../../../assets/images/Banners/filantropia-corporativa-apoia-os-esforcos-locais-do-banco-de-alimentos-para-aliviar-a-fome_38013-94227.avif";
 
 export const SectionFour = () => {
+
     const segmentos = [
         "DISTRIBUIDORES",
         "AUTO SERVIÇO",
@@ -13,42 +22,37 @@ export const SectionFour = () => {
         "ATACADO",
     ];
 
-    const marqueeItems = Array(4)
+    /*
+    ==========================================================
+    MARQUEE
+
+    Criamos uma sequência maior que a largura da tela.
+    Essa sequência será duplicada no JSX.
+
+    Dessa forma:
+
+    GRUPO 01 → sequência completa
+    GRUPO 02 → sequência completa
+
+    Quando o grupo 01 termina, o grupo 02 já está
+    exatamente na mesma sequência, criando o efeito
+    de movimento infinito.
+    ==========================================================
+    */
+
+    const marqueeGroup = Array(3)
         .fill(segmentos)
         .flat();
 
-    const contentVariants: Variants = {
-        hidden: {
-            opacity: 0,
-            y: 40,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.8,
-                staggerChildren: 0.2,
-            },
-        },
-    };
-
-    const itemVariants: Variants = {
-        hidden: {
-            opacity: 0,
-            y: 30,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.6,
-            },
-        },
-    };
-
     return (
         <section className="containerSectionFour">
+
+            {/* ==================================================
+                BANNER
+            ================================================== */}
+
             <div className="containerSectionFourContent">
+
                 <img
                     className="imageDistribuidora"
                     src={imagemDistribuidora}
@@ -57,7 +61,7 @@ export const SectionFour = () => {
 
                 <motion.article
                     className="sectionFourContent"
-                    variants={contentVariants}
+                    variants={staggerContainer}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{
@@ -65,33 +69,98 @@ export const SectionFour = () => {
                         amount: 0.3,
                     }}
                 >
-                    <motion.h1
-                        className="sectionFourTitle"
-                        variants={itemVariants}
+
+                    <motion.span
+                        className="sectionFourEyebrow"
+                        variants={fadeDown}
                     >
-                        Conectando produtos, negócios e oportunidades.
-                    </motion.h1>
+                        JWC DISTRIBUIÇÃO & LOGÍSTICA
+                    </motion.span>
+
+                    <motion.h2
+                        className="sectionFourTitle"
+                        variants={zoomIn}
+                    >
+                        Conectando produtos,
+                        <strong> negócios e oportunidades.</strong>
+                    </motion.h2>
 
                     <motion.button
                         className="sectionFourButton"
-                        variants={itemVariants}
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                        variants={orderButton}
+                        whileHover={{
+                            scale: 1.04,
+                        }}
+                        whileTap={{
+                            scale: 0.96,
+                        }}
                     >
                         Fale conosco
                     </motion.button>
+
                 </motion.article>
+
             </div>
 
+
+            {/* ==================================================
+                MARQUEE
+            ================================================== */}
+
             <div className="containerMarquee">
+
                 <div className="marquee">
-                    {marqueeItems.map((item, index) => (
-                        <span key={index}>
-                            • {item}
-                        </span>
-                    ))}
+
+                    {/* ==================================================
+                        GRUPO 01
+                    ================================================== */}
+
+                    <div className="marqueeGroup">
+
+                        {marqueeGroup.map((item, index) => (
+
+                            <span
+                                key={`marquee-one-${index}`}
+                                className="marqueeItem"
+                            >
+                                <small>•</small>
+
+                                {item}
+                            </span>
+
+                        ))}
+
+                    </div>
+
+
+                    {/* ==================================================
+                        GRUPO 02
+                    ================================================== */}
+
+                    <div
+                        className="marqueeGroup"
+                        aria-hidden="true"
+                    >
+
+                        {marqueeGroup.map((item, index) => (
+
+                            <span
+                                key={`marquee-two-${index}`}
+                                className="marqueeItem"
+                            >
+                                <small>•</small>
+
+                                {item}
+                            </span>
+
+                        ))}
+
+                    </div>
+
                 </div>
+
             </div>
+
         </section>
     );
 };

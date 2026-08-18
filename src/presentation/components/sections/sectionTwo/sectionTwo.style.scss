@@ -1,6 +1,6 @@
 /* ===========================================================
-   Section Two
-   Parceiro Ideal
+   SECTION TWO
+   PARCEIRO IDEAL
 =========================================================== */
 
 .containerParceiroIdeal {
@@ -9,20 +9,25 @@
     display: flex;
     justify-content: center;
 
-    background: #f5f5f5;
+    background-color: var(--color-background);
+
+    font-family: var(--font-primary);
 }
 
 
 /* ===========================================================
-   Container Principal
+   CONTAINER PRINCIPAL
 =========================================================== */
 
 .containerParceiroIdealContent {
-    width: min(90%, 1440px);
+    width: 100%;
+    max-width: var(--container-width);
 
     margin: 0 auto;
 
-    padding: 90px 0;
+    padding:
+        var(--spacing-xxl)
+        var(--container-padding);
 
     display: flex;
     flex-direction: column;
@@ -32,204 +37,481 @@
 
 
 /* ===========================================================
-   Título
+   TÍTULO
 =========================================================== */
 
 .titleParceiro {
-    max-width:700px;
+    position: relative;
 
-    text-align:left;
+    max-width: 760px;
 
-    margin-bottom:70px;
+    margin: 0 0 var(--spacing-xl);
 
-    font-size:2.5rem;
+    padding-left: 18px;
 
-    line-height:1.4;
+    font-family: var(--font-primary);
+
+    font-size: 42px;
+    font-weight: 800;
+
+    line-height: 1.12;
+
+    letter-spacing: -1.2px;
+
+    text-align: left;
+
+    color: var(--color-primary);
 }
 
 
 /* ===========================================================
-   Container dos Cards
+   DETALHE DO TÍTULO
+=========================================================== */
+
+.titleParceiro::before {
+    content: "";
+
+    position: absolute;
+
+    top: 4px;
+    left: 0;
+
+    width: 4px;
+    height: calc(100% - 8px);
+
+    border-radius: 10px;
+
+    background-color: var(--color-secondary);
+}
+
+
+/* ===========================================================
+   CONTAINER DOS CONTEÚDOS
 =========================================================== */
 
 .containerParceiroIdealContentArticles {
     width: 100%;
 
-    display: grid;
+    display: flex;
+    align-items: stretch;
 
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 4rem;
+    gap: var(--spacing-lg);
 }
 
 
 /* ===========================================================
-   Card
+   ARTIGO
 =========================================================== */
 
 .articleParceiroIdeal {
-    padding:0;
+    flex: 1;
 
-    border:none;
+    min-width: 0;
 
-    background:transparent;
+    padding: 32px;
 
-    box-shadow:none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
 
-    text-align:left;
+    background-color: var(--color-white);
+
+    text-align: left;
+
+    transition:
+        transform var(--transition-default),
+        border-color var(--transition-default),
+        box-shadow var(--transition-default);
 }
 
 
 /* ===========================================================
-   Ícone
+   HOVER CARD
+=========================================================== */
+
+.articleParceiroIdeal:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(216, 61, 61, 0.25);
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ===========================================================
+   ÍCONE
 =========================================================== */
 
 .containerIconParceiroIdeal {
-    width:90px;
-    height:90px;
+    width: 64px;
+    height: 64px;
 
-    border-radius:50%;
+    margin-bottom: var(--spacing-md);
 
-    border:1.2px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    background:#f5f5f5;
+    border-radius: var(--radius-md);
 
-    display:flex;
+    background-color: rgba(216, 61, 61, 0.08);
 
-    align-items:center;
-    justify-content:center;
-
-    margin-bottom:2rem;
+    transition:
+        background-color var(--transition-default),
+        transform var(--transition-default);
 }
+
+
+/* ===========================================================
+   HOVER ÍCONE
+=========================================================== */
+
+.articleParceiroIdeal:hover .containerIconParceiroIdeal {
+    background-color: var(--color-secondary);
+
+    transform: translateY(-2px);
+}
+
+
+/* ===========================================================
+   ÍCONE
+=========================================================== */
 
 .icons {
+    width: 28px;
+    height: 28px;
 
-    width: 42px;
-    height: 42px;
+    color: var(--color-secondary);
 
-    object-fit: contain;
+    transition:
+        color var(--transition-default),
+        transform var(--transition-default);
 }
 
 
 /* ===========================================================
-   Tipografia
+   HOVER ÍCONE
 =========================================================== */
 
-.titlecomercial {
-    margin-bottom:1rem;
+.articleParceiroIdeal:hover .icons {
+    color: var(--color-white);
 
-    font-size:1.3rem;
-
-    color:#2b2b2b;
-}
-
-.descriptioncomercial {
-    color:#6b6b6b;
-
-    line-height:1.9;
+    transform: scale(1.05);
 }
 
 
 /* ===========================================================
-   Botão
+   TÍTULO DO CARD
 =========================================================== */
+
+.titleComercial {
+    margin: 0 0 var(--spacing-sm);
+
+    font-family: var(--font-primary);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.35;
+
+    letter-spacing: -0.2px;
+
+    color: var(--color-primary);
+}
 
 
 /* ===========================================================
-   Responsividade
+   DESCRIÇÃO
 =========================================================== */
 
+.descriptionComercial {
+    margin: 0;
 
-/* ===========================
-   Tablet
-=========================== */
+    font-family: var(--font-primary);
 
-@media (max-width: 992px) {
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.75;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ===========================================================
+   BOTÃO
+=========================================================== */
+
+.containerButtonParceiroIdeal {
+    margin-top: var(--spacing-xl);
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width: 1024px) {
+
+    .containerParceiroIdealContent {
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
+    }
+
+
+    /* -----------------------------------------------
+       Título
+    ----------------------------------------------- */
 
     .titleParceiro {
+        max-width: 680px;
 
-        font-size: 2rem;
+        margin-bottom: var(--spacing-lg);
+
+        font-size: 36px;
+
+        letter-spacing: -0.8px;
     }
 
-    .containerParceiroIdealContentArticles {
 
-        grid-template-columns: repeat(2, 1fr);
+    /* -----------------------------------------------
+       Cards
+    ----------------------------------------------- */
+
+    .containerParceiroIdealContentArticles {
+        gap: var(--spacing-md);
+    }
+
+
+    .articleParceiroIdeal {
+        padding: 26px;
+    }
+
+
+    /* -----------------------------------------------
+       Ícone
+    ----------------------------------------------- */
+
+    .containerIconParceiroIdeal {
+        width: 60px;
+        height: 60px;
+    }
+
+
+    .icons {
+        width: 26px;
+        height: 26px;
+    }
+
+
+    /* -----------------------------------------------
+       Tipografia
+    ----------------------------------------------- */
+
+    .titleComercial {
+        font-size: 17px;
+    }
+
+
+    .descriptionComercial {
+        font-size: 14px;
+
+        line-height: 1.7;
     }
 
 }
 
 
-/* ===========================
-   Mobile
-=========================== */
+/* ===========================================================
+   MOBILE
+=========================================================== */
 
 @media (max-width: 768px) {
 
     .containerParceiroIdealContent {
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
 
-        padding: 70px 0;
+        align-items: flex-start;
     }
+
+
+    /* -----------------------------------------------
+       Título
+    ----------------------------------------------- */
 
     .titleParceiro {
+        width: 100%;
+        max-width: 100%;
 
-        font-size: 1.7rem;
+        margin-bottom: var(--spacing-lg);
 
-        margin-bottom: 3rem;
+        padding-left: 14px;
+
+        font-size: 30px;
+
+        line-height: 1.18;
+
+        letter-spacing: -0.5px;
     }
+
+
+    .titleParceiro::before {
+        top: 3px;
+
+        width: 3px;
+
+        height: calc(100% - 6px);
+    }
+
+
+    /* -----------------------------------------------
+       Cards
+    ----------------------------------------------- */
 
     .containerParceiroIdealContentArticles {
+        flex-direction: column;
 
-        grid-template-columns: 1fr;
-
-        gap: 1.8rem;
+        gap: var(--spacing-md);
     }
 
-    .articleParceiroIdeal {
 
-        padding: 2rem 1.5rem;
+    .articleParceiroIdeal {
+        width: 100%;
+
+        padding: 24px;
+    }
+
+
+    /* -----------------------------------------------
+       Ícone
+    ----------------------------------------------- */
+
+    .containerIconParceiroIdeal {
+        width: 58px;
+        height: 58px;
+
+        margin-bottom: var(--spacing-sm);
+    }
+
+
+    .icons {
+        width: 25px;
+        height: 25px;
+    }
+
+
+    /* -----------------------------------------------
+       Tipografia
+    ----------------------------------------------- */
+
+    .titleComercial {
+        font-size: 17px;
+    }
+
+
+    .descriptionComercial {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------------
+       Botão
+    ----------------------------------------------- */
+
+    .containerButtonParceiroIdeal {
+        width: 100%;
+
+        margin-top: var(--spacing-lg);
     }
 
 }
 
 
-/* ===========================
-   Smartphones Pequenos
-=========================== */
+/* ===========================================================
+   SMARTPHONES PEQUENOS
+=========================================================== */
 
 @media (max-width: 480px) {
 
     .containerParceiroIdealContent {
-
-        width: 92%;
+        padding-top: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
     }
+
+
+    /* -----------------------------------------------
+       Título
+    ----------------------------------------------- */
 
     .titleParceiro {
+        margin-bottom: var(--spacing-md);
 
-        font-size: 1.45rem;
+        padding-left: 12px;
+
+        font-size: 27px;
+
+        line-height: 1.2;
     }
+
+
+    .titleParceiro::before {
+        width: 3px;
+    }
+
+
+    /* -----------------------------------------------
+       Cards
+    ----------------------------------------------- */
+
+    .containerParceiroIdealContentArticles {
+        gap: var(--spacing-sm);
+    }
+
+
+    .articleParceiroIdeal {
+        padding: 20px;
+    }
+
+
+    /* -----------------------------------------------
+       Ícone
+    ----------------------------------------------- */
 
     .containerIconParceiroIdeal {
+        width: 54px;
+        height: 54px;
 
-        width: 75px;
-        height: 75px;
+        margin-bottom: var(--spacing-sm);
     }
+
 
     .icons {
-
-        width: 36px;
-        height: 36px;
+        width: 23px;
+        height: 23px;
     }
 
-    .titlecomercial {
 
-        font-size: 1.1rem;
+    /* -----------------------------------------------
+       Tipografia
+    ----------------------------------------------- */
+
+    .titleComercial {
+        font-size: 16px;
+
+        line-height: 1.35;
     }
 
-    .descriptioncomercial {
 
-        font-size: .92rem;
+    .descriptionComercial {
+        font-size: 14px;
 
-        line-height: 1.7;
+        line-height: 1.65;
     }
 
 }

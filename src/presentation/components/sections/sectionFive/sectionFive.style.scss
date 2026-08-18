@@ -1,72 +1,129 @@
-/* ==========================================================
+/* ===========================================================
    SECTION FIVE
-========================================================== */
+=========================================================== */
 
 .containerSectionFive {
     width: 100%;
 
-    padding: 100px 7%;
+    padding: 100px 0 110px;
 
-    background: #FFFFFF;
+    background-color: #ffffff;
+
+    overflow: hidden;
 }
 
-/* ==========================================================
+
+/* ===========================================================
    CONTAINER
-========================================================== */
+=========================================================== */
 
 .containerSectionFiveContent {
-    width: min(100%, 1440px);
+    width: 90%;
+    max-width: 1440px;
 
     margin: 0 auto;
 }
 
-/* ==========================================================
+
+/* ===========================================================
    TÍTULO
-========================================================== */
+=========================================================== */
 
 .containerSectionFiveTitle {
-    margin-bottom: 70px;
+    width: 100%;
+
+    margin-bottom: 65px;
 
     text-align: center;
 }
 
+
+/* ===========================================================
+   SUBTÍTULO
+=========================================================== */
+
+.subtitleSectionFive {
+    display: block;
+
+    margin-bottom: 14px;
+
+    color: #d91f26;
+
+    font-family: var(--font-primary);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* ===========================================================
+   TÍTULO PRINCIPAL
+=========================================================== */
+
 .titleSectionFive {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: #2f2f2f;
+
+    font-family: var(--font-primary);
+
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
 
-    color: #1F2937;
+    line-height: 1.15;
+
+    letter-spacing: -1px;
 }
 
-/* ==========================================================
+
+/* ===========================================================
    CONTAINER DOS CARDS
-========================================================== */
+=========================================================== */
 
 .containerSectionFiveCards {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
+    width: 100%;
 
-    gap: 2rem;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    gap: 25px;
 }
 
-/* ==========================================================
+
+/* ===========================================================
    CARD
-========================================================== */
+=========================================================== */
 
 .cardSectionFive {
+    position: relative;
+
     flex: 1;
+
+    min-height: 330px;
+
+    padding: 38px 35px 32px;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    padding: 35px;
+    border: 1px solid #e5e5e5;
+    border-radius: 16px;
 
-    border: 1px solid #E5E7EB;
-    border-radius: 18px;
-
-    background: #FFFFFF;
+    background-color: #ffffff;
 
     text-decoration: none;
+
+    overflow: hidden;
 
     transition:
         transform .35s ease,
@@ -74,114 +131,385 @@
         border-color .35s ease;
 }
 
+
+/* ===========================================================
+   LINHA SUPERIOR
+=========================================================== */
+
+.cardSectionFive::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: #d91f26;
+
+    transform: scaleX(0);
+
+    transform-origin: left;
+
+    transition: transform .35s ease;
+}
+
+
+/* ===========================================================
+   HOVER CARD
+=========================================================== */
+
 .cardSectionFive:hover {
     transform: translateY(-8px);
 
-    border-color: #E50000;
+    border-color: #dddddd;
 
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .08);
 }
 
-/* ==========================================================
+
+.cardSectionFive:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* ===========================================================
+   CONTEÚDO DO CARD
+=========================================================== */
+
+.cardSectionFiveContent {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ===========================================================
+   NÚMERO
+=========================================================== */
+
+.cardNumber {
+    display: block;
+
+    margin-bottom: 28px;
+
+    color: #b5b5b5;
+
+    font-family: var(--font-primary);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+}
+
+
+/* ===========================================================
    TÍTULO DO CARD
-========================================================== */
+=========================================================== */
 
 .titleCardSectionFive {
-    margin-bottom: 20px;
+    margin: 0 0 18px;
 
-    font-size: 1.6rem;
+    color: #2f2f2f;
+
+    font-family: var(--font-primary);
+
+    font-size: 25px;
     font-weight: 700;
 
-    color: #111827;
+    line-height: 1.2;
+
+    transition: color .3s ease;
 }
 
-/* ==========================================================
+
+.cardSectionFive:hover .titleCardSectionFive {
+    color: #d91f26;
+}
+
+
+/* ===========================================================
    DESCRIÇÃO
-========================================================== */
+=========================================================== */
 
 .descriptionCardSectionFive {
-    flex: 1;
+    max-width: 360px;
 
-    margin-bottom: 30px;
+    margin: 0;
 
-    font-size: 1rem;
-    line-height: 1.8;
+    color: #707070;
 
-    color: #6B7280;
+    font-family: var(--font-primary);
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.75;
 }
 
-/* ==========================================================
-   LINK "SAIBA MAIS"
-========================================================== */
 
-.cardSectionFive span {
+/* ===========================================================
+   LINK
+=========================================================== */
+
+.cardSectionFiveLink {
     display: flex;
     align-items: center;
 
-    gap: .75rem;
+    gap: 10px;
 
-    margin-top: auto;
+    width: fit-content;
 
-    font-weight: 600;
+    margin-top: 35px;
 
-    color: #E50000;
+    color: #d91f26;
+
+    font-family: var(--font-primary);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.4;
 }
 
-.cardSectionFive span img {
+
+/* ===========================================================
+   ÍCONE
+=========================================================== */
+
+.cardSectionFiveLink img {
     width: 22px;
     height: 22px;
 
-    transition: transform .3s ease;
+    transition:
+        transform .3s ease;
 }
 
-.cardSectionFive:hover span img {
+
+.cardSectionFive:hover .cardSectionFiveLink img {
     transform: translateX(5px);
 }
 
-/* ==========================================================
-   RESPONSIVIDADE - TABLET
-========================================================== */
 
-@media (max-width: 991px) {
+/* ===========================================================
+   TABLET GRANDE
+=========================================================== */
 
-    .containerSectionFiveCards {
-        flex-wrap: wrap;
+@media (max-width: 1200px) {
+
+    .containerSectionFive {
+        padding: 90px 0 100px;
     }
 
+
+    .containerSectionFiveCards {
+        gap: 20px;
+    }
+
+
     .cardSectionFive {
-        flex: 1 1 calc(50% - 1rem);
+        min-height: 320px;
+
+        padding: 32px 28px;
+    }
+
+
+    .titleCardSectionFive {
+        font-size: 23px;
+    }
+
+
+    .descriptionCardSectionFive {
+        font-size: 14px;
     }
 
 }
 
-/* ==========================================================
-   RESPONSIVIDADE - MOBILE
-========================================================== */
 
-@media (max-width: 768px) {
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width: 992px) {
 
     .containerSectionFive {
-        padding: 80px 5%;
+        padding: 80px 0 90px;
     }
+
 
     .containerSectionFiveTitle {
         margin-bottom: 50px;
     }
 
+
+    .containerSectionFiveCards {
+        flex-wrap: wrap;
+
+        gap: 20px;
+    }
+
+
+    .cardSectionFive {
+        flex: 1 1 calc(50% - 10px);
+
+        min-height: 300px;
+    }
+
+
+    .cardNumber {
+        margin-bottom: 22px;
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width: 768px) {
+
+    .containerSectionFive {
+        padding: 70px 0 80px;
+    }
+
+
+    .containerSectionFiveContent {
+        width: 90%;
+    }
+
+
+    .containerSectionFiveTitle {
+        margin-bottom: 40px;
+    }
+
+
+    .subtitleSectionFive {
+        margin-bottom: 12px;
+
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .titleSectionFive {
+        font-size: 2rem;
+
+        line-height: 1.2;
+    }
+
+
     .containerSectionFiveCards {
         flex-direction: column;
+
+        gap: 18px;
     }
+
 
     .cardSectionFive {
         width: 100%;
+
+        min-height: 280px;
+
+        padding: 30px 27px;
     }
+
 
     .titleCardSectionFive {
-        font-size: 1.4rem;
+        font-size: 22px;
     }
 
+
     .descriptionCardSectionFive {
-        font-size: .95rem;
+        max-width: 100%;
+
+        font-size: 14px;
+    }
+
+
+    .cardSectionFiveLink {
+        margin-top: 30px;
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE PEQUENO
+=========================================================== */
+
+@media (max-width: 480px) {
+
+    .containerSectionFive {
+        padding: 60px 0 70px;
+    }
+
+
+    .containerSectionFiveContent {
+        width: 88%;
+    }
+
+
+    .containerSectionFiveTitle {
+        margin-bottom: 35px;
+    }
+
+
+    .subtitleSectionFive {
+        font-size: 11px;
+
+        letter-spacing: 1.7px;
+    }
+
+
+    .titleSectionFive {
+        font-size: 1.8rem;
+
+        letter-spacing: -.5px;
+    }
+
+
+    .cardSectionFive {
+        min-height: 270px;
+
+        padding: 28px 24px;
+    }
+
+
+    .cardNumber {
+        margin-bottom: 20px;
+
+        font-size: 12px;
+    }
+
+
+    .titleCardSectionFive {
+        margin-bottom: 15px;
+
+        font-size: 21px;
+    }
+
+
+    .descriptionCardSectionFive {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .cardSectionFiveLink {
+        margin-top: 25px;
+
+        font-size: 13px;
+    }
+
+
+    .cardSectionFiveLink img {
+        width: 20px;
+        height: 20px;
     }
 
 }

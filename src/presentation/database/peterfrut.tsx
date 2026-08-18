@@ -27,7 +27,9 @@ export const produtosPeterfrut = {
             imagem: imagemAmora,
 
             informacoes: [
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -41,7 +43,9 @@ export const produtosPeterfrut = {
             imagem: imagemMoranguito,
 
             informacoes: [
+                "📦 Embalagem: 1kg",
                 "❄️ Conservação: manter congelado",
+                "📅 Validade: 06 meses",
             ],
         },
 
@@ -55,7 +59,9 @@ export const produtosPeterfrut = {
             imagem: imagemMirtilo,
 
             informacoes: [
+                "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
+                "📅 Validade: 06 meses",
             ],
         },
 

@@ -1,5 +1,5 @@
 /* ===========================================================
-   Footer
+   FOOTER
 =========================================================== */
 
 .containerFooter {
@@ -8,267 +8,511 @@
     display: flex;
     flex-direction: column;
 
-    // background: #1b1b1b;
-    // color: #f5f5f5;
-    background: #f7f8fa;
-    color: #2f2f2f;
+    background-color: #f7f7f7;
+
+    color: #2b2b2b;
+
+    border-top: 1px solid var(--color-border);
 }
 
 
 /* ===========================================================
-   Conteúdo Principal
+   CONTEÚDO PRINCIPAL
 =========================================================== */
 
 .containerFooterContent {
-    width: min(90%, 1440px);
+    width: 90%;
+    max-width: 1440px;
 
     margin: 0 auto;
 
-    padding: 70px 0;
+    padding: 90px 0 100px;
 
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 
-    gap: 4rem;
+    gap: 70px;
 }
 
 
 /* ===========================================================
-   Colunas
+   COLUNA INFORMAÇÕES
 =========================================================== */
 
-.containerFooterContentInfomation,
-.containerFooterContentInfomationAtendimento {
+.containerFooterContentInfomation {
     flex: 1;
+
+    min-width: 220px;
 
     display: flex;
     flex-direction: column;
 
-    gap: 1rem;
+    align-items: flex-start;
+
+    gap: 12px;
 }
 
 
 /* ===========================================================
-   Logo
+   COLUNA NAVEGAÇÃO
+=========================================================== */
+
+.containerFooterContentInfomation:nth-child(2) {
+    flex: 0 0 180px;
+}
+
+
+/* ===========================================================
+   COLUNA CONTATO
+=========================================================== */
+
+.containerFooterContentContact {
+    flex: 1;
+
+    min-width: 280px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+}
+
+
+/* ===========================================================
+   COLUNA ATENDIMENTO
+=========================================================== */
+
+.containerFooterContentInfomationAtendimento {
+    flex: 1;
+
+    min-width: 180px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 14px;
+}
+
+
+/* ===========================================================
+   LOGO
 =========================================================== */
 
 .imageLogoFooter {
-    width: 180px;
+    width: 150px;
+    height: auto;
 
-    margin-bottom: .5rem;
+    margin-bottom: 12px;
 }
 
 
 /* ===========================================================
-   Títulos
+   TÍTULOS
 =========================================================== */
 
 .textFooter {
-    font-size: 1.1rem;
+    margin: 0;
+
+    color: #2b2b2b;
+
+    font-family: var(--font-primary);
+
+    font-size: 16px;
     font-weight: 700;
 
-    // color: #ffffff;
-    color: #222;
+    line-height: 1.4;
 }
 
 
 /* ===========================================================
-   Texto
+   INFORMAÇÕES DA EMPRESA
 =========================================================== */
 
 .containerFooterContentInfomation p {
-    color: #666;
+    width: 100%;
+    max-width: 240px;
+
+    margin: 0;
+
+    color: #666666;
+
+    font-family: var(--font-primary);
+
+    font-size: 15px;
 
     line-height: 1.7;
 }
 
 
 /* ===========================================================
-   Botões de navegação
+   NAVEGAÇÃO
 =========================================================== */
 
-.containerFooterContentInfomation button {
+.footerLink {
     width: fit-content;
 
-    border: none;
-    background: transparent;
+    margin: 0;
 
-    color: #c9c9c9;
+    color: #666666;
 
-    font-size: 1rem;
+    font-family: var(--font-primary);
 
-    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
 
-    transition: .3s;
+    line-height: 1.5;
+
+    text-decoration: none;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
 }
 
-.containerFooterContentInfomation button:hover {
-    color: #ffffff;
 
-    transform: translateX(8px);
-}
+.footerLink:hover {
+    color: #d83d3d;
 
-.footerLink {
-
-    color: #666;
-
-    text-decoration:none;
-
-    transition:.3s;
-
-    font-size:1rem;
-}
-
-.footerLink:hover{
-    color:#d91f26;
-
-    transform:translateX(8px);
+    transform: translateX(5px);
 }
 
 
 /* ===========================================================
-   Redes Sociais
+   CONTATO
+=========================================================== */
+
+.footerContactText {
+    width: 100%;
+
+    margin: 0;
+
+    color: #666666;
+
+    font-family: var(--font-primary);
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    transition: color .3s ease;
+}
+
+
+.footerContactText:hover {
+    color: #d83d3d;
+}
+
+
+/* ===========================================================
+   REDES SOCIAIS
 =========================================================== */
 
 .containerFooterContentInfomationAtendimentoList {
     display: flex;
     align-items: center;
 
-    gap: 1rem;
+    gap: 12px;
+
+    margin: 4px 0 0;
+    padding: 0;
 
     list-style: none;
-
-    padding: 0;
-    margin: 0;
 }
+
 
 .containerFooterContentInfomationAtendimentoList li {
     display: flex;
 }
 
+
 .containerFooterContentInfomationAtendimentoList a {
-    width: 48px;
-    height: 48px;
+    width: 44px;
+    height: 44px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
+    border: 1px solid #dddddd;
     border-radius: 50%;
 
-    background: #ffffff;
-    border: 1px solid #ddd;
+    background-color: #ffffff;
+    cursor: pointer;
 
-    transition: .3s;
+    transition:
+        background-color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
 }
+
 
 .containerFooterContentInfomationAtendimentoList a:hover {
-    background: #f3f3f3;
-    border-color: #d91f26;
+    background-color: #d83d3d;
 
-    transform: translateY(-5px);
+    border-color: #d83d3d;
+
+    transform: translateY(-3px);
 }
+
 
 .imageRedesFooter {
-    width: 22px;
+    width: 20px;
+    height: auto;
 }
+
 
 /* ===========================================================
-   Contato
-=========================================================== */
-
-.containerFooterContentContact {
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: .8rem;
-}
-
-.footerContactText {
-    color: #666;
-
-    font-size: .95rem;
-
-    line-height: 1.2;
-
-    transition: .3s;
-}
-
-/* ===========================================================
-   Barra inferior
+   BARRA INFERIOR
 =========================================================== */
 
 .containerFooterContentBottom {
     width: 100%;
-    background: #efefef;
-    border-top: 1px solid #dedede;
+
+    background-color: #ffffff;
+
+    border-top: 1px solid #e2e2e2;
 }
 
+
 .containerFooterBarraTextFooter {
-    width: min(90%, 1440px);
+    width: 90%;
+    max-width: 1440px;
+
+    min-height: 75px;
 
     margin: 0 auto;
 
-    height: 70px;
+    padding: 18px 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+
 .containerFooterBarraTextFooter p {
-    color: #777;
+    margin: 0;
+
+    color: #777777;
+
+    font-family: var(--font-primary);
+
+    font-size: 13px;
+
+    line-height: 1.5;
 
     text-align: center;
-
-    font-size: .95rem;
 }
 
+
 /* ===========================================================
-   Tablet
+   TABLET
 =========================================================== */
 
-@media (max-width:992px){
-    .containerFooterContent{
+@media (max-width: 992px) {
 
-        gap:2rem;
+    .containerFooterContent {
+        width: 90%;
+
+        padding: 70px 0 80px;
+
+        gap: 40px;
     }
+
+
+    .containerFooterContentInfomation {
+        min-width: 180px;
+    }
+
+
+    .containerFooterContentInfomation:nth-child(2) {
+        flex: 0 0 150px;
+    }
+
+
+    .containerFooterContentContact {
+        min-width: 220px;
+    }
+
+
+    .containerFooterContentInfomationAtendimento {
+        min-width: 150px;
+    }
+
+
+    .imageLogoFooter {
+        width: 140px;
+    }
+
 }
 
+
 /* ===========================================================
-   Mobile
+   MOBILE
 =========================================================== */
 
-@media (max-width:768px){
-    .containerFooterContent{
-        flex-direction:column;
+@media (max-width: 768px) {
 
-        align-items:center;
+    .containerFooterContent {
+        width: 90%;
 
-        text-align:center;
+        padding: 65px 0 75px;
 
-        padding:50px 0;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 42px;
+
+        text-align: center;
     }
+
+
+    /* -------------------------------------------------------
+       Colunas
+    ------------------------------------------------------- */
 
     .containerFooterContentInfomation,
-    .containerFooterContentInfomationAtendimento{
-        width:100%;
+    .containerFooterContentContact,
+    .containerFooterContentInfomationAtendimento {
 
-        align-items:center;
+        width: 100%;
+        min-width: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 12px;
     }
 
-    .containerFooterContentInfomation button{
-        margin:auto;
+
+    .containerFooterContentInfomation:nth-child(2) {
+        flex: 1;
     }
 
-    .containerFooterContentInfomationAtendimentoList{
-        justify-content:center;
+
+    /* -------------------------------------------------------
+       Logo
+    ------------------------------------------------------- */
+
+    .imageLogoFooter {
+        width: 145px;
+
+        margin-bottom: 10px;
     }
 
-    .imageLogoFooter{
-        width:150px;
+
+    /* -------------------------------------------------------
+       Informações
+    ------------------------------------------------------- */
+
+    .containerFooterContentInfomation p {
+        max-width: 280px;
     }
+
+
+    /* -------------------------------------------------------
+       Links
+    ------------------------------------------------------- */
+
+    .footerLink {
+        width: auto;
+    }
+
+
+    .footerLink:hover {
+        transform: translateY(-2px);
+    }
+
+
+    /* -------------------------------------------------------
+       Contato
+    ------------------------------------------------------- */
+
+    .footerContactText {
+        max-width: 320px;
+    }
+
+
+    /* -------------------------------------------------------
+       Redes sociais
+    ------------------------------------------------------- */
+
+    .containerFooterContentInfomationAtendimentoList {
+        justify-content: center;
+
+        margin-top: 6px;
+    }
+
+
+    /* -------------------------------------------------------
+       Barra inferior
+    ------------------------------------------------------- */
+
+    .containerFooterBarraTextFooter {
+        width: 90%;
+
+        min-height: 75px;
+
+        padding: 18px 0;
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE PEQUENO
+=========================================================== */
+
+@media (max-width: 480px) {
+
+    .containerFooterContent {
+        width: 88%;
+
+        padding: 55px 0 65px;
+
+        gap: 38px;
+    }
+
+
+    .imageLogoFooter {
+        width: 135px;
+    }
+
+
+    .textFooter {
+        font-size: 15px;
+    }
+
+
+    .containerFooterContentInfomation p,
+    .footerLink,
+    .footerContactText {
+        font-size: 14px;
+    }
+
+
+    .containerFooterContentInfomationAtendimentoList {
+        gap: 10px;
+    }
+
+
+    .containerFooterContentInfomationAtendimentoList a {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .containerFooterBarraTextFooter p {
+        font-size: 12px;
+    }
+
 }

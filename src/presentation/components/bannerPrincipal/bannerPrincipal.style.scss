@@ -1,143 +1,440 @@
-/* ==========================================================
-   CONTAINER PRINCIPAL
-========================================================== */
+/* ===========================================================
+   BANNER PRINCIPAL
+=========================================================== */
 
 .containerBannerOne {
     position: relative;
 
     width: 100%;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh;
 
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    font-family: var(--font-primary);
 }
 
-/* ==========================================================
+
+/* ===========================================================
    IMAGEM DE FUNDO
-========================================================== */
+=========================================================== */
 
 .imageBannerOne {
     position: absolute;
+
     inset: 0;
 
     width: 100%;
     height: 100%;
 
     object-fit: cover;
-    z-index: -2;
+
+    z-index: 0;
 }
 
-/* ==========================================================
-   CAMADA ESCURA SOBRE O BANNER
-========================================================== */
 
-.containerBannerOne::before {
-    content: "";
+/* ===========================================================
+   OVERLAY
+=========================================================== */
 
+.overlayBannerOne {
     position: absolute;
+
     inset: 0;
 
-    background: rgba(0, 0, 0, .45);
+    z-index: 1;
 
-    z-index: -1;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(43, 43, 43, 0.82) 0%,
+            rgba(43, 43, 43, 0.68) 35%,
+            rgba(43, 43, 43, 0.28) 68%,
+            rgba(43, 43, 43, 0.08) 100%
+        );
 }
 
-/* ==========================================================
-   CONTAINER DA LOGO
-========================================================== */
 
-.containerLogo {
-    margin-bottom: 2rem;
-}
+/* ===========================================================
+   CONTAINER PRINCIPAL
+=========================================================== */
 
-/* ==========================================================
-   LOGO PRINCIPAL
-========================================================== */
-
-.imageLogo {
+.containerBannerOneContent {
     width: 100%;
-    max-width: 260px;
-    height: auto;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding:
+        140px
+        var(--container-padding)
+        80px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--spacing-xl);
 }
 
-/* ==========================================================
-   TEXTO PRINCIPAL
-========================================================== */
 
-.textLogo {
-    width: 90%;
-    max-width: 900px;
+/* ===========================================================
+   CONTEÚDO TEXTUAL
+=========================================================== */
 
-    margin-bottom: 2.5rem;
+.containerBannerOneText {
+    position: relative;
 
-    color: #FFFFFF;
+    z-index: 2;
 
-    text-align: center;
+    width: 100%;
+    max-width: 650px;
 
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+/* ===========================================================
+   TÍTULO
+=========================================================== */
+
+.titleBannerOne {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin: 0 0 var(--spacing-md);
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(3.2rem, 5vw, 5rem);
+
+    font-weight: 800;
+
+    line-height: 0.98;
+
+    letter-spacing: -2px;
+
+    color: var(--color-white);
+
+    text-transform: uppercase;
+}
+
+
+.titleBannerOne span {
+    display: block;
+}
+
+
+.titleBannerOneHighlight {
+    color: var(--color-secondary);
+}
+
+
+/* ===========================================================
+   DESCRIÇÃO
+=========================================================== */
+
+.descriptionBannerOne {
+    width: 100%;
+    max-width: 570px;
+
+    margin: 0 0 var(--spacing-lg);
+
+    font-family: var(--font-primary);
+
+    font-size: 18px;
+
+    font-weight: 400;
+
+    line-height: 1.55;
+
+    color: var(--color-white);
+}
+
+
+.descriptionBannerOne strong {
+    color: var(--color-secondary);
+
     font-weight: 600;
-    line-height: 1.4;
 }
 
-/* ==========================================================
+
+/* ===========================================================
    BOTÃO
-========================================================== */
+=========================================================== */
 
 .buttonFaleConoscoOne {
-    padding: 1rem 2.5rem;
+    position: relative;
 
-    border: none;
-    border-radius: 50px;
+    z-index: 3;
 
-    background: #FFC107;
+    display: inline-flex;
 
-    color: #000;
+    align-items: center;
+    justify-content: center;
 
-    font-size: 1rem;
+    width: fit-content;
+
+    min-width: 190px;
+    min-height: 50px;
+
+    margin: 0;
+
+    padding: 0 var(--spacing-md);
+
+    border: 1px solid var(--color-secondary);
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-secondary);
+
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
+
+    font-size: 14px;
+
     font-weight: 700;
+
+    letter-spacing: 0.5px;
 
     cursor: pointer;
 
-    transition: .3s;
+    transition:
+        background-color var(--transition-default),
+        border-color var(--transition-default),
+        transform var(--transition-default);
 }
 
 .buttonFaleConoscoOne:hover {
-    filter: brightness(.95);
+    background-color: transparent;
+
+    border-color: var(--color-white);
+
+    color: var(--color-white);
 }
 
-/* ==========================================================
-   RESPONSIVIDADE
-========================================================== */
+/* ===========================================================
+   ÁREA VISUAL
+=========================================================== */
 
-@media (max-width: 992px) {
-    .imageLogo {
-        max-width: 220px;
-    }
+.containerBannerOneVisual {
+    position: relative;
 
-    .textLogo {
-        font-size: 1.6rem;
-    }
+    z-index: 2;
+
+    flex: 1;
+
+    min-width: 0;
 }
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width: 1024px) {
+
+    .containerBannerOneContent {
+        gap: var(--spacing-lg);
+    }
+
+
+    .containerBannerOneText {
+        max-width: 560px;
+    }
+
+
+    .titleBannerOne {
+        font-size: clamp(2.8rem, 6vw, 4.2rem);
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .descriptionBannerOne {
+        max-width: 500px;
+
+        font-size: 16px;
+    }
+
+
+    .buttonFaleConoscoOne {
+        min-width: 180px;
+
+        min-height: 48px;
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
 
 @media (max-width: 768px) {
-    .containerBannerOne {
-        padding: 0 1.5rem;
+
+    /* =======================================================
+       OVERLAY
+    ======================================================= */
+
+    .overlayBannerOne {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(43, 43, 43, 0.45) 0%,
+                rgba(43, 43, 43, 0.72) 55%,
+                rgba(43, 43, 43, 0.88) 100%
+            );
     }
 
-    .imageLogo {
-        max-width: 180px;
+
+    /* =======================================================
+       CONTAINER
+    ======================================================= */
+
+    .containerBannerOneContent {
+        padding:
+            120px
+            var(--container-padding)
+            60px;
+
+        display: flex;
+
+        align-items: flex-end;
+        justify-content: flex-start;
+
+        gap: 0;
     }
 
-    .textLogo {
-        font-size: 1.25rem;
+
+    /* =======================================================
+       TEXTO
+    ======================================================= */
+
+    .containerBannerOneText {
+        width: 100%;
+        max-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        justify-content: flex-start;
+
+        gap: 0;
     }
+
+
+    /* =======================================================
+       ÁREA VISUAL
+    ======================================================= */
+
+    .containerBannerOneVisual {
+        display: none;
+    }
+
+
+    /* =======================================================
+       TÍTULO
+    ======================================================= */
+
+    .titleBannerOne {
+        width: 100%;
+
+        margin: 0 0 var(--spacing-md);
+
+        font-size: clamp(2.5rem, 11vw, 3.8rem);
+
+        line-height: 1;
+
+        letter-spacing: -1px;
+    }
+
+
+    /* =======================================================
+       DESCRIÇÃO
+    ======================================================= */
+
+    .descriptionBannerOne {
+        width: 100%;
+        max-width: 520px;
+
+        margin: 0 0 var(--spacing-lg);
+
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+
+    /* =======================================================
+       BOTÃO
+    ======================================================= */
 
     .buttonFaleConoscoOne {
         width: 100%;
-        max-width: 320px;
+
+        max-width: 280px;
+
+        min-width: 0;
+
+        min-height: 50px;
+
+        margin: 0;
     }
+
+}
+
+
+/* ===========================================================
+   SMARTPHONES PEQUENOS
+=========================================================== */
+
+@media (max-width: 480px) {
+
+    .containerBannerOneContent {
+        padding:
+            110px
+            var(--container-padding)
+            45px;
+    }
+
+
+    .containerBannerOneText {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .titleBannerOne {
+        font-size: 2.45rem;
+
+        line-height: 1;
+
+        letter-spacing: -0.8px;
+    }
+
+
+    .descriptionBannerOne {
+        font-size: 14px;
+
+        line-height: 1.55;
+    }
+
+
+    .buttonFaleConoscoOne {
+        min-height: 48px;
+    }
+
 }

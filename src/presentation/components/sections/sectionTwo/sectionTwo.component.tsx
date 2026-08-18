@@ -1,66 +1,37 @@
 import "./sectionTwo.style.scss";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
+
+import {
+    fadeDown,
+    fadeUp,
+    staggerContainer,
+    orderButton,
+} from "../../../animations";
+
 import {
     FaHandshake,
     FaTruck,
     FaAward,
 } from "react-icons/fa";
 
-//Fragements
+// Fragments
 import { ButtonSaibaMais } from "../../../fragments/buttons/buttonSaibaMais/buttonSaibaMais.fragments";
 
-//Imagens
 
 export const SectionTwo = () => {
-    const titleVariants: Variants = {
-        hidden: {
-            opacity: 0,
-            y: -40,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.8,
-            },
-        },
-    };
 
-    const cardVariants: Variants = {
-        hidden: {
-            opacity: 0,
-            y: 40,
-        },
-        visible: (index: number) => ({
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.7,
-                delay: index * 0.2,
-            },
-        }),
-    };
-
-    const buttonVariants: Variants = {
-        hidden: {
-            opacity: 0,
-            y: 30,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.8,
-                delay: 0.6,
-            },
-        },
-    };
-    return(
+    return (
         <section className="containerParceiroIdeal">
+
             <div className="containerParceiroIdealContent">
+
+                {/* ==================================================
+                    TÍTULO
+                ================================================== */}
+
                 <motion.h2
                     className="titleParceiro"
-                    variants={titleVariants}
+                    variants={fadeDown}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{
@@ -68,64 +39,117 @@ export const SectionTwo = () => {
                         amount: 0.3,
                     }}
                 >
-                    PORQUE A JWC É SEU PARCEIRO E DISTRIBUIDOR IDEAL?
+                    POR QUE A JWC É SEU PARCEIRO E DISTRIBUIDOR IDEAL?
                 </motion.h2>
 
-                <div className="containerParceiroIdealContentArticles">
+
+                {/* ==================================================
+                    CONTEÚDOS
+                ================================================== */}
+
+                <motion.div
+                    className="containerParceiroIdealContentArticles"
+                    variants={staggerContainer}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{
+                        once: true,
+                        amount: 0.2,
+                    }}
+                >
+
+                    {/* ==================================================
+                        PARCEIROS COMERCIAIS
+                    ================================================== */}
+
                     <motion.article
                         className="articleParceiroIdeal"
-                        variants={cardVariants}
-                        custom={0}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{
-                            once: true,
-                            amount: 0.3,
-                        }}
+                        variants={fadeUp}
                     >
+
                         <div className="containerIconParceiroIdeal">
                             <FaHandshake className="icons" />
                         </div>
-                        <h3 className="titlecomercial">PARCEIROS COMERCIAIS</h3>
-                        <p className="descriptioncomercial">trabalha inicialmente com a distribuição dos produtos Kipolpas, Amazon Açaí e Peter Frut, oferecendo ao mercado uma linha completa de polpas, açaí, frutas congeladas com elevado padrão de qualidade e excelente aceitação pelos consumidores.</p>
+
+                        <h3 className="titleComercial">
+                            PARCEIROS COMERCIAIS
+                        </h3>
+
+                        <p className="descriptionComercial">
+                            Trabalhamos inicialmente com a distribuição dos
+                            produtos Kipolpas, Amazon Açaí e Peter Frut,
+                            oferecendo ao mercado uma linha completa de
+                            polpas, açaí e frutas congeladas, com elevado
+                            padrão de qualidade e excelente aceitação pelos
+                            consumidores.
+                        </p>
+
                     </motion.article>
+
+
+                    {/* ==================================================
+                        ÁREA DE ATUAÇÃO
+                    ================================================== */}
+
                     <motion.article
                         className="articleParceiroIdeal"
-                        variants={cardVariants}
-                        custom={1}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{
-                            once: true,
-                            amount: 0.3,
-                        }}
+                        variants={fadeUp}
                     >
+
                         <div className="containerIconParceiroIdeal">
                             <FaTruck className="icons" />
                         </div>
-                        <h3 className="titlecomercial">ÁREA DE ATUAÇÃO</h3>
-                        <p className="descriptioncomercial">Atendimento inicial na região do Vale do Jaguaribe, Oeste Potiguar e cidades estratégicas do Ceará e Rio Grande do Norte, com expansão gradual conforme o crescimento das operações.</p>
+
+                        <h3 className="titleComercial">
+                            ÁREA DE ATUAÇÃO
+                        </h3>
+
+                        <p className="descriptionComercial">
+                            Atendimento inicial na região do Vale do
+                            Jaguaribe, Oeste Potiguar e cidades estratégicas
+                            do Ceará e Rio Grande do Norte, com expansão
+                            gradual conforme o crescimento das operações.
+                        </p>
+
                     </motion.article>
+
+
+                    {/* ==================================================
+                        COMPROMISSO COM NOSSOS CLIENTES
+                    ================================================== */}
+
                     <motion.article
                         className="articleParceiroIdeal"
-                        variants={cardVariants}
-                        custom={2}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{
-                            once: true,
-                            amount: 0.3,
-                        }}
+                        variants={fadeUp}
                     >
+
                         <div className="containerIconParceiroIdeal">
                             <FaAward className="icons" />
                         </div>
-                        <h3 className="titlecomercial">COMPROMISSO COM NOSSOS CLIENTES</h3>
-                        <p className="descriptioncomercial">Nosso compromisso é oferecer produtos de qualidade, atendimento ágil, logística confiável e condições comerciais que contribuam para o sucesso dos nossos parceiros.</p>
-                    </motion.article> 
-                </div>
+
+                        <h3 className="titleComercial">
+                            COMPROMISSO COM NOSSOS CLIENTES
+                        </h3>
+
+                        <p className="descriptionComercial">
+                            Nosso compromisso é oferecer produtos de
+                            qualidade, atendimento ágil, logística confiável
+                            e condições comerciais que contribuam para o
+                            sucesso dos nossos parceiros.
+                        </p>
+
+                    </motion.article>
+
+                </motion.div>
+
+
+                {/* ==================================================
+                    BOTÃO
+                ================================================== */}
+
                 <motion.div
-                    variants={buttonVariants}
+                    className="containerButtonParceiroIdeal"
+                    variants={orderButton}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{
@@ -137,7 +161,9 @@ export const SectionTwo = () => {
                         onClick={() => console.log("clicou")}
                     />
                 </motion.div>
+
             </div>
+
         </section>
-    )
-}
+    );
+};

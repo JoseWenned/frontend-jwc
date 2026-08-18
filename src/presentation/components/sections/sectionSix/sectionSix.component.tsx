@@ -1,48 +1,34 @@
 import "./sectionSix.style.scss";
-import { motion, type Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
-//Imagens
+// Animations
+import {
+    fadeLeft,
+    fadeRight,
+} from "../../../../presentation/animations";
+
+// Imagens
 import transportadora from "../../../../assets/images/Banners/melhores-transportadoras-para-ecommerce-.webp";
 
+
 export const SectionSix = () => {
-    const fadeLeft: Variants = {
-        hidden: {
-            opacity: 0,
-            x: -80,
-        },
-        visible: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                duration: 0.8,
-                ease: "easeOut",
-            },
-        },
-    };
 
-    const fadeRight: Variants = {
-        hidden: {
-            opacity: 0,
-            x: 80,
-        },
-        visible: {
-            opacity: 1,
-            x: 0,
-            transition: {
-                duration: 0.8,
-                delay: 0.2,
-                ease: "easeOut",
-            },
-        },
-    };
-
-    return(
+    return (
         <section
             className="sectionSix"
-            style={{ backgroundImage: `url(${transportadora})` }}
+            style={{
+                backgroundImage: `url(${transportadora})`,
+            }}
         >
+
             <div className="sectionSixOverlay">
+
                 <div className="sectionSixContainer">
+
+                    {/* ==================================================
+                        CONTEÚDO
+                    ================================================== */}
+
                     <motion.div
                         className="sectionSixContent"
                         variants={fadeLeft}
@@ -53,12 +39,19 @@ export const SectionSix = () => {
                             amount: 0.4,
                         }}
                     >
+
                         <h2 className="sectionSixTitle">
                             FAÇA PARTE DESSA HISTÓRIA.
                             <br />
-                            SEJA JWC DISTRIBUIÇÃO.
+                            SEJA JWC LOG.
                         </h2>
+
                     </motion.div>
+
+
+                    {/* ==================================================
+                        BOTÃO
+                    ================================================== */}
 
                     <motion.button
                         className="sectionSixButton"
@@ -72,8 +65,11 @@ export const SectionSix = () => {
                     >
                         FALE CONOSCO
                     </motion.button>
+
                 </div>
+
             </div>
+
         </section>
-    )
-}
+    );
+};

@@ -1,78 +1,135 @@
 import "./bannerPrincipal.style.scss";
 import { motion } from "framer-motion";
 
+// Animations
+import {
+    fadeLeft,
+    fadeRight,
+    orderButton,
+} from "../../animations";
+
 // Images
 import BannerOne from "../../../assets/images/Banners/BannerOne.png";
-import logo from "../../../assets/images/Banners/689167c3-4937-4691-bb0f-35fba9788737-removebg-preview.png";
 
-const containerVariants = {
-    hidden: {
-        opacity: 0,
-    },
-    visible: {
-        opacity: 1,
-        transition: {
-            duration: 0.5,
-            staggerChildren: 0.25,
-        },
-    },
-};
-
-const itemVariants = {
-    hidden: {
-        opacity: 0,
-        y: 35,
-    },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.7,
-        },
-    },
-};
 
 export const BannnerPrincipal = () => {
+
     return (
         <motion.section
             className="containerBannerOne"
-            variants={containerVariants}
             initial="hidden"
             animate="visible"
         >
-            <img
+
+            {/* ==================================================
+                IMAGEM DE FUNDO
+            ================================================== */}
+
+            <motion.img
                 className="imageBannerOne"
                 src={BannerOne}
-                alt="Banner Principal"
+                alt="JWC Distribuição e Logística"
             />
 
+
+            {/* ==================================================
+                OVERLAY
+            ================================================== */}
+
             <motion.div
-                className="containerLogo"
-                variants={itemVariants}
-            >
-                <img
-                    className="imageLogo"
-                    src={logo}
-                    alt="Logo"
+                className="overlayBannerOne"
+            />
+
+
+            {/* ==================================================
+                CONTEÚDO
+            ================================================== */}
+
+            <div className="containerBannerOneContent">
+
+                {/* ==================================================
+                    CONTEÚDO TEXTUAL
+                ================================================== */}
+
+                <motion.div
+                    className="containerBannerOneText"
+                >
+
+                    {/* ==================================================
+                        TÍTULO
+                    ================================================== */}
+
+                    <motion.h1
+                        className="titleBannerOne"
+                        variants={fadeLeft}
+                    >
+
+                        <span>
+                            CONECTAMOS
+                        </span>
+
+                        <span>
+                            NEGÓCIOS,
+                        </span>
+
+                        <span className="titleBannerOneHighlight">
+                            MOVEMOS
+                        </span>
+
+                        <span className="titleBannerOneHighlight">
+                            RESULTADOS.
+                        </span>
+
+                    </motion.h1>
+
+
+                    {/* ==================================================
+                        DESCRIÇÃO
+                    ================================================== */}
+
+                    <motion.p
+                        className="descriptionBannerOne"
+                        variants={fadeLeft}
+                    >
+                        Soluções completas em distribuição e logística,
+                        levando eficiência, qualidade e oportunidades
+                        para <strong>empresas que querem crescer.</strong>
+                    </motion.p>
+
+
+                    {/* ==================================================
+                        BOTÃO
+                    ================================================== */}
+
+                    <motion.button
+                        className="buttonFaleConoscoOne"
+                        variants={orderButton}
+
+                        whileHover={{
+                            scale: 1.03,
+                        }}
+
+                        whileTap={{
+                            scale: 0.97,
+                        }}
+                    >
+                        FALE CONOSCO
+                    </motion.button>
+
+                </motion.div>
+
+
+                {/* ==================================================
+                    ÁREA VISUAL
+                ================================================== */}
+
+                <motion.div
+                    className="containerBannerOneVisual"
+                    variants={fadeRight}
                 />
-            </motion.div>
 
-            <motion.p
-                className="textLogo"
-                variants={itemVariants}
-            >
-                SEU MELHOR PARCEIRO EM SOLUÇÕES COMPLETAS NA DISTRIBUIÇÃO
-                DE ALIMENTOS CONGELADOS NO CE E RN
-            </motion.p>
+            </div>
 
-            <motion.button
-                className="buttonFaleConoscoOne"
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-            >
-                FALE CONOSCO
-            </motion.button>
         </motion.section>
     );
 };
