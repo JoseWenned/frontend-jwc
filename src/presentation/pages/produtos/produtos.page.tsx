@@ -29,10 +29,17 @@ import bannerProdutos from "../../../assets/images/Banners/filantropia-corporati
 import { SectionOne } from "../../components/sections/sectionOne/sectionOne.component";
 import { produtosPuroSabor } from "../../database/puroSaber";
 
-
-
 export const ProdutosPage = () => {
     
+    const phone = "5588988965616";
+
+    const message =
+        "Olá! Gostaria de conhecer as soluções da JWC Distribuição.";
+
+    const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(
+        message
+    )}`;
+
     return (
         <>
 
@@ -48,6 +55,7 @@ export const ProdutosPage = () => {
             ================================================== */}
 
             <motion.section
+                id="marcas"
                 className="produtosHero"
                 variants={staggerContainer}
                 initial="hidden"
@@ -96,6 +104,7 @@ export const ProdutosPage = () => {
                 </div>
 
             </motion.section>
+
             <SectionOne/>
 
             {/* ==================================================
@@ -182,6 +191,11 @@ export const ProdutosPage = () => {
                             }}
                             whileTap={{
                                 scale: 0.97,
+                            }}
+                            onClick={() => {
+                                window.open(
+                                    whatsappLink
+                                );
                             }}
                         >
                             Faça seu pedido

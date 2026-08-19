@@ -1,5 +1,6 @@
 import "./sectionTwo.style.scss";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import {
     fadeDown,
@@ -19,6 +20,7 @@ import { ButtonSaibaMais } from "../../../fragments/buttons/buttonSaibaMais/butt
 
 
 export const SectionTwo = () => {
+    const navigate = useNavigate();
 
     return (
         <section className="containerParceiroIdeal">
@@ -76,12 +78,8 @@ export const SectionTwo = () => {
                         </h3>
 
                         <p className="descriptionComercial">
-                            Trabalhamos inicialmente com a distribuição dos
-                            produtos Kipolpas, Amazon Açaí e Peter Frut,
-                            oferecendo ao mercado uma linha completa de
-                            polpas, açaí e frutas congeladas, com elevado
-                            padrão de qualidade e excelente aceitação pelos
-                            consumidores.
+                            Trabalhamos com marcas selecionadas e produtos de qualidade para oferecer ao mercado um portfólio diversificado de polpas, 
+                            açaí e frutas congeladas, atendendo diferentes necessidades e oportunidades do canal de distribuição.
                         </p>
 
                     </motion.article>
@@ -105,10 +103,8 @@ export const SectionTwo = () => {
                         </h3>
 
                         <p className="descriptionComercial">
-                            Atendimento inicial na região do Vale do
-                            Jaguaribe, Oeste Potiguar e cidades estratégicas
-                            do Ceará e Rio Grande do Norte, com expansão
-                            gradual conforme o crescimento das operações.
+                            Do Ceará para todo o Nordeste, ampliamos nossa atuação de forma estratégica para conectar marcas, produtos e negócios, 
+                            construindo uma rede de distribuição cada vez mais ampla e eficiente.
                         </p>
 
                     </motion.article>
@@ -132,10 +128,8 @@ export const SectionTwo = () => {
                         </h3>
 
                         <p className="descriptionComercial">
-                            Nosso compromisso é oferecer produtos de
-                            qualidade, atendimento ágil, logística confiável
-                            e condições comerciais que contribuam para o
-                            sucesso dos nossos parceiros.
+                            Mais do que distribuir produtos, buscamos construir relações de confiança, 
+                            oferecendo atendimento próximo, organização e uma logística eficiente para que nossos clientes tenham mais segurança e previsibilidade em seus negócios.
                         </p>
 
                     </motion.article>
@@ -158,7 +152,7 @@ export const SectionTwo = () => {
                     }}
                 >
                     <ButtonSaibaMais
-                        onClick={() => console.log("clicou")}
+                        onClick={() => navigate("/sobre-nos")}
                     />
                 </motion.div>
 

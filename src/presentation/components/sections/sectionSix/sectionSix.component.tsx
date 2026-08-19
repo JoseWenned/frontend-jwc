@@ -1,5 +1,6 @@
 import "./sectionSix.style.scss";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 // Animations
 import {
@@ -10,8 +11,8 @@ import {
 // Imagens
 import transportadora from "../../../../assets/images/Banners/melhores-transportadoras-para-ecommerce-.webp";
 
-
 export const SectionSix = () => {
+    const navigate = useNavigate();
 
     return (
         <section
@@ -62,6 +63,7 @@ export const SectionSix = () => {
                             once: true,
                             amount: 0.4,
                         }}
+                        onClick={() => navigate("/contato")}
                     >
                         FALE CONOSCO
                     </motion.button>

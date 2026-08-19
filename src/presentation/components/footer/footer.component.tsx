@@ -22,19 +22,19 @@ export const Footer = () => {
                     <Link className="footerLink" to="/">
                         Início
                     </Link>
-                    <Link className="footerLink" to="/sobre">
+                    <Link className="footerLink" to="/sobre-nos">
                         Sobre Nós
                     </Link>
                     {/* <Link className="footerLink" to="/vantagens">
                         Vantagens
                     </Link> */}
-                    <Link className="footerLink" to="/vantagens">
+                    <Link className="footerLink" to="/produtos">
                         Produtos
                     </Link>
                     {/* <Link className="footerLink" to="/vantagens">
                         Como Funciona
                     </Link> */}
-                    <Link className="footerLink" to="/vantagens">
+                    <Link className="footerLink" to="/contato">
                         Contato
                     </Link>
                 </div>
@@ -57,7 +57,7 @@ export const Footer = () => {
                             <a><img className="imageRedesFooter" src={iconLinkedin} alt="Linkedin"/></a>
                         </li>
                         <li>
-                            <a><img className="imageRedesFooter" src={iconInstagram} alt="Instagram"/></a>
+                            <a href="https://www.instagram.com/jwc.log/" target="_blank"><img className="imageRedesFooter" src={iconInstagram} alt="Instagram"/></a>
                         </li>
                     </ul>
                 </div>

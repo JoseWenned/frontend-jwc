@@ -18,8 +18,15 @@ import { ButtonWhatsApp } from "../../fragments/buttons/buttonWhatsApp/buttonWha
 // Banner
 import bannerContato from "../../../assets/images/Banners/filantropia-corporativa-apoia-os-esforcos-locais-do-banco-de-alimentos-para-aliviar-a-fome_38013-94227.avif";
 
-
 export const ContatoPage = () => {
+    const phone = "5588988965616";
+
+    const message =
+        "Olá! Gostaria de conhecer as soluções da JWC Distribuição.";
+
+    const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(
+        message
+    )}`;
 
     return (
         <>
@@ -409,6 +416,11 @@ export const ContatoPage = () => {
                         <button
                             type="button"
                             className="contatoWhatsappButton"
+                            onClick={() => {
+                                window.open(
+                                    whatsappLink
+                                );
+                            }}
                         >
                             <span className="contatoWhatsappButtonIcon">
                                 ☎

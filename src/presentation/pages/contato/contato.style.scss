@@ -979,7 +979,7 @@
 
     .contatoContainer {
         padding: var(--spacing-xxl) var(--container-padding);
-
+        align-items: center;
         gap: var(--spacing-xl);
     }
 
@@ -1024,8 +1024,6 @@
 
 
     .contatoHeroContent {
-        max-width: 650px;
-
         text-align: center;
     }
 

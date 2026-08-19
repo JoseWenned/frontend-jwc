@@ -1,5 +1,6 @@
 import "./sobreNos.style.scss";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 import {
     fadeLeft,
@@ -25,7 +26,10 @@ import BannerLogistica from "../../../assets/images/Banners/empresa-transporte-c
 import { ButtonWhatsApp } from "../../fragments/buttons/buttonWhatsApp/buttonWhatsApp.component";
 import { Header } from "../../components/header/header.component";
 
+
 export const SobreNosPage = () => {
+    const navigate = useNavigate();
+    
     return (
         <>
             <Header/>
@@ -48,7 +52,7 @@ export const SobreNosPage = () => {
                         className="sobreNosHeroSubtitle"
                         variants={fadeLeft}
                     >
-                        Confiança e Qualidade
+                        Distribuição que conecta negócios
                     </motion.span>
 
                     <motion.h1
@@ -105,7 +109,7 @@ export const SobreNosPage = () => {
                             }}
                         >
                             <span className="sobreNosPresentationButtonText">
-                                Conecte-se com a JWC no LinkedIn
+                                Conheça a JWC no LinkedIn
                             </span>
                             <span className="sobreNosPresentationButtonIcon">
                                 <img
@@ -125,6 +129,7 @@ export const SobreNosPage = () => {
             </motion.section>
 
             <motion.section
+                id="comercial"
                 className="comercialSection"
                 variants={staggerContainer}
                 initial="hidden"
@@ -178,13 +183,11 @@ export const SobreNosPage = () => {
                             className="comercialContentDescription"
                             variants={fadeLeft}
                         >
-                            O comercial da JWC Distribuição & Logística atua próximo aos
-                            nossos clientes e parceiros, buscando compreender suas
-                            necessidades e oferecer soluções que contribuam para o
-                            crescimento de seus negócios. Trabalhamos para construir
-                            relacionamentos duradouros, conectando estabelecimentos,
-                            fornecedores e marcas através de um atendimento próximo,
-                            eficiente e comprometido com resultados.
+                            Nossa atuação comercial vai além da venda de produtos. 
+                            Buscamos entender as necessidades de cada cliente, 
+                            identificar oportunidades e construir relações que façam sentido para todos os envolvidos.
+                            Trabalhamos próximos aos nossos clientes, fornecedores e parceiros para conectar produtos aos mercados certos, 
+                            criando oportunidades comerciais e contribuindo para o crescimento sustentável de toda a cadeia.
                         </motion.p>
 
                         <motion.button
@@ -193,9 +196,10 @@ export const SobreNosPage = () => {
                             whileTap={{
                                 scale: .95,
                             }}
+                            onClick={() => navigate("/produtos#marcas")}
                         >
                             <span className="comercialContentButtonText">
-                                Conheça os parceiros JWC
+                                Conheça nossas marcas e parceiros
                             </span>
 
                             <span className="comercialContentButtonIcon">
@@ -218,6 +222,7 @@ export const SobreNosPage = () => {
                 </div>
             </motion.section>
             <motion.section
+                id="operacaoelogistica"
                 className="operacaoSection"
                 variants={staggerContainer}
                 initial="hidden"
@@ -271,13 +276,10 @@ export const SobreNosPage = () => {
                             className="operacaoContentDescription"
                             variants={fadeLeft}
                         >
-                            Na JWC Distribuição & Logística, nossa operação é estruturada
-                            para garantir que cada etapa do processo aconteça de forma
-                            eficiente, organizada e segura. Trabalhamos para conectar
-                            fornecedores e clientes com uma logística eficiente,
-                            garantindo o cuidado com os produtos, a agilidade nas entregas
-                            e a confiabilidade necessária para que nossos parceiros possam
-                            contar com a JWC em todos os momentos.
+                            Nossa operação é estruturada para que produtos e pedidos avancem de forma organizada, segura e eficiente. 
+                            Do planejamento à entrega, buscamos manter controle sobre cada etapa da distribuição, reduzindo imprevistos e oferecendo mais previsibilidade aos nossos parceiros.
+                            Mais do que transportar produtos, trabalhamos para construir uma operação confiável, 
+                            capaz de acompanhar o crescimento dos nossos clientes e ampliar gradualmente nossa atuação do Ceará para todo o Nordeste.
                         </motion.p>
 
                         <motion.button
@@ -286,6 +288,7 @@ export const SobreNosPage = () => {
                             whileTap={{
                                 scale: .95,
                             }}
+                            onClick={() => navigate("/contato")}
                         >
 
                             <span className="operacaoContentButtonText">

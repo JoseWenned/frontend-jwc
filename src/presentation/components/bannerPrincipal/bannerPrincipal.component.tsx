@@ -1,5 +1,6 @@
 import "./bannerPrincipal.style.scss";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 // Animations
 import {
@@ -13,6 +14,7 @@ import BannerOne from "../../../assets/images/Banners/BannerOne.png";
 
 
 export const BannnerPrincipal = () => {
+    const navigate = useNavigate();
 
     return (
         <motion.section
@@ -112,6 +114,7 @@ export const BannnerPrincipal = () => {
                         whileTap={{
                             scale: 0.97,
                         }}
+                        onClick={() => navigate("/contato")}
                     >
                         FALE CONOSCO
                     </motion.button>

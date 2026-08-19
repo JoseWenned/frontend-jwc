@@ -8,7 +8,7 @@ import {
     zoomIn,
     fadeLeft,
     fadeUp,
-    fadeRight,
+    // fadeRight,
 } from "../../../../presentation/animations";
 
 // Icons
@@ -67,7 +67,7 @@ export const SectionFive = () => {
                         variants={fadeLeft}
                     >
                         <Link
-                            to="/comercial"
+                            to="/sobre-nos#comercial"
                             className="cardSectionFive"
                         >
 
@@ -110,7 +110,7 @@ export const SectionFive = () => {
                         variants={fadeUp}
                     >
                         <Link
-                            to="/logistica"
+                            to="/sobre-nos#operacaoelogistica"
                             className="cardSectionFive"
                         >
 
@@ -149,7 +149,7 @@ export const SectionFive = () => {
                         MERCHANDISING
                     ================================================== */}
 
-                    <motion.div
+                    {/* <motion.div
                         variants={fadeRight}
                     >
                         <Link
@@ -185,7 +185,7 @@ export const SectionFive = () => {
                             </span>
 
                         </Link>
-                    </motion.div>
+                    </motion.div> */}
 
                 </motion.article>
 

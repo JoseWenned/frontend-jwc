@@ -11,7 +11,7 @@
     z-index: 1000;
 
     width: 100%;
-    min-height: 90px;
+    min-height: 100px;
 
     display: flex;
     align-items: center;
@@ -186,9 +186,22 @@
     transition: var(--transition-default);
 }
 
+.containerHeader__menuButton {
+    color: var(--color-white);
+
+    transition:
+        color var(--transition-default),
+        transform var(--transition-default);
+}
+
+
+.containerHeader__menuButtonScrolled {
+    color: var(--color-text-secondary);
+}
+
 
 .containerHeader__menuButton:hover {
-    color: var(--color-secondary);
+    transform: scale(1.05);
 }
 
 
@@ -198,20 +211,9 @@
 
 @media (max-width: 1024px) {
 
-    .containerHeader {
-        min-height: 85px;
-    }
-
-
     .containerHeader__content {
         gap: var(--spacing-md);
     }
-
-
-    .containerHeader__slogan {
-        width: 190px;
-    }
-
 
     .containerHeader__content__socialMedia {
         gap: var(--spacing-xs);
@@ -242,24 +244,9 @@
 
 @media (max-width: 768px) {
 
-    .containerHeader {
-        min-height: 80px;
-    }
-
-
     .containerHeader__content {
         padding: 0 var(--container-padding);
     }
-
-
-    /* -----------------------------------------------
-       Slogan
-    ----------------------------------------------- */
-
-    .containerHeader__slogan {
-        width: 160px;
-    }
-
 
     /* -----------------------------------------------
        Navegação
@@ -295,16 +282,6 @@
 =========================================================== */
 
 @media (max-width: 480px) {
-
-    .containerHeader {
-        min-height: 72px;
-    }
-
-
-    .containerHeader__slogan {
-        width: 145px;
-    }
-
 
     .containerHeader__menuButton {
         width: 44px;

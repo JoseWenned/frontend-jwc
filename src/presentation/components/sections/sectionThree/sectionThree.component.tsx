@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 
 // Imagens
-import iconMapa from "../../../../assets/images/icons/ChatGPT_Image_24_de_jul._de_2026__23_58_59-removebg-preview.png";
+import iconMapa from "../../../../assets/images/Banners/mapa.png";
 
 
 export const SectionThree = () => {
@@ -59,9 +59,8 @@ export const SectionThree = () => {
                         </div>
 
                         <p className="textSectionThree">
-                            Distribuir produtos de qualidade com eficiência
-                            logística, fortalecendo parcerias comerciais e
-                            contribuindo para o desenvolvimento econômico.
+                            Conectar marcas e produtos aos mercados com eficiência, organização e confiança, 
+                            oferecendo soluções de distribuição e logística que fortalecem nossos parceiros e impulsionam seus negócios.
                         </p>
 
                     </motion.article>
@@ -87,10 +86,9 @@ export const SectionThree = () => {
                         </div>
 
                         <p className="textSectionThree">
-                            Ser reconhecida como uma das principais
-                            distribuidoras da região Nordeste, destacando-se
-                            pela excelência operacional, confiança e
-                            compromisso com clientes, fornecedores e parceiros.
+                            Ser referência em distribuição e logística no Nordeste, 
+                            reconhecida pela excelência operacional, 
+                            pela confiança e pela construção de relações duradouras com clientes, fornecedores e parceiros.
                         </p>
 
                     </motion.article>
@@ -116,8 +114,8 @@ export const SectionThree = () => {
                         </div>
 
                         <p className="textSectionThree">
-                            Trabalho, comprometimento, qualidade,
-                            sustentabilidade com ética e transparência.
+                            Atuamos com confiança, comprometimento, ética, transparência, excelência e espírito de parceria, 
+                            buscando sempre construir relações sólidas e gerar valor para toda a cadeia comercial.
                         </p>
 
                     </motion.article>

@@ -111,7 +111,9 @@ export const Header = () => {
                     ================================================== */}
 
                     <motion.button
-                        className="containerHeader__menuButton"
+                        className={`containerHeader__menuButton ${
+                            scrolled ? "containerHeader__menuButtonScrolled" : ""
+                        }`}
 
                         variants={fadeLeft}
 
@@ -119,9 +121,7 @@ export const Header = () => {
 
                         aria-label="Abrir menu"
                     >
-
                         <HiOutlineMenuAlt3 />
-
                     </motion.button>
 
 
@@ -167,7 +167,8 @@ export const Header = () => {
 
                         <li>
                             <a
-                                href="#"
+                                href="https://www.instagram.com/jwc.log/"
+                                target="_blank"
                                 className="socialLink"
                                 aria-label="Instagram"
                             >
