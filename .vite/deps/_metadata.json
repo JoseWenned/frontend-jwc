@@ -1,61 +1,61 @@
 {
-  "hash": "58c89aae",
+  "hash": "55c71459",
   "configHash": "6c8808fe",
-  "lockfileHash": "d2a3d9e8",
-  "browserHash": "50ab4033",
+  "lockfileHash": "2601320d",
+  "browserHash": "16687324",
   "optimized": {
     "framer-motion": {
       "src": "../../node_modules/framer-motion/dist/es/index.mjs",
       "file": "framer-motion.js",
-      "fileHash": "16b84f67",
+      "fileHash": "90d68575",
       "needsInterop": false
     },
     "react-dom": {
       "src": "../../node_modules/react-dom/index.js",
       "file": "react-dom.js",
-      "fileHash": "721bb4ab",
+      "fileHash": "8b602791",
       "needsInterop": true
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "9d7bb1f9",
+      "fileHash": "7d1ee044",
       "needsInterop": true
     },
     "react-icons/fa": {
       "src": "../../node_modules/react-icons/fa/index.mjs",
       "file": "react-icons_fa.js",
-      "fileHash": "23cb6a1c",
+      "fileHash": "135c2e86",
       "needsInterop": false
     },
     "react-icons/hi": {
       "src": "../../node_modules/react-icons/hi/index.mjs",
       "file": "react-icons_hi.js",
-      "fileHash": "f532f04c",
+      "fileHash": "fdd48a46",
       "needsInterop": false
     },
     "react-router-dom": {
       "src": "../../node_modules/react-router-dom/dist/index.mjs",
       "file": "react-router-dom.js",
-      "fileHash": "8edaa90e",
+      "fileHash": "682cba59",
       "needsInterop": false
     },
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "1084cfb9",
+      "fileHash": "3187e836",
       "needsInterop": true
     },
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "32c963b5",
+      "fileHash": "ec36ea6c",
       "needsInterop": true
     },
     "react/jsx-runtime": {
       "src": "../../node_modules/react/jsx-runtime.js",
       "file": "react_jsx-runtime.js",
-      "fileHash": "1d468686",
+      "fileHash": "39f47d36",
       "needsInterop": true
     }
   },
