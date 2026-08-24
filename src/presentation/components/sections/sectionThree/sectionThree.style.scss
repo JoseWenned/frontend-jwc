@@ -1,0 +1,821 @@
+// /* ===========================================================
+//    SECTION THREE
+//    MISSÃO • VISÃO • VALORES
+// =========================================================== */
+
+// .containerSectionThree {
+//     width: 100%;
+
+//     display: flex;
+//     justify-content: center;
+
+//     background-color: var(--color-background);
+
+//     font-family: var(--font-primary);
+// }
+
+
+// /* ===========================================================
+//    CONTAINER PRINCIPAL
+// =========================================================== */
+
+// .containerSectionThreeContent {
+//     width: 100%;
+//     max-width: var(--container-width);
+
+//     margin: 0 auto;
+
+//     padding: var(--spacing-xxl) var(--container-padding);
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     gap: var(--spacing-xl);
+// }
+
+
+// /* ===========================================================
+//    COLUNA ESQUERDA
+// =========================================================== */
+
+// .containerSectionThreeContentArticles {
+//     flex: 1;
+
+//     display: flex;
+//     flex-direction: column;
+
+//     gap: var(--spacing-lg);
+// }
+
+
+// /* ===========================================================
+//    ARTIGO
+// =========================================================== */
+
+// .articleSectionThree {
+//     width: 100%;
+//     max-width: 560px;
+// }
+
+
+// /* ===========================================================
+//    CABEÇALHO DO ARTIGO
+// =========================================================== */
+
+// .containerSectionThreeContentArticlesTitle {
+//     display: flex;
+//     align-items: center;
+
+//     gap: var(--spacing-sm);
+
+//     margin-bottom: var(--spacing-sm);
+// }
+
+
+// /* ===========================================================
+//    TIPOGRAFIA
+// =========================================================== */
+
+// .titleSectionThree {
+//     margin: 0;
+
+//     font-family: var(--font-primary);
+
+//     font-size: 26px;
+//     font-weight: 700;
+//     line-height: 1.2;
+
+//     color: var(--color-text-primary);
+// }
+
+// .textSectionThree {
+//     margin: 0;
+
+//     font-family: var(--font-primary);
+
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 1.7;
+
+//     color: var(--color-text-secondary);
+// }
+
+
+// /* ===========================================================
+//    ÍCONES
+// =========================================================== */
+
+// .iconSectionThree {
+//     width: 42px;
+//     height: 42px;
+
+//     color: var(--color-primary);
+
+//     flex-shrink: 0;
+// }
+
+
+// /* ===========================================================
+//    COLUNA DIREITA
+// =========================================================== */
+
+// .containerSectionThreeContentMap {
+//     flex: 1;
+
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+// .imgSectionThree {
+//     width: 90%;
+//     max-width: 500px;
+
+//     object-fit: contain;
+// }
+
+
+// /* ===========================================================
+//    TABLET
+// =========================================================== */
+
+// @media (max-width: 1024px) {
+
+//     .containerSectionThreeContent {
+//         gap: var(--spacing-lg);
+//     }
+
+//     .containerSectionThreeContentArticles {
+//         gap: var(--spacing-md);
+//     }
+
+//     .articleSectionThree {
+//         max-width: 480px;
+//     }
+
+//     .titleSectionThree {
+//         font-size: 23px;
+//     }
+
+//     .textSectionThree {
+//         font-size: 15px;
+//     }
+
+//     .iconSectionThree {
+//         width: 38px;
+//         height: 38px;
+//     }
+
+//     .imgSectionThree {
+//         width: 90%;
+//         max-width: 420px;
+//     }
+// }
+
+
+// /* ===========================================================
+//    MOBILE
+// =========================================================== */
+
+// @media (max-width: 768px) {
+
+//     .containerSectionThreeContent {
+//         flex-direction: column;
+
+//         padding-top: var(--spacing-xl);
+//         padding-bottom: var(--spacing-xl);
+
+//         gap: var(--spacing-xl);
+//     }
+
+//     .containerSectionThreeContentArticles {
+//         width: 100%;
+
+//         align-items: center;
+
+//         gap: var(--spacing-lg);
+//     }
+
+//     .articleSectionThree {
+//         width: 100%;
+//         max-width: 500px;
+
+//         text-align: center;
+//     }
+
+//     .containerSectionThreeContentArticlesTitle {
+//         justify-content: center;
+//     }
+
+//     .titleSectionThree {
+//         font-size: 22px;
+//     }
+
+//     .textSectionThree {
+//         font-size: 15px;
+//         line-height: 1.7;
+//     }
+
+//     .iconSectionThree {
+//         width: 36px;
+//         height: 36px;
+//     }
+
+//     .containerSectionThreeContentMap {
+//         width: 100%;
+//     }
+
+//     .imgSectionThree {
+//         width: 80%;
+//         max-width: 340px;
+//     }
+// }
+
+
+/* ===========================================================
+   SECTION THREE
+   MISSÃO • VISÃO • VALORES
+=========================================================== */
+
+.containerSectionThree {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--color-white);
+
+    font-family: var(--font-primary);
+}
+
+
+/* ===========================================================
+   CONTAINER PRINCIPAL
+=========================================================== */
+
+.containerSectionThreeContent {
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding:
+        var(--spacing-xxl)
+        var(--container-padding);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: clamp(
+        var(--spacing-xl),
+        7vw,
+        110px
+    );
+}
+
+
+/* ===========================================================
+   COLUNA ESQUERDA
+=========================================================== */
+
+.containerSectionThreeContentArticles {
+    flex: 1;
+
+    width: 100%;
+    max-width: 620px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-md);
+}
+
+
+/* ===========================================================
+   ARTIGO
+=========================================================== */
+
+.articleSectionThree {
+    position: relative;
+
+    width: 100%;
+
+    padding: 28px 30px;
+
+    background-color: var(--color-background);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    overflow: hidden;
+
+    transition:
+        transform var(--transition-default),
+        box-shadow var(--transition-default),
+        border-color var(--transition-default),
+        background-color var(--transition-default);
+}
+
+
+/* ===========================================================
+   DETALHE LATERAL
+=========================================================== */
+
+.articleSectionThree::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 0;
+
+    background-color: var(--color-secondary);
+
+    border-radius:
+        var(--radius-md)
+        0
+        0
+        var(--radius-md);
+
+    transition:
+        height var(--transition-default);
+}
+
+
+/* ===========================================================
+   HOVER DO ARTIGO
+=========================================================== */
+
+.articleSectionThree:hover {
+    transform: translateY(-4px);
+
+    background-color: var(--color-white);
+
+    border-color: rgba(216, 61, 61, 0.25);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+.articleSectionThree:hover::before {
+    height: 100%;
+}
+
+
+/* ===========================================================
+   CABEÇALHO DO ARTIGO
+=========================================================== */
+
+.containerSectionThreeContentArticlesTitle {
+    display: flex;
+    align-items: center;
+
+    gap: var(--spacing-sm);
+
+    margin-bottom: var(--spacing-sm);
+}
+
+
+/* ===========================================================
+   ÍCONE
+=========================================================== */
+
+.iconSectionThree {
+    width: 42px;
+    height: 42px;
+
+    padding: 10px;
+
+    flex-shrink: 0;
+
+    color: var(--color-secondary);
+
+    background-color: rgba(216, 61, 61, 0.08);
+
+    border-radius: var(--radius-sm);
+
+    transition:
+        background-color var(--transition-default),
+        color var(--transition-default),
+        transform var(--transition-default);
+}
+
+
+/* ===========================================================
+   HOVER ÍCONE
+=========================================================== */
+
+.articleSectionThree:hover .iconSectionThree {
+    color: var(--color-white);
+
+    background-color: var(--color-secondary);
+
+    transform: scale(1.05);
+}
+
+
+/* ===========================================================
+   TÍTULO
+=========================================================== */
+
+.titleSectionThree {
+    margin: 0;
+
+    font-family: var(--font-primary);
+
+    font-size: 21px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: -0.3px;
+
+    color: var(--color-primary);
+
+    transition:
+        color var(--transition-default);
+}
+
+
+.articleSectionThree:hover .titleSectionThree {
+    color: var(--color-secondary);
+}
+
+
+/* ===========================================================
+   TEXTO
+=========================================================== */
+
+.textSectionThree {
+    margin: 0;
+
+    font-family: var(--font-primary);
+
+    font-size: 15px;
+    font-weight: 400;
+
+    line-height: 1.75;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ===========================================================
+   COLUNA DIREITA
+=========================================================== */
+
+.containerSectionThreeContentMap {
+    position: relative;
+
+    flex: 1;
+
+    width: 100%;
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: var(--spacing-lg);
+
+    background-color: var(--color-background);
+
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-lg);
+
+    overflow: hidden;
+}
+
+
+/* ===========================================================
+   DETALHE DECORATIVO DO MAPA
+=========================================================== */
+
+.containerSectionThreeContentMap::before {
+    content: "";
+
+    position: absolute;
+
+    top: -100px;
+    right: -100px;
+
+    width: 260px;
+    height: 260px;
+
+    border-radius: 50%;
+
+    background-color: rgba(216, 61, 61, 0.05);
+
+    pointer-events: none;
+}
+
+
+.containerSectionThreeContentMap::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -120px;
+    left: -120px;
+
+    width: 280px;
+    height: 280px;
+
+    border-radius: 50%;
+
+    border: 1px solid rgba(216, 61, 61, 0.08);
+
+    pointer-events: none;
+}
+
+
+/* ===========================================================
+   MAPA
+=========================================================== */
+
+.imgSectionThree {
+    position: relative;
+
+    z-index: 1;
+
+    display: block;
+
+    width: 90%;
+    max-width: 500px;
+
+    object-fit: contain;
+
+    transition:
+        transform var(--transition-default);
+}
+
+
+/* ===========================================================
+   HOVER MAPA
+=========================================================== */
+
+.containerSectionThreeContentMap:hover .imgSectionThree {
+    transform: scale(1.025);
+}
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width: 1024px) {
+
+    .containerSectionThreeContent {
+        gap: var(--spacing-lg);
+
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
+    }
+
+
+    /* -----------------------------------------------
+       ARTIGOS
+    ----------------------------------------------- */
+
+    .containerSectionThreeContentArticles {
+        max-width: 520px;
+
+        gap: var(--spacing-sm);
+    }
+
+
+    .articleSectionThree {
+        padding: 24px 26px;
+    }
+
+
+    /* -----------------------------------------------
+       ÍCONE
+    ----------------------------------------------- */
+
+    .iconSectionThree {
+        width: 40px;
+        height: 40px;
+
+        padding: 9px;
+    }
+
+
+    /* -----------------------------------------------
+       TÍTULO
+    ----------------------------------------------- */
+
+    .titleSectionThree {
+        font-size: 19px;
+    }
+
+
+    /* -----------------------------------------------
+       TEXTO
+    ----------------------------------------------- */
+
+    .textSectionThree {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------------
+       MAPA
+    ----------------------------------------------- */
+
+    .containerSectionThreeContentMap {
+        min-height: 430px;
+
+        padding: var(--spacing-md);
+    }
+
+
+    .imgSectionThree {
+        width: 92%;
+
+        max-width: 420px;
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width: 768px) {
+
+    .containerSectionThreeContent {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
+
+        gap: var(--spacing-lg);
+    }
+
+
+    /* -----------------------------------------------
+       COLUNA DE ARTIGOS
+    ----------------------------------------------- */
+
+    .containerSectionThreeContentArticles {
+        width: 100%;
+        max-width: 100%;
+
+        gap: var(--spacing-sm);
+    }
+
+
+    /* -----------------------------------------------
+       ARTIGO
+    ----------------------------------------------- */
+
+    .articleSectionThree {
+        width: 100%;
+
+        padding: 24px;
+    }
+
+
+    /* -----------------------------------------------
+       CABEÇALHO
+    ----------------------------------------------- */
+
+    .containerSectionThreeContentArticlesTitle {
+        justify-content: flex-start;
+
+        margin-bottom: var(--spacing-sm);
+    }
+
+
+    /* -----------------------------------------------
+       TÍTULO
+    ----------------------------------------------- */
+
+    .titleSectionThree {
+        font-size: 19px;
+    }
+
+
+    /* -----------------------------------------------
+       TEXTO
+    ----------------------------------------------- */
+
+    .textSectionThree {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------------
+       MAPA
+    ----------------------------------------------- */
+
+    .containerSectionThreeContentMap {
+        width: 100%;
+
+        min-height: 360px;
+
+        padding: var(--spacing-md);
+
+        border-radius: var(--radius-md);
+    }
+
+
+    .imgSectionThree {
+        width: 85%;
+
+        max-width: 340px;
+    }
+
+}
+
+
+/* ===========================================================
+   SMARTPHONES PEQUENOS
+=========================================================== */
+
+@media (max-width: 480px) {
+
+    .containerSectionThreeContent {
+        padding-top: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
+
+        gap: var(--spacing-md);
+    }
+
+
+    /* -----------------------------------------------
+       ARTIGO
+    ----------------------------------------------- */
+
+    .articleSectionThree {
+        padding: 20px;
+    }
+
+
+    /* -----------------------------------------------
+       ÍCONE
+    ----------------------------------------------- */
+
+    .iconSectionThree {
+        width: 38px;
+        height: 38px;
+
+        padding: 8px;
+    }
+
+
+    /* -----------------------------------------------
+       TÍTULO
+    ----------------------------------------------- */
+
+    .titleSectionThree {
+        font-size: 17px;
+
+        letter-spacing: 0;
+    }
+
+
+    /* -----------------------------------------------
+       TEXTO
+    ----------------------------------------------- */
+
+    .textSectionThree {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------------
+       MAPA
+    ----------------------------------------------- */
+
+    .containerSectionThreeContentMap {
+        min-height: 300px;
+
+        padding: var(--spacing-sm);
+    }
+
+
+    .imgSectionThree {
+        width: 90%;
+
+        max-width: 300px;
+    }
+
+}

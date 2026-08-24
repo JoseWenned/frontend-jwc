@@ -1,0 +1,921 @@
+/* ===========================================================
+   SOBRE NÓS
+   JWC DISTRIBUIÇÃO & LOGÍSTICA
+=========================================================== */
+
+
+/* ===========================================================
+   HERO
+=========================================================== */
+
+.sobreNosHero {
+    position: relative;
+
+    width: 100%;
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    font-family: var(--font-primary);
+}
+
+
+/* ===========================================================
+   IMAGEM DO HERO
+=========================================================== */
+
+.sobreNosHeroImage {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+
+    transform: scale(1.02);
+}
+
+
+/* ===========================================================
+   OVERLAY HERO
+=========================================================== */
+
+.sobreNosHero::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(43, 43, 43, 0.82) 0%,
+            rgba(43, 43, 43, 0.60) 48%,
+            rgba(43, 43, 43, 0.30) 100%
+        );
+}
+
+
+/* ===========================================================
+   CONTEÚDO HERO
+=========================================================== */
+
+.sobreNosHeroContent {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding:
+        120px
+        var(--container-padding)
+        80px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* ===========================================================
+   SUBTÍTULO HERO
+=========================================================== */
+
+.sobreNosHeroSubtitle {
+    position: relative;
+
+    margin-bottom: var(--spacing-sm);
+
+    padding-left: 0;
+
+    color: var(--color-secondary);
+
+    font-family: var(--font-primary);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+
+/* ===========================================================
+   TÍTULO HERO
+=========================================================== */
+
+.sobreNosHeroTitle {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0;
+
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    text-align: center;
+}
+
+
+/* ===========================================================
+   PRESENTATION
+=========================================================== */
+
+.sobreNosPresentation {
+    width: 100%;
+
+    background-color: var(--color-white);
+
+    font-family: var(--font-primary);
+}
+
+
+/* ===========================================================
+   CONTAINER PRESENTATION
+=========================================================== */
+
+.sobreNosPresentationContainer {
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding:
+        var(--spacing-xxl)
+        var(--container-padding);
+}
+
+
+/* ===========================================================
+   CONTEÚDO PRESENTATION
+=========================================================== */
+
+.sobreNosPresentationContent {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+
+/* ===========================================================
+   TÍTULO PRESENTATION
+=========================================================== */
+
+.sobreNosPresentationTitle {
+    position: relative;
+
+    margin: 0 0 var(--spacing-lg);
+
+    padding-left: 22px;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.sobreNosPresentationTitle::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 5px;
+
+    width: 5px;
+    height: calc(100% - 10px);
+
+    background-color: var(--color-secondary);
+
+    border-radius: 4px;
+}
+
+
+/* ===========================================================
+   DESCRIÇÃO PRESENTATION
+=========================================================== */
+
+.sobreNosPresentationDescription {
+    margin: 0 0 var(--spacing-lg);
+
+    max-width: 850px;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    line-height: 1.85;
+}
+
+
+/* ===========================================================
+   BOTÃO PRESENTATION
+=========================================================== */
+
+.sobreNosPresentationButton,
+.comercialContentButton,
+.operacaoContentButton {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: var(--spacing-xs);
+
+    padding: 0;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-primary);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+        color var(--transition-default),
+        transform var(--transition-default);
+}
+
+
+.sobreNosPresentationButton:hover,
+.comercialContentButton:hover,
+.operacaoContentButton:hover {
+    color: var(--color-secondary);
+
+    transform: translateX(3px);
+}
+
+
+/* ===========================================================
+   TEXTO DOS BOTÕES
+=========================================================== */
+
+.sobreNosPresentationButtonText,
+.comercialContentButtonText,
+.operacaoContentButtonText {
+    transition: color var(--transition-default);
+}
+
+
+/* ===========================================================
+   CONTAINER DOS ÍCONES
+=========================================================== */
+
+.sobreNosPresentationButtonIcon,
+.comercialContentButtonIcon,
+.operacaoContentButtonIcon {
+    position: relative;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+
+/* ===========================================================
+   ÍCONES DOS BOTÕES
+=========================================================== */
+
+.sobreNosPresentationButtonArrow,
+.sobreNosPresentationButtonCircle,
+.comercialContentButtonArrow,
+.comercialContentButtonCircle,
+.operacaoContentButtonArrow,
+.operacaoContentButtonCircle {
+    position: absolute;
+
+    width: 27px;
+    height: 27px;
+
+    object-fit: contain;
+
+    transition:
+        transform .35s ease,
+        opacity .35s ease;
+}
+
+
+/* ===========================================================
+   SETAS INICIAIS
+=========================================================== */
+
+.sobreNosPresentationButtonArrow,
+.comercialContentButtonArrow,
+.operacaoContentButtonArrow {
+    transform: translateX(0);
+
+    opacity: 1;
+}
+
+
+/* ===========================================================
+   SETAS CIRCULARES
+=========================================================== */
+
+.sobreNosPresentationButtonCircle,
+.comercialContentButtonCircle,
+.operacaoContentButtonCircle {
+    transform: translateX(-30px);
+
+    opacity: 0;
+}
+
+
+/* ===========================================================
+   HOVER BOTÕES
+=========================================================== */
+
+.sobreNosPresentationButton:hover
+.sobreNosPresentationButtonText,
+.comercialContentButton:hover
+.comercialContentButtonText,
+.operacaoContentButton:hover
+.operacaoContentButtonText {
+    color: var(--color-secondary);
+}
+
+
+.sobreNosPresentationButton:hover
+.sobreNosPresentationButtonArrow,
+.comercialContentButton:hover
+.comercialContentButtonArrow,
+.operacaoContentButton:hover
+.operacaoContentButtonArrow {
+    transform: translateX(30px);
+
+    opacity: 0;
+}
+
+
+.sobreNosPresentationButton:hover
+.sobreNosPresentationButtonCircle,
+.comercialContentButton:hover
+.comercialContentButtonCircle,
+.operacaoContentButton:hover
+.operacaoContentButtonCircle {
+    transform: translateX(0);
+
+    opacity: 1;
+}
+
+
+/* ===========================================================
+   SEÇÕES COMERCIAIS
+=========================================================== */
+
+.comercialSection,
+.operacaoSection {
+    width: 100%;
+
+    background-color: var(--color-background);
+
+    font-family: var(--font-primary);
+}
+
+
+/* ===========================================================
+   BANNERS
+=========================================================== */
+
+.comercialBanner,
+.operacaoBanner {
+    position: relative;
+
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+
+/* ===========================================================
+   IMAGENS
+=========================================================== */
+
+.comercialBannerImage,
+.operacaoBannerImage {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+
+    transform: scale(1.02);
+}
+
+
+/* ===========================================================
+   OVERLAYS
+=========================================================== */
+
+.comercialBannerOverlay,
+.operacaoBannerOverlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(43, 43, 43, 0.78) 0%,
+            rgba(43, 43, 43, 0.48) 55%,
+            rgba(43, 43, 43, 0.22) 100%
+        );
+}
+
+
+/* ===========================================================
+   TÍTULOS DOS BANNERS
+=========================================================== */
+
+.comercialBannerTitle,
+.operacaoBannerTitle {
+    position: relative;
+
+    z-index: 2;
+
+    margin: 0;
+
+    padding:
+        14px
+        24px;
+
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(2.5rem, 5vw, 4rem);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+
+    text-align: center;
+}
+
+
+/* ===========================================================
+   CONTAINERS DE CONTEÚDO
+=========================================================== */
+
+.comercialContainer,
+.operacaoContainer {
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding:
+        var(--spacing-xxl)
+        var(--container-padding);
+
+    box-sizing: border-box;
+}
+
+
+/* ===========================================================
+   CONTEÚDOS
+=========================================================== */
+
+.comercialContent,
+.operacaoContent {
+    width: 100%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    text-align: left;
+}
+
+
+/* ===========================================================
+   TÍTULOS DE CONTEÚDO
+=========================================================== */
+
+.comercialContentTitle,
+.operacaoContentTitle {
+    position: relative;
+
+    margin: 0 0 var(--spacing-lg);
+
+    padding-left: 22px;
+
+    color: var(--color-primary);
+
+    font-family: var(--font-primary);
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.comercialContentTitle::before,
+.operacaoContentTitle::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 5px;
+
+    width: 5px;
+    height: calc(100% - 10px);
+
+    background-color: var(--color-secondary);
+
+    border-radius: 4px;
+}
+
+
+/* ===========================================================
+   DESCRIÇÕES
+=========================================================== */
+
+.comercialContentDescription,
+.operacaoContentDescription {
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 0;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+
+    font-size: 17px;
+
+    font-weight: 400;
+
+    line-height: 1.85;
+}
+
+
+/* ===========================================================
+   BOTÕES DE CONTEÚDO
+=========================================================== */
+
+.comercialContentButton,
+.operacaoContentButton {
+    margin-top: var(--spacing-lg);
+}
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width: 1024px) {
+
+    .sobreNosHero {
+        min-height: 420px;
+    }
+
+
+    .sobreNosHeroContent {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+
+    .sobreNosHeroTitle {
+        font-size: clamp(2.5rem, 6vw, 3.8rem);
+    }
+
+
+    .sobreNosPresentationContainer,
+    .comercialContainer,
+    .operacaoContainer {
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
+    }
+
+
+    .sobreNosPresentationDescription,
+    .comercialContentDescription,
+    .operacaoContentDescription {
+        font-size: 16px;
+
+        line-height: 1.8;
+    }
+
+
+    .comercialBanner,
+    .operacaoBanner {
+        height: 360px;
+    }
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width: 768px) {
+
+    .sobreNosHero {
+        min-height: 340px;
+    }
+
+
+    .sobreNosHero::before {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(43, 43, 43, 0.42) 0%,
+                rgba(43, 43, 43, 0.82) 100%
+            );
+    }
+
+
+    .sobreNosHeroContent {
+        padding:
+            100px
+            var(--container-padding)
+            60px;
+
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    .sobreNosHeroSubtitle {
+        padding-left: 0;
+
+        font-size: 12px;
+
+        text-align: center;
+    }
+
+
+    .sobreNosHeroSubtitle::before {
+        display: none;
+    }
+
+
+    .sobreNosHeroTitle {
+        max-width: 100%;
+
+        font-size: clamp(2rem, 9vw, 3rem);
+
+        line-height: 1.08;
+
+        letter-spacing: -1px;
+
+        text-align: center;
+    }
+
+
+    .sobreNosPresentationContainer,
+    .comercialContainer,
+    .operacaoContainer {
+        padding:
+            var(--spacing-xl)
+            var(--container-padding);
+    }
+
+
+    .sobreNosPresentationContent,
+    .comercialContent,
+    .operacaoContent {
+        max-width: 100%;
+
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+
+    .sobreNosPresentationTitle,
+    .comercialContentTitle,
+    .operacaoContentTitle {
+        margin-bottom: var(--spacing-md);
+
+        font-size: 30px;
+
+        line-height: 1.2;
+    }
+
+
+    .sobreNosPresentationDescription,
+    .comercialContentDescription,
+    .operacaoContentDescription {
+        font-size: 15px;
+
+        line-height: 1.75;
+    }
+
+
+    .comercialBanner,
+    .operacaoBanner {
+        height: 320px;
+    }
+
+
+    .comercialBannerOverlay,
+    .operacaoBannerOverlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(43, 43, 43, 0.35) 0%,
+                rgba(43, 43, 43, 0.82) 100%
+            );
+    }
+
+
+    .comercialBannerTitle,
+    .operacaoBannerTitle {
+        font-size: clamp(2.2rem, 9vw, 3rem);
+
+        letter-spacing: -1px;
+    }
+
+
+    .comercialContentButton,
+    .operacaoContentButton,
+    .sobreNosPresentationButton {
+        margin-top: var(--spacing-md);
+
+        font-size: 14px;
+    }
+}
+
+
+/* ===========================================================
+   SMARTPHONES PEQUENOS
+=========================================================== */
+
+@media (max-width: 480px) {
+
+    .sobreNosHero {
+        min-height: 300px;
+    }
+
+
+    .sobreNosHeroContent {
+        padding:
+            90px
+            var(--container-padding)
+            50px;
+    }
+
+
+    .sobreNosHeroSubtitle {
+        margin-bottom: var(--spacing-xs);
+
+        font-size: 11px;
+
+        letter-spacing: .8px;
+    }
+
+
+    .sobreNosHeroTitle {
+        font-size: 2rem;
+
+        line-height: 1.08;
+    }
+
+
+    .sobreNosPresentationContainer,
+    .comercialContainer,
+    .operacaoContainer {
+        padding:
+            var(--spacing-lg)
+            var(--container-padding);
+    }
+
+
+    .sobreNosPresentationTitle,
+    .comercialContentTitle,
+    .operacaoContentTitle {
+        padding-left: 16px;
+
+        font-size: 27px;
+
+        letter-spacing: -.5px;
+    }
+
+
+    .sobreNosPresentationTitle::before,
+    .comercialContentTitle::before,
+    .operacaoContentTitle::before {
+        width: 4px;
+    }
+
+
+    .sobreNosPresentationDescription,
+    .comercialContentDescription,
+    .operacaoContentDescription {
+        font-size: 14px;
+
+        line-height: 1.75;
+    }
+
+
+    .comercialBanner,
+    .operacaoBanner {
+        height: 280px;
+    }
+
+
+    .comercialBannerTitle,
+    .operacaoBannerTitle {
+        font-size: 2rem;
+    }
+
+
+    .sobreNosPresentationButton,
+    .comercialContentButton,
+    .operacaoContentButton {
+        font-size: 13px;
+    }
+}

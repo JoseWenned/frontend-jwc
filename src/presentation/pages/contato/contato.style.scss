@@ -1,0 +1,1246 @@
+/* ==================================================
+   JWC LOG
+   CONTATO PAGE
+================================================== */
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.contatoHero {
+    position: relative;
+
+    width: 100%;
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* ==================================================
+   HERO BACKGROUND
+================================================== */
+
+.contatoHeroBackground {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+/* ==================================================
+   HERO OVERLAY
+================================================== */
+
+.contatoHeroOverlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.70) 0%,
+            rgba(0, 0, 0, 0.48) 50%,
+            rgba(0, 0, 0, 0.25) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* ==================================================
+   HERO CONTAINER
+================================================== */
+
+.contatoHeroContainer {
+    position: relative;
+
+    width: 100%;
+    max-width: var(--container-width);
+
+    min-height: 480px;
+
+    margin: 0 auto;
+    padding: 100px var(--container-padding);
+
+    display: flex;
+    align-items: center;
+
+    z-index: 2;
+}
+
+
+/* ==================================================
+   HERO CONTENT
+================================================== */
+
+.contatoHeroContent {
+    width: 100%;
+    max-width: 720px;
+}
+
+
+/* ==================================================
+   HERO SUBTITLE
+================================================== */
+
+.contatoHeroSubtitle {
+    position: relative;
+
+    display: inline-block;
+
+    margin-bottom: var(--spacing-sm);
+    padding-left: 18px;
+
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: var(--color-white);
+}
+
+
+/* ==================================================
+   HERO SUBTITLE DETAIL
+================================================== */
+
+.contatoHeroSubtitle::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 4px;
+    height: 18px;
+
+    border-radius: 10px;
+
+    background-color: var(--color-secondary);
+
+    transform: translateY(-50%);
+}
+
+
+/* ==================================================
+   HERO TITLE
+================================================== */
+
+.contatoHeroTitle {
+    margin: 0 0 var(--spacing-md);
+
+    font-family: var(--font-primary);
+    font-size: clamp(3rem, 5vw, 4.25rem);
+    font-weight: 700;
+
+    line-height: 1;
+    letter-spacing: -1.5px;
+
+    color: var(--color-white);
+}
+
+
+/* ==================================================
+   HERO DESCRIPTION
+================================================== */
+
+.contatoHeroDescription {
+    max-width: 620px;
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-size: 17px;
+    font-weight: 400;
+
+    line-height: 1.75;
+
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* ==================================================
+   CONTATO
+================================================== */
+
+.contato {
+    width: 100%;
+
+    background-color: var(--color-background);
+}
+
+
+/* ==================================================
+   CONTATO CONTAINER
+================================================== */
+
+.contatoContainer {
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+    padding: var(--spacing-xxl) var(--container-padding);
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: var(--spacing-xxl);
+}
+
+
+/* ==================================================
+   INFORMAÇÕES
+================================================== */
+
+.contatoInformation {
+    width: 42%;
+    max-width: 540px;
+
+    padding-top: var(--spacing-md);
+}
+
+
+/* ==================================================
+   INFORMATION EYEBROW
+================================================== */
+
+.contatoInformationEyebrow {
+    display: block;
+
+    margin-bottom: var(--spacing-sm);
+
+    font-family: var(--font-primary);
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    color: var(--color-secondary);
+}
+
+
+/* ==================================================
+   INFORMATION TITLE
+================================================== */
+
+.contatoInformationTitle {
+    margin: 0 0 var(--spacing-md);
+
+    font-family: var(--font-primary);
+    font-size: 44px;
+    font-weight: 400;
+
+    line-height: 1.15;
+    letter-spacing: -0.8px;
+
+    color: var(--color-primary);
+}
+
+
+/* ==================================================
+   INFORMATION TITLE STRONG
+================================================== */
+
+.contatoInformationTitle strong {
+    font-weight: 700;
+
+    color: var(--color-primary);
+}
+
+
+/* ==================================================
+   INFORMATION DESCRIPTION
+================================================== */
+
+.contatoInformationDescription {
+    max-width: 480px;
+
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.8;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ==================================================
+   INFORMATION LIST
+================================================== */
+
+.contatoInformationList {
+    margin-top: var(--spacing-xl);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-md);
+}
+
+
+/* ==================================================
+   INFORMATION ITEM
+================================================== */
+
+.contatoInformationItem {
+    display: flex;
+    align-items: center;
+
+    gap: var(--spacing-sm);
+}
+
+
+/* ==================================================
+   INFORMATION ICON
+================================================== */
+
+.contatoInformationIcon {
+    width: 48px;
+    height: 48px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    background-color: var(--color-white);
+
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 600;
+
+    color: var(--color-primary);
+
+    box-shadow: var(--shadow-sm);
+
+    transition:
+        background-color var(--transition-default),
+        color var(--transition-default),
+        border-color var(--transition-default),
+        transform var(--transition-default);
+}
+
+
+/* ==================================================
+   INFORMATION ITEM HOVER
+================================================== */
+
+.contatoInformationItem:hover .contatoInformationIcon {
+    border-color: var(--color-secondary);
+
+    background-color: var(--color-secondary);
+
+    color: var(--color-white);
+
+    transform: translateY(-2px);
+}
+
+
+/* ==================================================
+   INFORMATION ITEM CONTENT
+================================================== */
+
+.contatoInformationItemContent {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+/* ==================================================
+   INFORMATION ITEM LABEL
+================================================== */
+
+.contatoInformationItemContent span {
+    font-family: var(--font-primary);
+    font-size: 11px;
+    font-weight: 600;
+
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ==================================================
+   INFORMATION ITEM VALUE
+================================================== */
+
+.contatoInformationItemContent strong {
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1.4;
+
+    color: var(--color-primary);
+}
+
+
+/* ==================================================
+   FORM WRAPPER
+================================================== */
+
+.contatoFormWrapper {
+    width: 58%;
+    max-width: 680px;
+
+    margin-left: auto;
+
+    padding: var(--spacing-lg);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+
+    background-color: var(--color-white);
+
+    box-shadow: var(--shadow-md);
+}
+
+
+/* ==================================================
+   FORM HEADER
+================================================== */
+
+.contatoFormHeader {
+    margin-bottom: var(--spacing-lg);
+}
+
+
+/* ==================================================
+   FORM EYEBROW
+================================================== */
+
+.contatoFormEyebrow {
+    display: block;
+
+    margin-bottom: var(--spacing-xs);
+
+    font-family: var(--font-primary);
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: var(--color-secondary);
+}
+
+
+/* ==================================================
+   FORM TITLE
+================================================== */
+
+.contatoFormTitle {
+    margin: 0 0 var(--spacing-xs);
+
+    font-family: var(--font-primary);
+    font-size: 30px;
+    font-weight: 700;
+
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+
+    color: var(--color-primary);
+}
+
+
+/* ==================================================
+   FORM DESCRIPTION
+================================================== */
+
+.contatoFormDescription {
+    margin: 0;
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.6;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ==================================================
+   FORM
+================================================== */
+
+.contatoForm {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-md);
+}
+
+
+/* ==================================================
+   FORM ROW
+================================================== */
+
+.contatoFormRow {
+    width: 100%;
+
+    display: flex;
+
+    gap: var(--spacing-sm);
+}
+
+
+/* ==================================================
+   FORM FIELD
+================================================== */
+
+.contatoFormField {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--spacing-xs);
+}
+
+
+/* ==================================================
+   FORM LABEL
+================================================== */
+
+.contatoFormField label {
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1.2;
+
+    color: var(--color-primary);
+}
+
+
+/* ==================================================
+   FORM INPUTS
+================================================== */
+
+.contatoFormField input,
+.contatoFormField select,
+.contatoFormField textarea {
+    width: 100%;
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+
+    outline: none;
+
+    background-color: var(--color-background);
+
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 400;
+
+    color: var(--color-text-primary);
+
+    transition:
+        border-color var(--transition-default),
+        background-color var(--transition-default),
+        box-shadow var(--transition-default);
+}
+
+
+/* ==================================================
+   INPUT / SELECT
+================================================== */
+
+.contatoFormField input,
+.contatoFormField select {
+    height: 48px;
+
+    padding: 0 14px;
+}
+
+
+/* ==================================================
+   TEXTAREA
+================================================== */
+
+.contatoFormField textarea {
+    min-height: 120px;
+
+    padding: 14px;
+
+    line-height: 1.6;
+
+    resize: vertical;
+}
+
+
+/* ==================================================
+   PLACEHOLDER
+================================================== */
+
+.contatoFormField input::placeholder,
+.contatoFormField textarea::placeholder {
+    color: #999999;
+}
+
+
+/* ==================================================
+   FOCUS
+================================================== */
+
+.contatoFormField input:focus,
+.contatoFormField select:focus,
+.contatoFormField textarea:focus {
+    border-color: var(--color-secondary);
+
+    background-color: var(--color-white);
+
+    box-shadow:
+        0 0 0 3px rgba(216, 61, 61, 0.08);
+}
+
+
+/* ==================================================
+   FORM BUTTON
+================================================== */
+
+.contatoFormButton {
+    width: 100%;
+    min-height: 52px;
+
+    margin-top: var(--spacing-xs);
+
+    padding: 0 var(--spacing-md);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+
+    background-color: var(--color-primary);
+
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+
+    color: var(--color-white);
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transition-default),
+        color var(--transition-default),
+        border-color var(--transition-default),
+        transform var(--transition-default),
+        gap var(--transition-default);
+}
+
+
+/* ==================================================
+   FORM BUTTON ARROW
+================================================== */
+
+.contatoFormButton strong {
+    font-family: var(--font-primary);
+    font-size: 19px;
+    font-weight: 400;
+
+    transition: transform var(--transition-default);
+}
+
+
+/* ==================================================
+   FORM BUTTON HOVER
+================================================== */
+
+.contatoFormButton:hover {
+    border-color: var(--color-secondary);
+
+    background-color: var(--color-secondary);
+
+    color: var(--color-white);
+
+    transform: translateY(-2px);
+
+    gap: 18px;
+}
+
+
+.contatoFormButton:hover strong {
+    transform: translateX(4px);
+}
+
+
+/* ==================================================
+   WHATSAPP
+================================================== */
+
+.contatoWhatsapp {
+    width: 100%;
+
+    background-color: var(--color-white);
+}
+
+
+/* ==================================================
+   WHATSAPP CONTAINER
+================================================== */
+
+.contatoWhatsappContainer {
+    width: 100%;
+    max-width: var(--container-width);
+
+    min-height: 360px;
+
+    margin: 0 auto;
+    padding: var(--spacing-xl) var(--container-padding);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+/* ==================================================
+   WHATSAPP CONTENT
+================================================== */
+
+.contatoWhatsappContent {
+    width: 100%;
+    max-width: 680px;
+}
+
+
+/* ==================================================
+   WHATSAPP EYEBROW
+================================================== */
+
+.contatoWhatsappEyebrow {
+    display: block;
+
+    margin-bottom: var(--spacing-sm);
+
+    font-family: var(--font-primary);
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1.2;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+    color: var(--color-secondary);
+}
+
+
+/* ==================================================
+   WHATSAPP TITLE
+================================================== */
+
+.contatoWhatsappTitle {
+    margin: 0 0 var(--spacing-sm);
+
+    font-family: var(--font-primary);
+    font-size: 38px;
+    font-weight: 700;
+
+    line-height: 1.2;
+    letter-spacing: -0.6px;
+
+    color: var(--color-primary);
+}
+
+
+/* ==================================================
+   WHATSAPP DESCRIPTION
+================================================== */
+
+.contatoWhatsappDescription {
+    max-width: 560px;
+
+    margin: 0 auto var(--spacing-lg);
+
+    font-family: var(--font-primary);
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.7;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ==================================================
+   WHATSAPP BUTTON
+================================================== */
+
+.contatoWhatsappButton {
+    min-width: 240px;
+    min-height: 56px;
+
+    padding: 5px 7px 5px 6px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 12px;
+
+    border: 1px solid var(--color-secondary);
+    border-radius: 50px;
+
+    background-color: var(--color-secondary);
+
+    font-family: var(--font-primary);
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1;
+    letter-spacing: 0.4px;
+
+    color: var(--color-white);
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transition-default),
+        color var(--transition-default),
+        border-color var(--transition-default),
+        transform var(--transition-default),
+        box-shadow var(--transition-default);
+}
+
+
+/* ==================================================
+   WHATSAPP ICON
+================================================== */
+
+.contatoWhatsappButtonIcon {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: var(--color-white);
+
+    font-family: var(--font-primary);
+    font-size: 16px;
+
+    color: var(--color-secondary);
+
+    transition:
+        background-color var(--transition-default),
+        color var(--transition-default),
+        transform var(--transition-default);
+}
+
+
+/* ==================================================
+   WHATSAPP TEXT
+================================================== */
+
+.contatoWhatsappButtonText {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    white-space: nowrap;
+
+    transition: transform var(--transition-default);
+}
+
+
+/* ==================================================
+   WHATSAPP ARROW
+================================================== */
+
+.contatoWhatsappButtonArrow {
+    width: 30px;
+    height: 30px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 17px;
+
+    opacity: 0.8;
+
+    transition:
+        opacity var(--transition-default),
+        transform var(--transition-default);
+}
+
+
+/* ==================================================
+   WHATSAPP HOVER
+================================================== */
+
+.contatoWhatsappButton:hover {
+    border-color: var(--color-primary);
+
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow-md);
+}
+
+
+.contatoWhatsappButton:hover
+.contatoWhatsappButtonIcon {
+    background-color: var(--color-white);
+
+    color: var(--color-primary);
+
+    transform: rotate(-8deg) scale(1.05);
+}
+
+
+.contatoWhatsappButton:hover
+.contatoWhatsappButtonText {
+    transform: translateX(2px);
+}
+
+
+.contatoWhatsappButton:hover
+.contatoWhatsappButtonArrow {
+    opacity: 1;
+
+    transform: translate(3px, -3px);
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 1024px) {
+
+    .contatoHeroContainer {
+        min-height: 440px;
+
+        padding: 80px var(--container-padding);
+    }
+
+
+    .contatoContainer {
+        padding: var(--spacing-xxl) var(--container-padding);
+        align-items: center;
+        gap: var(--spacing-xl);
+    }
+
+
+    .contatoInformation {
+        width: 45%;
+    }
+
+
+    .contatoInformationTitle {
+        font-size: 38px;
+    }
+
+
+    .contatoFormWrapper {
+        width: 55%;
+
+        padding: 32px;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .contatoHero {
+        min-height: 400px;
+    }
+
+
+    .contatoHeroContainer {
+        min-height: 400px;
+
+        padding: 70px var(--container-padding);
+
+        align-items: center;
+    }
+
+
+    .contatoHeroContent {
+        text-align: center;
+    }
+
+
+    .contatoHeroSubtitle {
+        margin-bottom: var(--spacing-sm);
+
+        padding-left: 0;
+
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+
+    .contatoHeroSubtitle::before {
+        display: none;
+    }
+
+
+    .contatoHeroTitle {
+        margin-bottom: var(--spacing-sm);
+
+        font-size: 42px;
+
+        line-height: 1.08;
+    }
+
+
+    .contatoHeroDescription {
+        margin: 0 auto;
+
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+
+    /* --------------------------------------------------
+       CONTATO
+    -------------------------------------------------- */
+
+    .contatoContainer {
+        padding: var(--spacing-xxl) var(--container-padding);
+
+        flex-direction: column;
+
+        gap: var(--spacing-xl);
+    }
+
+
+    .contatoInformation {
+        width: 100%;
+        max-width: 650px;
+
+        padding-top: 0;
+    }
+
+
+    .contatoInformationTitle {
+        font-size: 34px;
+    }
+
+
+    .contatoInformationDescription {
+        font-size: 15px;
+    }
+
+
+    .contatoInformationList {
+        margin-top: var(--spacing-lg);
+
+        gap: var(--spacing-md);
+    }
+
+
+    .contatoFormWrapper {
+        width: 100%;
+        max-width: 650px;
+
+        margin: 0;
+
+        padding: var(--spacing-lg);
+    }
+
+
+    .contatoFormRow {
+        flex-direction: column;
+
+        gap: var(--spacing-md);
+    }
+
+
+    /* --------------------------------------------------
+       WHATSAPP
+    -------------------------------------------------- */
+
+    .contatoWhatsappContainer {
+        min-height: 330px;
+
+        padding: var(--spacing-xl) var(--container-padding);
+    }
+
+
+    .contatoWhatsappTitle {
+        font-size: 32px;
+    }
+
+
+    .contatoWhatsappDescription {
+        font-size: 15px;
+    }
+
+}
+
+
+/* ==================================================
+   MOBILE PEQUENO
+================================================== */
+
+@media (max-width: 480px) {
+
+    .contatoHero {
+        min-height: 360px;
+    }
+
+
+    .contatoHeroContainer {
+        min-height: 360px;
+
+        padding: 60px var(--container-padding);
+    }
+
+
+    .contatoHeroTitle {
+        font-size: 34px;
+    }
+
+
+    .contatoHeroDescription {
+        font-size: 14px;
+    }
+
+
+    /* --------------------------------------------------
+       CONTATO
+    -------------------------------------------------- */
+
+    .contatoContainer {
+        padding: var(--spacing-xl) var(--container-padding);
+    }
+
+
+    .contatoInformationTitle {
+        font-size: 29px;
+    }
+
+
+    .contatoInformationDescription {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+
+    .contatoInformationItemContent strong {
+        font-size: 13px;
+    }
+
+
+    .contatoInformationIcon {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    .contatoFormWrapper {
+        padding: var(--spacing-md);
+    }
+
+
+    .contatoFormTitle {
+        font-size: 25px;
+    }
+
+
+    /* --------------------------------------------------
+       WHATSAPP
+    -------------------------------------------------- */
+
+    .contatoWhatsappContainer {
+        min-height: 310px;
+
+        padding: var(--spacing-xl) var(--container-padding);
+    }
+
+
+    .contatoWhatsappEyebrow {
+        font-size: 10px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .contatoWhatsappTitle {
+        font-size: 27px;
+    }
+
+
+    .contatoWhatsappDescription {
+        margin-bottom: var(--spacing-md);
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+
+    .contatoWhatsappButton {
+        width: 100%;
+        max-width: 240px;
+    }
+
+}

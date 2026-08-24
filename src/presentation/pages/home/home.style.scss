@@ -1,0 +1,186 @@
+/* ===========================
+   Banner Principal
+=========================== */
+
+.containerBannerOne {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.imageBannerOne {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.containerLogo {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.imageLogo {
+    width: 420px;
+    height: auto;
+}
+
+.textLogo {
+    position: absolute;
+    top: 58%;
+    left: 15%;
+
+    width: 550px;
+
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.buttonFaleConoscoOne {
+    position: absolute;
+
+    top: 74%;
+    left: 15%;
+
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: #007BFF;
+    color: white;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buttonFaleConoscoOne:hover {
+    background: #005ec7;
+}
+
+/* ===========================
+   Slogans
+=========================== */
+
+.containerSlogans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 0;
+}
+
+.containerSlog {
+    width: min(1440px, 90%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imageSlogCompany {
+    width: 250px;
+    height: auto;
+}
+
+/* ===========================
+   Animação dos slogans
+=========================== */
+
+@keyframes surgirDireita {
+    from {
+        opacity: 0;
+        transform: translateX(-60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.containerSlogans .imageSlogCompany {
+    opacity: 0;
+    transform: translateX(-60px);
+}
+
+.containerSlogans.show .imageSlogCompany {
+    animation: surgirDireita .8s ease forwards;
+}
+
+.containerSlogans.show .imageSlogCompany:nth-child(1) {
+    animation-delay: .2s;
+}
+
+.containerSlogans.show .imageSlogCompany:nth-child(2) {
+    animation-delay: .5s;
+}
+
+.containerSlogans.show .imageSlogCompany:nth-child(3) {
+    animation-delay: .8s;
+}
+
+/* ===========================
+   Responsividade
+=========================== */
+
+@media (max-width: 992px) {
+
+    .containerLogo {
+        left: 8%;
+    }
+
+    .imageLogo {
+        width: 320px;
+    }
+
+    .textLogo {
+        left: 8%;
+        width: 420px;
+        font-size: 1.5rem;
+    }
+
+    .buttonFaleConoscoOne {
+        left: 8%;
+    }
+
+    .containerSlog {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .imageSlogCompany {
+        width: 220px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .containerBannerOne {
+        height: 80vh;
+    }
+
+    .imageLogo {
+        width: 260px;
+    }
+
+    .textLogo {
+        width: 320px;
+        font-size: 1.2rem;
+    }
+
+    .containerParceiro h2 {
+        font-size: 2rem;
+    }
+
+    .cardParceiro {
+        width: 100%;
+    }
+}

@@ -1,0 +1,221 @@
+/* ==================================================
+   JWC LOG
+   GLOBAL STYLES
+================================================== */
+
+
+/* ==================================================
+   FONT
+================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+
+/* ==================================================
+   ROOT
+================================================== */
+
+:root {
+
+    /* -----------------------------------------------
+       COLORS
+    ----------------------------------------------- */
+
+    --color-primary: #2B2B2B;
+    --color-secondary: #D83D3D;
+    --color-background: #F7F7F7;
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+
+    --color-text-primary: #2B2B2B;
+    --color-text-secondary: #666666;
+
+    --color-border: #E5E5E5;
+
+
+    /* -----------------------------------------------
+       TYPOGRAPHY
+    ----------------------------------------------- */
+
+    --font-primary: "Inter", sans-serif;
+
+
+    /* -----------------------------------------------
+       CONTAINER
+    ----------------------------------------------- */
+
+    --container-width: 1440px;
+    --container-padding: 40px;
+
+
+    /* -----------------------------------------------
+       SPACING
+    ----------------------------------------------- */
+
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+    --spacing-xl: 64px;
+    --spacing-xxl: 96px;
+
+
+    /* -----------------------------------------------
+       BORDER RADIUS
+    ----------------------------------------------- */
+
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+
+    /* -----------------------------------------------
+       SHADOWS
+    ----------------------------------------------- */
+
+    --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.10);
+
+
+    /* -----------------------------------------------
+       TRANSITIONS
+    ----------------------------------------------- */
+
+    --transition-default: 0.3s ease;
+}
+
+/* ==================================================
+   CONTAINER
+================================================== */
+
+.container {
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+
+/* ==================================================
+   SECTION
+================================================== */
+
+.section {
+    width: 100%;
+}
+
+
+/* ==================================================
+   TITLES
+================================================== */
+
+.sectionTitle {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.15;
+    color: var(--color-primary);
+}
+
+
+.sectionDescription {
+    max-width: 700px;
+
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: var(--color-text-secondary);
+}
+
+
+/* ==================================================
+   BUTTON
+================================================== */
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+    padding: 0 24px;
+
+    border-radius: var(--radius-sm);
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+
+    transition: var(--transition-default);
+}
+
+
+.buttonPrimary {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+}
+
+
+.buttonPrimary:hover {
+    background-color: var(--color-primary);
+}
+
+
+.buttonSecondary {
+    background-color: transparent;
+    color: var(--color-primary);
+
+    border: 1px solid var(--color-primary);
+}
+
+
+.buttonSecondary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+
+@media (max-width: 1024px) {
+
+    :root {
+        --container-padding: 32px;
+    }
+
+    .sectionTitle {
+        font-size: 36px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    :root {
+        --container-padding: 24px;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+    }
+
+    .sectionDescription {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    :root {
+        --container-padding: 20px;
+    }
+
+    .sectionTitle {
+        font-size: 27px;
+    }
+}
