@@ -1,73 +1,209 @@
-# React + TypeScript + Vite
+# JWC Distribuição & Logística
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center">
+  <strong>Conectamos negócios, movemos resultados.</strong>
+</p>
 
-Currently, two official plugins are available:
+<p align="center">
+  Frontend institucional da JWC Distribuição & Logística.
+</p>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📋 Sobre o projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+O projeto **JWC Distribuição & Logística** é o frontend institucional desenvolvido para apresentar a empresa, suas soluções, marcas e produtos, além de disponibilizar canais de contato com clientes e parceiros.
 
-## Expanding the ESLint configuration
+A aplicação foi desenvolvida com foco em:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Experiência do usuário;
+- Responsividade;
+- Performance;
+- Organização de código;
+- Reutilização de componentes;
+- Acessibilidade;
+- Animações;
+- Testabilidade;
+- Facilidade de manutenção.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+A plataforma apresenta a JWC como uma empresa de distribuição e logística, conectando marcas, fornecedores e estabelecimentos comerciais por meio de soluções de distribuição de alimentos congelados.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Funcionalidades
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🏠 Página inicial
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+A página inicial apresenta:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- Hero institucional;
+- Apresentação da empresa;
+- Soluções oferecidas;
+- Informações sobre atuação comercial;
+- Informações sobre operação e logística;
+- Chamadas para ação;
+- Integração com WhatsApp.
+
+### 🏢 Sobre nós
+
+A página institucional apresenta:
+
+- História e posicionamento da JWC;
+- Informações sobre a atuação da empresa;
+- Área comercial;
+- Operação e logística;
+- Integração com produtos e marcas;
+- Links de navegação entre as áreas do site.
+
+### 📦 Produtos
+
+A página de produtos apresenta o portfólio da JWC dividido por marcas.
+
+Marcas atualmente cadastradas:
+
+- **Kipolpas**
+- **Puro Sabor**
+- **Amazon**
+- **Peterfrut**
+- **Palamaz**
+
+Cada marca possui uma estrutura própria para apresentação de seus produtos.
+
+### 📞 Contato
+
+A página de contato disponibiliza:
+
+- Informações de contato;
+- E-mail;
+- Telefone;
+- Horário de atendimento;
+- Formulário de contato;
+- Seleção de assunto;
+- Campo para mensagem;
+- Atendimento via WhatsApp;
+- Botão flutuante do WhatsApp.
+
+### 💬 WhatsApp
+
+A aplicação possui integração com o WhatsApp para facilitar o contato comercial.
+
+Os principais pontos de acesso são:
+
+- Botão flutuante;
+- Botões de contato;
+- Botão "Faça seu pedido";
+- Links de atendimento.
+
+---
+
+# 🛠️ Tecnologias utilizadas
+
+O projeto foi desenvolvido utilizando tecnologias modernas do ecossistema React.
+
+### Frontend
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev/)
+
+### Estilização
+
+- SCSS
+- CSS
+- Layout responsivo
+
+### Animações
+
+- [Framer Motion](https://motion.dev/)
+
+Utilizado para criação de:
+
+- Fade;
+- Slide;
+- Zoom;
+- Stagger;
+- Animações de entrada;
+- Interações de botões;
+- Animações durante o scroll.
+
+### Navegação
+
+- [React Router](https://reactrouter.com/)
+
+Responsável pela navegação entre as páginas da aplicação.
+
+### Ícones
+
+- React Icons;
+- SVGs personalizados;
+- Assets próprios do projeto.
+
+### Testes
+
+- [Vitest](https://vitest.dev/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+- Testing Library DOM Matchers
+
+### Qualidade de código
+
+- ESLint
+- TypeScript
+
+### Deploy
+
+- Vercel
+
+---
+
+# 📁 Estrutura do projeto
+
+```text
+frontend-jwc/
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── assets/
+│   │   └── images/
+│   │       ├── Banners/
+│   │       ├── icons/
+│   │       └── ...
+│   │
+│   ├── presentation/
+│   │   │
+│   │   ├── animations/
+│   │   │
+│   │   ├── components/
+│   │   │   ├── brandProducts/
+│   │   │   ├── footer/
+│   │   │   ├── header/
+│   │   │   ├── navigation/
+│   │   │   ├── mobileMenu/
+│   │   │   └── sections/
+│   │   │
+│   │   ├── database/
+│   │   │   ├── amazon/
+│   │   │   ├── kipolpas/
+│   │   │   ├── palamaz/
+│   │   │   ├── peterfrut/
+│   │   │   └── puroSaber/
+│   │   │
+│   │   ├── fragments/
+│   │   │   └── buttons/
+│   │   │
+│   │   └── pages/
+│   │       ├── contato/
+│   │       ├── home/
+│   │       ├── produtos/
+│   │       └── sobreNos/
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── ...
+│
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── eslint.config.js
+└── README.md
