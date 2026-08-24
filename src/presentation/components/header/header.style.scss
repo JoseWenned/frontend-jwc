@@ -1,0 +1,293 @@
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.containerHeader {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    width: 100%;
+    min-height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+
+    font-family: var(--font-primary);
+
+    transition:
+        background-color var(--transition-default),
+        box-shadow var(--transition-default);
+}
+
+
+/* ===========================================================
+   CONTEÚDO
+=========================================================== */
+
+.containerHeader__content {
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding: 0 var(--container-padding);
+
+    display: flex;
+    align-items: center;
+
+    gap: var(--spacing-lg);
+}
+
+
+/* ===========================================================
+   SLOGAN
+=========================================================== */
+
+.containerHeader__slogan {
+    width: 150px;
+
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+
+.containerHeader__slogan img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ===========================================================
+   NAVEGAÇÃO
+=========================================================== */
+
+.containerHeader__navigation {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ===========================================================
+   ESTADO SCROLL
+=========================================================== */
+
+.containerHeader.scrolled {
+    background-color: var(--color-white);
+
+    box-shadow: var(--shadow-sm);
+}
+
+
+/* ===========================================================
+   REDES SOCIAIS
+=========================================================== */
+
+.containerHeader__content__socialMedia {
+    display: flex;
+    align-items: center;
+
+    gap: var(--spacing-sm);
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    flex-shrink: 0;
+}
+
+
+.containerHeader__content__socialMedia li {
+    display: flex;
+}
+
+
+.socialLink {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    background-color: var(--color-white);
+
+    transition: var(--transition-default);
+}
+
+
+.socialLink:hover {
+    background-color: var(--color-secondary);
+
+    border-color: var(--color-secondary);
+
+    transform: translateY(-3px);
+}
+
+
+.socialIcon {
+    width: 20px;
+    height: auto;
+
+    transition: var(--transition-default);
+}
+
+
+.socialIconFacebook {
+    width: 23px;
+}
+
+
+/* ===========================================================
+   BOTÃO MENU MOBILE
+=========================================================== */
+
+.containerHeader__menuButton {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    margin-left: auto;
+    padding: 0;
+
+    border: none;
+
+    background-color: transparent;
+
+    color: var(--color-primary);
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    transition: var(--transition-default);
+}
+
+.containerHeader__menuButton {
+    color: var(--color-white);
+
+    transition:
+        color var(--transition-default),
+        transform var(--transition-default);
+}
+
+
+.containerHeader__menuButtonScrolled {
+    color: var(--color-text-secondary);
+}
+
+
+.containerHeader__menuButton:hover {
+    transform: scale(1.05);
+}
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width: 1024px) {
+
+    .containerHeader__content {
+        gap: var(--spacing-md);
+    }
+
+    .containerHeader__content__socialMedia {
+        gap: var(--spacing-xs);
+    }
+
+
+    .socialLink {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .socialIcon {
+        width: 19px;
+    }
+
+
+    .socialIconFacebook {
+        width: 22px;
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width: 768px) {
+
+    .containerHeader__content {
+        padding: 0 var(--container-padding);
+    }
+
+    /* -----------------------------------------------
+       Navegação
+    ----------------------------------------------- */
+
+    .containerHeader__navigation {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------
+       Redes sociais
+    ----------------------------------------------- */
+
+    .containerHeader__content__socialMedia {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------
+       Menu
+    ----------------------------------------------- */
+
+    .containerHeader__menuButton {
+        display: flex;
+    }
+
+}
+
+
+/* ===========================================================
+   SMARTPHONES PEQUENOS
+=========================================================== */
+
+@media (max-width: 480px) {
+
+    .containerHeader__menuButton {
+        width: 44px;
+        height: 44px;
+
+        font-size: 1.8rem;
+    }
+
+}

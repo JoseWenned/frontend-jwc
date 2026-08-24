@@ -1,0 +1,975 @@
+// .produtosHero {
+//     position: relative;
+
+//     width: 100%;
+//     min-height: 480px;
+
+//     display: flex;
+//     align-items: center;
+
+//     overflow: hidden;
+// }
+
+// /* ==================================================
+//    HERO BACKGROUND
+// ================================================== */
+
+// .produtosHeroBackground {
+//     position: absolute;
+
+//     inset: 0;
+
+//     width: 100%;
+//     height: 100%;
+
+//     object-fit: cover;
+
+//     z-index: 0;
+// }
+
+// /* ==================================================
+//    HERO OVERLAY
+// ================================================== */
+
+// .produtosHeroOverlay {
+//     position: absolute;
+
+//     inset: 0;
+
+//     background:
+//         linear-gradient(
+//             90deg,
+//             rgba(0, 0, 0, 0.68) 0%,
+//             rgba(0, 0, 0, 0.48) 45%,
+//             rgba(0, 0, 0, 0.25) 100%
+//         );
+
+//     z-index: 1;
+// }
+
+// /* ==================================================
+//    HERO CONTAINER
+// ================================================== */
+
+// .produtosHeroContainer {
+//     position: relative;
+
+//     width: 100%;
+//     max-width: 1440px;
+
+//     margin: 0 auto;
+//     padding: 100px 60px;
+
+//     z-index: 2;
+// }
+
+// .produtosHeroContent {
+//     width: 100%;
+//     max-width: 720px;
+// }
+
+// /* ==================================================
+//    HERO SUBTITLE
+// ================================================== */
+
+// .produtosHeroSubtitle {
+//     position: relative;
+
+//     display: inline-block;
+
+//     margin-bottom: 20px;
+//     padding-left: 18px;
+
+//     font-size: 13px;
+//     font-weight: 700;
+
+//     letter-spacing: 3px;
+//     text-transform: uppercase;
+
+//     color: #ffffff;
+// }
+
+// .produtosHeroSubtitle::before {
+//     content: "";
+
+//     position: absolute;
+
+//     top: 50%;
+//     left: 0;
+
+//     width: 4px;
+//     height: 18px;
+
+//     border-radius: 10px;
+
+//     background-color: #ffffff;
+
+//     transform: translateY(-50%);
+// }
+
+// /* ==================================================
+//    HERO TITLE
+// ================================================== */
+
+// .produtosHeroTitle {
+//     margin: 0 0 24px;
+
+//     font-size: 68px;
+//     font-weight: 700;
+//     line-height: 1;
+
+//     letter-spacing: -1.5px;
+
+//     color: #ffffff;
+// }
+
+// /* ==================================================
+//    HERO DESCRIPTION
+// ================================================== */
+
+// .produtosHeroDescription {
+//     max-width: 620px;
+
+//     margin: 0;
+
+//     font-size: 18px;
+//     font-weight: 400;
+//     line-height: 1.75;
+
+//     color: rgba(255, 255, 255, 0.9);
+// }
+
+// /* ==================================================
+//    SECTION FAÇA SEU PEDIDO
+// ================================================== */
+
+// .productsOrder {
+//     width: 100%;
+
+//     background-color: #f1f1ef;
+
+//     border-top: 1px solid #e5e5e2;
+//     border-bottom: 1px solid #e5e5e2;
+// }
+
+// .productsOrderContainer {
+//     width: 100%;
+//     max-width: 1440px;
+
+//     min-height: 360px;
+
+//     margin: 0 auto;
+//     padding: 85px 60px;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .productsOrderContent {
+//     width: 100%;
+//     max-width: 760px;
+
+//     text-align: center;
+// }
+
+// /* ==================================================
+//    EYEBROW
+// ================================================== */
+
+// .productsOrderEyebrow {
+//     display: block;
+
+//     margin-bottom: 18px;
+
+//     font-size: 12px;
+//     font-weight: 700;
+
+//     letter-spacing: 3px;
+//     text-transform: uppercase;
+
+//     color: #8a8a8a;
+// }
+
+// /* ==================================================
+//    TITLE
+// ================================================== */
+
+// .productsOrderTitle {
+//     margin: 0;
+
+//     font-size: 40px;
+//     font-weight: 600;
+//     line-height: 1.2;
+
+//     letter-spacing: -0.8px;
+
+//     color: #343434;
+// }
+
+// /* ==================================================
+//    DESCRIPTION
+// ================================================== */
+
+// .productsOrderDescription {
+//     max-width: 520px;
+
+//     margin: 18px auto 0;
+
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 1.7;
+
+//     color: #777777;
+// }
+
+// /* ==================================================
+//    ACTION
+// ================================================== */
+
+// .productsOrderAction {
+//     display: flex;
+//     justify-content: center;
+
+//     margin-top: 42px;
+// }
+
+// /* ==================================================
+//    BUTTON
+// ================================================== */
+
+// .productsOrderButton {
+//     min-width: 200px;
+//     height: 54px;
+
+//     padding: 0 28px;
+
+//     margin-top: 1rem;
+
+//     display: inline-flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     gap: 18px;
+
+//     border: 1px solid #353535;
+//     border-radius: 30px;
+
+//     background-color: #353535;
+
+//     font-size: 13px;
+//     font-weight: 700;
+
+//     letter-spacing: 0.8px;
+//     text-transform: uppercase;
+
+//     color: #ffffff;
+
+//     cursor: pointer;
+
+//     transition:
+//         background-color 0.3s ease,
+//         color 0.3s ease,
+//         transform 0.3s ease,
+//         gap 0.3s ease;
+// }
+
+// .productsOrderButton span {
+//     font-size: 18px;
+
+//     transition: transform 0.3s ease;
+// }
+
+// .productsOrderButton:hover {
+//     background-color: transparent;
+
+//     color: #353535;
+
+//     transform: translateY(-3px);
+
+//     gap: 22px;
+// }
+
+// .productsOrderButton:hover span {
+//     transform: translateX(3px);
+// }
+
+// /* ==================================================
+//    RESPONSIVO
+// ================================================== */
+
+// @media (max-width: 1024px) {
+
+//     .productsOrderContainer {
+//         min-height: 330px;
+
+//         padding: 75px 40px;
+//     }
+
+//     .productsOrderTitle {
+//         font-size: 36px;
+//     }
+// }
+
+// @media (max-width: 768px) {
+
+//     .productsOrderContainer {
+//         min-height: 320px;
+
+//         padding: 70px 30px;
+//     }
+
+//     .productsOrderTitle {
+//         font-size: 32px;
+//     }
+
+//     .productsOrderDescription {
+//         font-size: 15px;
+//     }
+
+//     .productsOrderAction {
+//         margin-top: 38px;
+//     }
+// }
+
+// @media (max-width: 480px) {
+
+//     .productsOrderContainer {
+//         min-height: 300px;
+
+//         padding: 60px 20px;
+//     }
+
+//     .productsOrderEyebrow {
+//         margin-bottom: 15px;
+
+//         font-size: 11px;
+//         letter-spacing: 2px;
+//     }
+
+//     .productsOrderTitle {
+//         font-size: 28px;
+//         line-height: 1.25;
+//     }
+
+//     .productsOrderDescription {
+//         margin-top: 16px;
+
+//         font-size: 14px;
+//         line-height: 1.6;
+//     }
+
+//     .productsOrderAction {
+//         margin-top: 35px;
+//     }
+
+//     .productsOrderButton {
+//         width: 100%;
+//         max-width: 220px;
+
+//         height: 50px;
+//     }
+// }
+
+
+/* ===========================================================
+   PRODUTOS PAGE
+=========================================================== */
+
+
+/* ===========================================================
+   HERO
+=========================================================== */
+
+.produtosHero {
+    position: relative;
+
+    width: 100%;
+    min-height: 480px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    font-family: var(--font-primary);
+}
+
+
+/* ===========================================================
+   HERO — BACKGROUND
+=========================================================== */
+
+.produtosHeroBackground {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+}
+
+
+/* ===========================================================
+   HERO — OVERLAY
+=========================================================== */
+
+.produtosHeroOverlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(43, 43, 43, .82) 0%,
+            rgba(43, 43, 43, .64) 45%,
+            rgba(43, 43, 43, .32) 100%
+        );
+
+    z-index: 1;
+}
+
+
+/* ===========================================================
+   HERO — CONTAINER
+=========================================================== */
+
+.produtosHeroContainer {
+    position: relative;
+
+    width: 100%;
+    max-width: var(--container-width);
+
+    margin: 0 auto;
+
+    padding: var(--spacing-xxl) var(--container-padding);
+
+    z-index: 2;
+}
+
+
+/* ===========================================================
+   HERO — CONTENT
+=========================================================== */
+
+.produtosHeroContent {
+    width: 100%;
+    max-width: 720px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+/* ===========================================================
+   HERO — SUBTITLE
+=========================================================== */
+
+.produtosHeroSubtitle {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    margin-bottom: var(--spacing-sm);
+    padding-left: 18px;
+
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+
+/* ===========================================================
+   SUBTITLE — INDICADOR
+=========================================================== */
+
+.produtosHeroSubtitle::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+
+    width: 4px;
+    height: 18px;
+
+    border-radius: 10px;
+
+    background-color: var(--color-secondary);
+
+    transform: translateY(-50%);
+}
+
+
+/* ===========================================================
+   HERO — TITLE
+=========================================================== */
+
+.produtosHeroTitle {
+    margin: 0 0 var(--spacing-md);
+
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
+
+    font-size: 64px;
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: -1.5px;
+}
+
+
+/* ===========================================================
+   HERO — DESCRIPTION
+=========================================================== */
+
+.produtosHeroDescription {
+    max-width: 620px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, .88);
+
+    font-family: var(--font-primary);
+
+    font-size: 17px;
+    font-weight: 400;
+
+    line-height: 1.75;
+}
+
+
+/* ===========================================================
+   SECTION — FAÇA SEU PEDIDO
+=========================================================== */
+
+.productsOrder {
+    width: 100%;
+
+    background-color: var(--color-background);
+
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+
+    font-family: var(--font-primary);
+}
+
+
+/* ===========================================================
+   CONTAINER
+=========================================================== */
+
+.productsOrderContainer {
+    width: 100%;
+    max-width: var(--container-width);
+
+    min-height: 340px;
+
+    margin: 0 auto;
+
+    padding: var(--spacing-xl) var(--container-padding);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ===========================================================
+   CONTENT
+=========================================================== */
+
+.productsOrderContent {
+    width: 100%;
+    max-width: 760px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+/* ===========================================================
+   TEXT
+=========================================================== */
+
+.productsOrderText {
+    position: relative;
+
+    margin: 0 0 var(--spacing-md);
+    padding-left: 16px;
+
+    color: var(--color-text-secondary);
+
+    font-family: var(--font-primary);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* ===========================================================
+   TEXT — INDICADOR
+=========================================================== */
+
+.productsOrderText::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    width: 4px;
+    height: 16px;
+
+    border-radius: 10px;
+
+    transform: translateY(-50%);
+}
+
+
+/* ===========================================================
+   BUTTON
+=========================================================== */
+
+.productsOrderButton {
+    min-width: 210px;
+    min-height: 52px;
+
+    padding: 0 var(--spacing-md);
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    border: 1px solid var(--color-primary);
+    border-radius: 30px;
+
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+
+    font-family: var(--font-primary);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: .8px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background-color var(--transition-default),
+        color var(--transition-default),
+        border-color var(--transition-default),
+        gap var(--transition-default);
+}
+
+
+/* ===========================================================
+   BUTTON — ARROW
+=========================================================== */
+
+.productsOrderButtonArrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+
+    transition:
+        transform var(--transition-default);
+}
+
+
+/* ===========================================================
+   BUTTON — HOVER
+=========================================================== */
+
+.productsOrderButton:hover {
+    background-color: transparent;
+
+    border-color: var(--color-primary);
+
+    color: var(--color-primary);
+
+    gap: 20px;
+}
+
+
+.productsOrderButton:hover
+.productsOrderButtonArrow {
+    transform: translateX(4px);
+}
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width: 1024px) {
+
+    /* -----------------------------------------------
+       HERO
+    ----------------------------------------------- */
+
+    .produtosHero {
+        min-height: 430px;
+    }
+
+
+    .produtosHeroContainer {
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
+    }
+
+
+    .produtosHeroTitle {
+        font-size: 52px;
+    }
+
+
+    .produtosHeroDescription {
+        font-size: 16px;
+    }
+
+
+    /* -----------------------------------------------
+       ORDER
+    ----------------------------------------------- */
+
+    .productsOrderContainer {
+        min-height: 320px;
+
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width: 768px) {
+
+    /* -----------------------------------------------
+       HERO
+    ----------------------------------------------- */
+
+    .produtosHero {
+        min-height: 380px;
+    }
+
+
+    .produtosHeroOverlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(43, 43, 43, .82) 0%,
+                rgba(43, 43, 43, .62) 100%
+            );
+    }
+
+
+    .produtosHeroContainer {
+        padding-top: var(--spacing-xl);
+        padding-bottom: var(--spacing-xl);
+    }
+
+
+    .produtosHeroContent {
+        max-width: 100%;
+    }
+
+
+    .produtosHeroSubtitle {
+        margin-bottom: var(--spacing-sm);
+
+        font-size: 11px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .produtosHeroSubtitle::before {
+        width: 3px;
+        height: 15px;
+    }
+
+
+    .produtosHeroTitle {
+        margin-bottom: var(--spacing-sm);
+
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .produtosHeroDescription {
+        max-width: 520px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* -----------------------------------------------
+       ORDER
+    ----------------------------------------------- */
+
+    .productsOrderContainer {
+        min-height: 300px;
+
+        padding-top: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
+    }
+
+
+    .productsOrderContent {
+        max-width: 100%;
+    }
+
+
+    .productsOrderText {
+        margin-bottom: var(--spacing-md);
+
+        font-size: 11px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .productsOrderText::before {
+        width: 3px;
+        height: 14px;
+    }
+
+
+    .productsOrderButton {
+        width: 100%;
+        max-width: 230px;
+
+        min-height: 50px;
+
+        font-size: 12px;
+    }
+
+}
+
+
+/* ===========================================================
+   SMARTPHONES PEQUENOS
+=========================================================== */
+
+@media (max-width: 480px) {
+
+    /* -----------------------------------------------
+       HERO
+    ----------------------------------------------- */
+
+    .produtosHero {
+        min-height: 350px;
+    }
+
+
+    .produtosHeroContainer {
+        padding-top: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
+    }
+
+
+    .produtosHeroSubtitle {
+        font-size: 10px;
+
+        letter-spacing: 1.7px;
+    }
+
+
+    .produtosHeroTitle {
+        font-size: 36px;
+
+        line-height: 1.1;
+    }
+
+
+    .produtosHeroDescription {
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    /* -----------------------------------------------
+       ORDER
+    ----------------------------------------------- */
+
+    .productsOrderContainer {
+        min-height: 280px;
+
+        padding-top: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
+    }
+
+
+    .productsOrderText {
+        max-width: 260px;
+
+        margin-bottom: var(--spacing-md);
+
+        font-size: 10px;
+
+        line-height: 1.5;
+
+        letter-spacing: 1.5px;
+    }
+
+
+    .productsOrderButton {
+        max-width: 220px;
+
+        min-height: 48px;
+
+        padding: 0 var(--spacing-md);
+
+        font-size: 11px;
+    }
+
+}

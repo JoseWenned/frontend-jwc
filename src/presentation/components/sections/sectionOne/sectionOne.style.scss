@@ -1,0 +1,224 @@
+.sectionOne {
+    width: 100%;
+
+    padding: 70px 30px;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: var(--color-white);
+
+    font-family: var(--font-primary);
+}
+
+
+.sectionOneContainer {
+    width: 100%;
+    max-width: var(--container-width);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ==================================================
+   ITEM
+================================================== */
+
+.sectionOneItem {
+    width: 20%;
+
+    min-height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 15px;
+}
+
+
+/* ==================================================
+   IMAGEM BASE
+================================================== */
+
+.sectionOneImage {
+    display: block;
+
+    width: auto;
+    height: auto;
+    max-width: 100%;
+
+    object-fit: contain;
+
+    transition: transform var(--transition-default);
+}
+
+
+.sectionOneImage:hover {
+    transform: scale(1.05);
+}
+
+
+/* ==================================================
+   TAMANHO DAS MARCAS
+================================================== */
+
+/* Kipolpas */
+.sectionOneItemKipolpas .sectionOneImage {
+    width: 550px;
+    max-height: 200px;
+}
+
+/* Amazon */
+.sectionOneItemAmazon .sectionOneImage {
+    width: 220px;
+    max-height: 135px;
+}
+
+/* Peterfrut */
+.sectionOneItemPeterfrut .sectionOneImage {
+    width: 225px;
+    max-height: 145px;
+}
+
+/* Palamaz */
+.sectionOneItemPalamaz .sectionOneImage {
+    width: 230px;
+    max-height: 180px;
+}
+
+/* Puro Sabor */
+.sectionOneItemPuroSabor .sectionOneImage {
+    width: 225px;
+    max-height: 145px;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media (max-width: 992px) {
+
+    .sectionOne {
+        padding: 60px 25px;
+    }
+
+    .sectionOneItem {
+        min-height: 120px;
+
+        padding: 0 8px;
+    }
+
+    .sectionOneItemKipolpas .sectionOneImage {
+        width: 195px;
+    }
+
+    .sectionOneItemAmazon .sectionOneImage {
+        width: 175px;
+    }
+
+    .sectionOneItemPeterfrut .sectionOneImage {
+        width: 200px;
+    }
+
+    .sectionOneItemPalamaz .sectionOneImage {
+        width: 185px;
+    }
+
+    .sectionOneItemPuroSabor .sectionOneImage {
+        width: 195px;
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width: 768px) {
+
+    .sectionOne {
+        padding: 55px 20px;
+    }
+
+    .sectionOneContainer {
+        flex-wrap: wrap;
+
+        row-gap: 35px;
+    }
+
+    .sectionOneItem {
+        width: 33.333%;
+
+        min-height: 100px;
+
+        padding: 0 8px;
+    }
+
+    .sectionOneItemKipolpas .sectionOneImage {
+        width: 180px;
+    }
+
+    .sectionOneItemAmazon .sectionOneImage {
+        width: 160px;
+    }
+
+    .sectionOneItemPeterfrut .sectionOneImage {
+        width: 180px;
+    }
+
+    .sectionOneItemPalamaz .sectionOneImage {
+        width: 200px;
+    }
+
+    .sectionOneItemPuroSabor .sectionOneImage {
+        width: 175px;
+    }
+}
+
+
+/* ==================================================
+   MOBILE PEQUENO
+================================================== */
+
+@media (max-width: 480px) {
+
+    .sectionOne {
+        padding: 45px 15px;
+    }
+
+    .sectionOneContainer {
+        row-gap: 30px;
+    }
+
+    .sectionOneItem {
+        width: 50%;
+
+        min-height: 90px;
+
+        padding: 0 5px;
+    }
+
+    .sectionOneItemKipolpas .sectionOneImage {
+        width: 165px;
+    }
+
+    .sectionOneItemAmazon .sectionOneImage {
+        width: 145px;
+    }
+
+    .sectionOneItemPeterfrut .sectionOneImage {
+        width: 165px;
+    }
+
+    .sectionOneItemPalamaz .sectionOneImage {
+        width: 150px;
+    }
+
+    .sectionOneItemPuroSabor .sectionOneImage {
+        width: 160px;
+    }
+}

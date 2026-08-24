@@ -1,0 +1,703 @@
+/* ===========================================================
+   BRAND PRODUTOS
+=========================================================== */
+
+.brandProduct {
+    width: 100%;
+
+    overflow: hidden;
+
+    background-color: #f7f7f5;
+}
+
+
+/* ===========================================================
+   CONTAINER PRINCIPAL
+=========================================================== */
+
+.brandProductContainer {
+    width: 90%;
+    max-width: 1440px;
+
+    min-height: 650px;
+
+    margin: 0 auto;
+
+    padding: 90px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 80px;
+}
+
+
+/* ===========================================================
+   CONTEÚDO
+=========================================================== */
+
+.brandProductContent {
+    position: relative;
+
+    width: 46%;
+    max-width: 560px;
+
+    padding-left: 28px;
+}
+
+
+/* ===========================================================
+   LINHA DECORATIVA
+=========================================================== */
+
+.brandProductContent::before {
+    content: "";
+
+    position: absolute;
+
+    top: 4px;
+    left: 0;
+
+    width: 3px;
+    height: 48px;
+
+    border-radius: 10px;
+
+    background-color: #d9d9d9;
+}
+
+
+/* ===========================================================
+   MARCA
+=========================================================== */
+
+.brandProductBrand {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #888888;
+
+    font-family: var(--font-primary);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: 2.5px;
+
+    text-transform: uppercase;
+}
+
+
+/* ===========================================================
+   TÍTULO
+=========================================================== */
+
+.brandProductTitle {
+    margin: 0 0 22px;
+
+    color: #2f2f2f;
+
+    font-family: var(--font-primary);
+
+    font-size: 52px;
+    font-weight: 700;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.2px;
+}
+
+
+/* ===========================================================
+   DESCRIÇÃO
+=========================================================== */
+
+.brandProductDescription {
+    max-width: 510px;
+
+    margin: 0 0 32px;
+
+    color: #707070;
+
+    font-family: var(--font-primary);
+
+    font-size: 16px;
+    font-weight: 400;
+
+    line-height: 1.75;
+}
+
+
+/* ===========================================================
+   INFORMAÇÕES
+=========================================================== */
+
+.brandProductInformation {
+    display: flex;
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.brandProductInformationItem {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    min-height: 24px;
+
+    padding-left: 18px;
+
+    color: #555555;
+
+    font-family: var(--font-primary);
+
+    font-size: 14px;
+    font-weight: 400;
+
+    line-height: 1.5;
+}
+
+
+.brandProductInformationItem::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+
+    background-color: #a2a2a2;
+}
+
+
+/* ===========================================================
+   CONTROLES
+=========================================================== */
+
+.brandProductControls {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+
+    margin-top: 45px;
+}
+
+
+.brandProductArrow {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 50%;
+
+    background-color: #ffffff;
+
+    color: #444444;
+
+    font-family: var(--font-primary);
+
+    font-size: 17px;
+    font-weight: 400;
+
+    cursor: pointer;
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+
+.brandProductArrow:hover {
+    border-color: #333333;
+
+    background-color: #333333;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===========================================================
+   CONTADOR
+=========================================================== */
+
+.brandProductCounter {
+    min-width: 60px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    color: #999999;
+
+    font-family: var(--font-primary);
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+.brandProductCounterCurrent {
+    color: #333333;
+
+    font-weight: 700;
+}
+
+
+.brandProductCounterDivider {
+    color: #c1c1c1;
+}
+
+
+.brandProductCounterTotal {
+    color: #999999;
+}
+
+
+/* ===========================================================
+   ÁREA DA IMAGEM
+=========================================================== */
+
+.brandProductImageContainer {
+    position: relative;
+
+    width: 54%;
+
+    min-height: 520px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ===========================================================
+   CÍRCULO DE FUNDO
+=========================================================== */
+
+.brandProductImageContainer::before {
+    content: "";
+
+    position: absolute;
+
+    width: 430px;
+    height: 430px;
+
+    border-radius: 50%;
+
+    background-color: #eeeeeb;
+
+    z-index: 0;
+}
+
+
+/* ===========================================================
+   CÍRCULO EXTERNO
+=========================================================== */
+
+.brandProductImageContainer::after {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    border: 1px solid #e2e2df;
+
+    border-radius: 50%;
+
+    z-index: 0;
+}
+
+
+/* ===========================================================
+   IMAGEM DO PRODUTO
+=========================================================== */
+
+.brandProductImage {
+    position: relative;
+
+    z-index: 1;
+
+    display: block;
+
+    width: 100%;
+    max-width: 620px;
+
+    max-height: 520px;
+
+    object-fit: contain;
+
+    transition: transform .5s ease;
+}
+
+
+.brandProductImageContainer:hover .brandProductImage {
+    transform: scale(1.025);
+}
+
+
+/* ===========================================================
+   TABLET GRANDE
+=========================================================== */
+
+@media (max-width: 1200px) {
+
+    .brandProductContainer {
+        gap: 55px;
+
+        padding: 80px 0;
+    }
+
+
+    .brandProductTitle {
+        font-size: 47px;
+    }
+
+
+    .brandProductImageContainer::before {
+        width: 370px;
+        height: 370px;
+    }
+
+
+    .brandProductImageContainer::after {
+        width: 450px;
+        height: 450px;
+    }
+
+
+    .brandProductImage {
+        max-width: 560px;
+    }
+
+}
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (max-width: 1024px) {
+
+    .brandProductContainer {
+        min-height: 580px;
+
+        padding: 70px 0;
+
+        gap: 35px;
+    }
+
+
+    .brandProductContent {
+        width: 48%;
+
+        padding-left: 24px;
+    }
+
+
+    .brandProductImageContainer {
+        width: 52%;
+
+        min-height: 430px;
+    }
+
+
+    .brandProductTitle {
+        font-size: 41px;
+
+        letter-spacing: -.8px;
+    }
+
+
+    .brandProductDescription {
+        font-size: 15px;
+    }
+
+
+    .brandProductImage {
+        max-height: 440px;
+    }
+
+
+    .brandProductImageContainer::before {
+        width: 310px;
+        height: 310px;
+    }
+
+
+    .brandProductImageContainer::after {
+        width: 380px;
+        height: 380px;
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE
+=========================================================== */
+
+@media (max-width: 768px) {
+
+    .brandProductContainer {
+        width: 90%;
+
+        min-height: auto;
+
+        padding: 70px 0 75px;
+
+        flex-direction: column;
+
+        gap: 45px;
+    }
+
+
+    /* -------------------------------------------------------
+       Imagem
+    ------------------------------------------------------- */
+
+    .brandProductImageContainer {
+        width: 100%;
+
+        min-height: 340px;
+
+        order: -1;
+    }
+
+
+    .brandProductImage {
+        max-width: 480px;
+
+        max-height: 340px;
+    }
+
+
+    .brandProductImageContainer::before {
+        width: 280px;
+        height: 280px;
+    }
+
+
+    .brandProductImageContainer::after {
+        width: 340px;
+        height: 340px;
+    }
+
+
+    /* -------------------------------------------------------
+       Conteúdo
+    ------------------------------------------------------- */
+
+    .brandProductContent {
+        width: 100%;
+
+        max-width: 600px;
+
+        padding-left: 22px;
+    }
+
+
+    .brandProductContent::before {
+        width: 3px;
+
+        height: 45px;
+    }
+
+
+    .brandProductBrand {
+        margin-bottom: 15px;
+
+        font-size: 12px;
+
+        letter-spacing: 2px;
+    }
+
+
+    .brandProductTitle {
+        margin-bottom: 18px;
+
+        font-size: 38px;
+
+        letter-spacing: -.7px;
+    }
+
+
+    .brandProductDescription {
+        max-width: 100%;
+
+        margin-bottom: 28px;
+
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+
+    /* -------------------------------------------------------
+       Informações
+    ------------------------------------------------------- */
+
+    .brandProductInformation {
+        gap: 10px;
+    }
+
+
+    .brandProductInformationItem {
+        font-size: 13px;
+    }
+
+
+    /* -------------------------------------------------------
+       Controles
+    ------------------------------------------------------- */
+
+    .brandProductControls {
+        margin-top: 38px;
+    }
+
+}
+
+
+/* ===========================================================
+   MOBILE PEQUENO
+=========================================================== */
+
+@media (max-width: 480px) {
+
+    .brandProductContainer {
+        width: 88%;
+
+        padding: 55px 0 65px;
+
+        gap: 35px;
+    }
+
+
+    /* -------------------------------------------------------
+       Imagem
+    ------------------------------------------------------- */
+
+    .brandProductImageContainer {
+        min-height: 270px;
+    }
+
+
+    .brandProductImage {
+        max-height: 270px;
+    }
+
+
+    .brandProductImageContainer::before {
+        width: 220px;
+        height: 220px;
+    }
+
+
+    .brandProductImageContainer::after {
+        width: 270px;
+        height: 270px;
+    }
+
+
+    /* -------------------------------------------------------
+       Conteúdo
+    ------------------------------------------------------- */
+
+    .brandProductContent {
+        padding-left: 18px;
+    }
+
+
+    .brandProductContent::before {
+        width: 2px;
+
+        height: 40px;
+    }
+
+
+    .brandProductBrand {
+        margin-bottom: 13px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .brandProductTitle {
+        margin-bottom: 16px;
+
+        font-size: 32px;
+
+        letter-spacing: -.5px;
+    }
+
+
+    .brandProductDescription {
+        margin-bottom: 25px;
+
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .brandProductInformationItem {
+        font-size: 13px;
+    }
+
+
+    /* -------------------------------------------------------
+       Controles
+    ------------------------------------------------------- */
+
+    .brandProductControls {
+        gap: 14px;
+
+        margin-top: 32px;
+    }
+
+
+    .brandProductArrow {
+        width: 42px;
+        height: 42px;
+    }
+
+
+    .brandProductCounter {
+        min-width: 55px;
+
+        font-size: 12px;
+    }
+
+}

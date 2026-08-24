@@ -1,10 +1,15 @@
+import "../src/presentation/styles/global.style.scss"
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
 import App from './App.tsx'
+import { BrowserRouter } from 'react-router-dom'
+import { ScrollToTop } from "./presentation/components/scrollToTop/scrollToTop.tsx"
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <ScrollToTop />
+      <App />
+    </BrowserRouter>
   </StrictMode>,
 )

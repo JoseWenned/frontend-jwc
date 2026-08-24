@@ -1,0 +1,83 @@
+/* ===========================================================
+   Botão
+=========================================================== */
+
+.buttonSaibaMais {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+
+    span{
+        font-size:18px;
+        font-weight:600;
+        color:#000;
+
+        transition:.35s;
+    }
+}
+
+
+/* ===========================================================
+   Container do Ícone
+=========================================================== */
+
+.buttonSaibaMaisIcon{
+
+    position:relative;
+
+    width:32px;
+    height:32px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.iconArrow{
+
+    position:absolute;
+
+    width:18px;
+    height:18px;
+
+    transition:all .35s ease;
+
+    transform:translateX(0);
+
+    opacity:1;
+}
+
+.iconCircle{
+
+    position:absolute;
+
+    width:28px;
+    height:28px;
+
+    transition:all .35s ease;
+
+    transform:translateX(-18px);
+
+    opacity:0;
+}
+
+.buttonSaibaMais:hover{
+    .iconArrow{
+        transform:translateX(18px);
+
+        opacity:0;
+    }
+
+    .iconCircle{
+        transform:translateX(0);
+
+        opacity:1;
+    }
+}
