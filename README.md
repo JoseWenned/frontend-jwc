@@ -155,6 +155,24 @@ Responsável pela navegação entre as páginas da aplicação.
 
 ---
 
+## ✉️ Integração com Resend
+
+O formulário de contato utiliza a API do Resend para envio das mensagens.
+
+### Fluxo
+
+Formulário → `/api/contact` → Resend → E-mail da JWC
+
+### Variáveis de ambiente
+
+Crie um arquivo `.env.local`:
+
+---
+
+```env
+RESEND_API_KEY=re_xxxxxxxxxxxxxxxxx
+CONTACT_EMAIL=jwcdistribuicaoelogisticaltda@gmail.com
+
 # 📁 Estrutura do projeto
 
 ```text
@@ -207,19 +225,3 @@ frontend-jwc/
 ├── vite.config.ts
 ├── eslint.config.js
 └── README.md
-
-## ✉️ Integração com Resend
-
-O formulário de contato utiliza a API do Resend para envio das mensagens.
-
-### Fluxo
-
-Formulário → `/api/contact` → Resend → E-mail da JWC
-
-### Variáveis de ambiente
-
-Crie um arquivo `.env.local`:
-
-```env
-RESEND_API_KEY=re_xxxxxxxxxxxxxxxxx
-CONTACT_EMAIL=jwcdistribuicaoelogisticaltda@gmail.com
