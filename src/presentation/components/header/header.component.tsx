@@ -21,8 +21,8 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import facebookIconGray from "../../../assets/images/icons/iconFacebookGray.png";
 import linkedinIconGray from "../../../assets/images/icons/iconLinkedinGray.png";
 import instagramIconGray from "../../../assets/images/icons/iconInstagramGray.png";
-import imagemSlogPrincipal from "../../../assets/images/slog/imagemSlogPrincipal.png";
-
+import imagemSlogVermelhoeBranco from "../../../assets/images/slog/SloganVermelhoeBranco.png";
+import imagemSlogVermelhaePreta from "../../../assets/images/slog/sloganVermelhaePreta.png";
 
 export const Header = () => {
 
@@ -85,7 +85,7 @@ export const Header = () => {
                     >
 
                         <img
-                            src={imagemSlogPrincipal}
+                            src={scrolled ? imagemSlogVermelhaePreta : imagemSlogVermelhoeBranco}
                             alt="JWC Distribuição e Logística"
                         />
 
