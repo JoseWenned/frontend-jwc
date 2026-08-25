@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 import iconLinkedin from '../../../assets/images/icons/iconLinkedinGray.png'
 import iconInstagram from '../../../assets/images/icons/iconInstagramGray.png'
 import iconFacebook from '../../../assets/images/icons/iconFacebookGray.png'
-import logo from '../../../assets/images/slog/imagemSlogPrincipal.png';
+import sloganVermelhoePreto from '../../../assets/images/slog/sloganVermelhaePreta.png';
 
 export const Footer = () => {
     return (
         <footer className="containerFooter">
             <section className="containerFooterContent">
                 <div className="containerFooterContentInfomation">
-                    <img className="imageLogoFooter" src={logo} alt="Logo"/>
+                    <img className="imageLogoFooter" src={sloganVermelhoePreto} alt="Logo"/>
 
                     <h3 className="textFooter">Matriz: </h3>
                     <p>Vereador Efésio Costa | Nº 496</p>
