@@ -169,9 +169,11 @@ Crie um arquivo `.env.local`:
 
 ---
 
-```env
+-env
 RESEND_API_KEY=re_xxxxxxxxxxxxxxxxx
 CONTACT_EMAIL=jwcdistribuicaoelogisticaltda@gmail.com
+
+```
 
 # 📁 Estrutura do projeto
 
