@@ -1,5 +1,6 @@
 import "./contato.style.scss";
 import { motion } from "framer-motion";
+import { useContactForm } from "../../hooks/contato/useContactForm";
 
 // Animations
 import {
@@ -19,6 +20,28 @@ import { ButtonWhatsApp } from "../../fragments/buttons/buttonWhatsApp/buttonWha
 import bannerContato from "../../../assets/images/Banners/filantropia-corporativa-apoia-os-esforcos-locais-do-banco-de-alimentos-para-aliviar-a-fome_38013-94227.avif";
 
 export const ContatoPage = () => {
+    const {
+        submit,
+        isSubmitting,
+        status,
+    } = useContactForm();
+
+    const handleSubmit = async (
+        event: React.FormEvent<HTMLFormElement>
+    ) => {
+        event.preventDefault();
+
+        const form = event.currentTarget;
+
+        const formData = new FormData(form);
+
+        const success = await submit(formData);
+
+        if (success) {
+            form.reset();
+        }
+    };
+
     const phone = "5588988965616";
 
     const message =
@@ -221,6 +244,7 @@ export const ContatoPage = () => {
                             amount: 0.2,
                         }}
                         variants={fadeRight}
+                        
                     >
 
                         <div className="contatoFormHeader">
@@ -240,7 +264,10 @@ export const ContatoPage = () => {
                         </div>
 
 
-                        <form className="contatoForm">
+                        <form 
+                            className="contatoForm"
+                            onSubmit={handleSubmit}
+                        >
 
                             <div className="contatoFormRow">
 
@@ -366,20 +393,31 @@ export const ContatoPage = () => {
 
                             </div>
 
+                            {status.message && (
+                                <div
+                                    className={`contatoFormStatus contatoFormStatus--${status.type}`}
+                                    role="alert"
+                                >
+                                    {status.message}
+                                </div>
+                            )}
 
                             <button
                                 type="submit"
                                 className="contatoFormButton"
+                                disabled={isSubmitting}
                             >
-
                                 <span>
-                                    Enviar mensagem
+                                    {isSubmitting
+                                        ? "Enviando..."
+                                        : "Enviar mensagem"}
                                 </span>
 
                                 <strong>
-                                    →
+                                    {isSubmitting
+                                        ? "..."
+                                        : "→"}
                                 </strong>
-
                             </button>
 
                         </form>
