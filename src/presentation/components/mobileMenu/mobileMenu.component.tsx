@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 
 // Images
-import imagemSlogPrincipal from "../../../assets/images/slog/imagemSlogPrincipal.png";
+import imagemSloganVermelhoePreto from "../../../assets/images/slog/sloganVermelhaePreta.png";
 
 
 interface MobileMenuProps {
@@ -156,7 +156,7 @@ export const MobileMenu = ({
 
                             <img
                                 className="mobileMenu__brandImage"
-                                src={imagemSlogPrincipal}
+                                src={imagemSloganVermelhoePreto}
                                 alt="JWC Distribuição e Logística"
                             />
                             <span>DISTRIBUIÇÃO & LOGÍSTICA</span>
