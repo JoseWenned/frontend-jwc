@@ -2,7 +2,6 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { ButtonSaibaMais } from "../../../../src/presentation/fragments/buttons/buttonSaibaMais/buttonSaibaMais.fragments";
-import React from "react";
 
 describe("ButtonSaibaMais", () => {
 

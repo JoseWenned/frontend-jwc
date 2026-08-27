@@ -2,8 +2,6 @@ import { render, screen } from "@testing-library/react";
 import { describe, expect, it, vi } from "vitest";
 
 import { ButtonWhatsApp } from "../../../presentation/fragments/buttons/buttonWhatsApp/buttonWhatsApp.component";
-import React from "react";
-
 
 /* ==================================================
    MOCK FRAMER MOTION
