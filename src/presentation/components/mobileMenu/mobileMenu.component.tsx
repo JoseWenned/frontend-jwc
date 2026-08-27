@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 
 // Images
-import imagemSloganVermelhoePreto from "../../../assets/images/slog/sloganVermelhaePreta.png";
+import imagemSloganVermelhoePreto from "../../../assets/images/slogan/LogoHorizontal2@10x.png";
 
 
 interface MobileMenuProps {

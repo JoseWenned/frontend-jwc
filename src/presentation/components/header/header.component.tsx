@@ -21,8 +21,8 @@ import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import facebookIconGray from "../../../assets/images/icons/iconFacebookGray.png";
 import linkedinIconGray from "../../../assets/images/icons/iconLinkedinGray.png";
 import instagramIconGray from "../../../assets/images/icons/iconInstagramGray.png";
-import imagemSlogVermelhoeBranco from "../../../assets/images/slog/SloganVermelhoeBranco.png";
-import imagemSlogVermelhaePreta from "../../../assets/images/slog/sloganVermelhaePreta.png";
+import imagemSlogVermelhoeBranco from "../../../assets/images/slogan/LogoHorizontal1@10x.png";
+import imagemSlogVermelhaePreta from "../../../assets/images/slogan/LogoHorizontal2@10x.png";
 
 export const Header = () => {
 
