@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import iconLinkedin from '../../../assets/images/icons/iconLinkedinGray.png'
 import iconInstagram from '../../../assets/images/icons/iconInstagramGray.png'
 import iconFacebook from '../../../assets/images/icons/iconFacebookGray.png'
-import sloganVermelhoePreto from '../../../assets/images/slog/sloganVermelhaePreta.png';
+import sloganVermelhoePreto from '../../../assets/images/slogan/LogoHorizontal2@10x.png';
 
 export const Footer = () => {
     return (
