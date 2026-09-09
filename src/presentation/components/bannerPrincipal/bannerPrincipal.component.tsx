@@ -10,8 +10,7 @@ import {
 } from "../../animations";
 
 // Images
-import BannerOne from "../../../assets/images/Banners/BannerOne.png";
-
+import BannerOne from "../../../assets/images/Banners/BannerPrincipal.png";
 
 export const BannnerPrincipal = () => {
     const navigate = useNavigate();

@@ -14,7 +14,7 @@ import {
 } from "react-icons/fa";
 
 // Imagens
-import iconMapa from "../../../../assets/images/Banners/mapa.png";
+import iconMapa from "../../../../assets/images/Banners/MapaBrasilJWC.png";
 
 
 export const SectionThree = () => {
