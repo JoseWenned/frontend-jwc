@@ -11,7 +11,7 @@ import {
 } from "../../../../presentation/animations";
 
 // Imagens
-import imagemDistribuidora from "../../../../assets/images/Banners/filantropia-corporativa-apoia-os-esforcos-locais-do-banco-de-alimentos-para-aliviar-a-fome_38013-94227.avif";
+import imagemDistribuidora from "../../../../assets/images/Banners/Banner 3 Home.png";
 
 export const SectionFour = () => {
     const navigate = useNavigate();
