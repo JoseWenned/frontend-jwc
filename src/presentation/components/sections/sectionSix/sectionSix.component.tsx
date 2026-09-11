@@ -9,7 +9,7 @@ import {
 } from "../../../../presentation/animations";
 
 // Imagens
-import transportadora from "../../../../assets/images/Banners/melhores-transportadoras-para-ecommerce-.webp";
+import transportadora from "../../../../assets/images/Banners/Banner Último Home.png";
 
 export const SectionSix = () => {
     const navigate = useNavigate();
