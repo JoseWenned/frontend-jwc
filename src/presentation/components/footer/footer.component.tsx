@@ -51,10 +51,10 @@ export const Footer = () => {
                     <h3 className="textFooter">Atendimento:</h3>
                     <ul className="containerFooterContentInfomationAtendimentoList">
                         <li>
-                            <a><img className="imageRedesFooter" src={iconFacebook} alt="Facebook"/></a>
+                            <a href="https://www.facebook.com/profile.php?id=61594291260407&locale=pt_BR" target="_blank"><img className="imageRedesFooter" src={iconFacebook} alt="Facebook"/></a>
                         </li>
                         <li>
-                            <a><img className="imageRedesFooter" src={iconLinkedin} alt="Linkedin"/></a>
+                            <a href="https://www.linkedin.com/company/jwc-log/?viewAsMember=true" target="_blank"><img className="imageRedesFooter" src={iconLinkedin} alt="Linkedin"/></a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/jwc.log/" target="_blank"><img className="imageRedesFooter" src={iconInstagram} alt="Instagram"/></a>

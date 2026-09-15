@@ -19,9 +19,9 @@ import iconArrow from "../../../assets/images/icons/icon-set-right.svg";
 import iconArrowCircle from "../../../assets/images/icons/icon-seta-com-circulo.svg";
 
 // Images
-import BannerPrincipalSobreNos from "../../../assets/images/Banners/Transligue-Transporte-de-Cargas-Fracionadas.jpg";
-import BannerComercial from "../../../assets/images/Banners/pessoas-de-negocios-apertando-as-maos-juntas_53876-13391.avif";
-import BannerLogistica from "../../../assets/images/Banners/empresa-transporte-cargas_Para-otimizar-seus-servicos-a-empresa-de-transporte-de-cargas-deve-investir-em-planejamento-e-uma-logistica-eficiente.-1-scaled.jpeg";
+import BannerPrincipalSobreNos from "../../../assets/images/Banners/Banner1SobreNós.png";
+import BannerComercial from "../../../assets/images/Banners/Banner2SobreNós_Comercial.png";
+import BannerLogistica from "../../../assets/images/Banners/Banner2SobreNós_Logística.png";
 
 import { ButtonWhatsApp } from "../../fragments/buttons/buttonWhatsApp/buttonWhatsApp.component";
 import { Header } from "../../components/header/header.component";
