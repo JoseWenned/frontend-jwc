@@ -5,8 +5,10 @@
 .containerBannerOne {
     position: relative;
 
-    width: 100%;
+    width: calc(100% - 12px);
     min-height: 100vh;
+
+    margin-inline: 6px;
 
     overflow: hidden;
 

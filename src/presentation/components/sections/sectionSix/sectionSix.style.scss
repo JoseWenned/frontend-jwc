@@ -5,8 +5,10 @@
 .sectionSix {
     position: relative;
 
-    width: 100%;
+    width: calc(100% - 12px);
     min-height: 260px;
+
+    margin-inline: 6px;
 
     overflow: hidden;
 
