@@ -207,24 +207,24 @@ export const MobileMenu = ({
                         <div className="mobileMenu__social">
 
                             <a
-                                href="#"
+                                href="https://www.facebook.com/profile.php?id=61594291260407&locale=pt_BR" target="_blank"
                                 onClick={onClose}
                             >
                                 Facebook
                             </a>
 
                             <a
-                                href="#"
-                                onClick={onClose}
-                            >
-                                Instagram
-                            </a>
-
-                            <a
-                                href="#"
+                                href="https://www.linkedin.com/company/jwc-log/?viewAsMember=true" target="_blank"
                                 onClick={onClose}
                             >
                                 LinkedIn
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/jwc.log/" target="_blank"
+                                onClick={onClose}
+                            >
+                                Instagram
                             </a>
 
                         </div>
