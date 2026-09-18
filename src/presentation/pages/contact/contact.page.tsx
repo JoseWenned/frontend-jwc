@@ -190,7 +190,7 @@ export const ContatoPage = () => {
                                 <div className="contatoInformationIcon">
                                     ☎
                                 </div>
-
+                                
                                 <div className="contatoInformationItemContent">
 
                                     <span>
@@ -472,9 +472,9 @@ export const ContatoPage = () => {
                                 Fale pelo WhatsApp
                             </span>
 
-                            <span className="contatoWhatsappButtonArrow">
+                            {/* <span className="contatoWhatsappButtonArrow">
                                 ↗
-                            </span>
+                            </span> */}
                         </button>
 
                     </div>

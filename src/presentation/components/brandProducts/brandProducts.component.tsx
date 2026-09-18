@@ -9,7 +9,6 @@ import {
 
 interface Produto {
     nome: string;
-    descricao: string;
     imagem: string;
     informacoes?: string[];
 }
@@ -73,12 +72,6 @@ export const BrandProdutos = ({
                         <h2 className="brandProductTitle">
                             {produto.nome}
                         </h2>
-
-
-                        <p className="brandProductDescription">
-                            {produto.descricao}
-                        </p>
-
 
                         {/* ==================================================
                             INFORMAÇÕES
