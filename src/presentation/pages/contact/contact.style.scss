@@ -105,7 +105,6 @@
     display: inline-block;
 
     margin-bottom: var(--spacing-sm);
-    padding-left: 18px;
 
     font-family: var(--font-primary);
     font-size: 13px;
@@ -115,32 +114,8 @@
     letter-spacing: 3px;
     text-transform: uppercase;
 
-    color: var(--color-white);
+    color: var(--color-secondary);
 }
-
-
-/* ==================================================
-   HERO SUBTITLE DETAIL
-================================================== */
-
-.contatoHeroSubtitle::before {
-    content: "";
-
-    position: absolute;
-
-    top: 50%;
-    left: 0;
-
-    width: 4px;
-    height: 18px;
-
-    border-radius: 10px;
-
-    background-color: var(--color-secondary);
-
-    transform: translateY(-50%);
-}
-
 
 /* ==================================================
    HERO TITLE
