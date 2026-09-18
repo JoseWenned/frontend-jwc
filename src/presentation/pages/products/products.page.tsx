@@ -96,7 +96,7 @@ export const ProdutosPage = () => {
                             variants={fadeLeft}
                         >
                             Conheça as marcas e produtos que fazem parte
-                            do portfólio da JWC Distribuição.
+                            do portfólio da JWC Distribuição & Logística.
                         </motion.p>
 
                     </div>
