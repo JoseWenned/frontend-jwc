@@ -20,12 +20,7 @@ export const produtosPeterfrut = {
 
         {
             nome: "Amora",
-
-            descricao:
-                "Polpa de amora com sabor marcante e característico, ideal para o preparo de bebidas, sobremesas e diversas receitas.",
-
             imagem: imagemAmora,
-
             informacoes: [
                 "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
@@ -36,12 +31,7 @@ export const produtosPeterfrut = {
 
         {
             nome: "Moranguito",
-
-            descricao:
-                "Polpa de moranguito com sabor doce e refrescante, perfeita para bebidas, sobremesas e preparações especiais.",
-
             imagem: imagemMoranguito,
-
             informacoes: [
                 "📦 Embalagem: 1kg",
                 "❄️ Conservação: manter congelado",
@@ -52,12 +42,7 @@ export const produtosPeterfrut = {
 
         {
             nome: "Mirtilo",
-
-            descricao:
-                "Polpa de mirtilo com sabor delicado e marcante, ideal para bebidas, sobremesas e diferentes preparações.",
-
             imagem: imagemMirtilo,
-
             informacoes: [
                 "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",

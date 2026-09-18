@@ -20,8 +20,6 @@ import imagemUva from "../assets/images/produtos/kipolpas/Pacote Polpa de Uva.pn
 export const produtosKipolpas = [
         {
             nome: "Abacaxi",
-            descricao:
-                "Polpa de abacaxi com sabor refrescante e intenso, ideal para sucos, vitaminas e diversas receitas.",
             imagem: imagemAbacaxi,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -32,8 +30,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Abacaxi com Hortelã",
-            descricao:
-                "A combinação refrescante do abacaxi com o toque marcante da hortelã.",
             imagem: imagemAbacaxicomhortela,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -44,8 +40,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Acerola",
-            descricao:
-                "Polpa de acerola com sabor marcante e refrescante, perfeita para bebidas e preparações.",
             imagem: imagemAcerola,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -56,8 +50,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Ameixa",
-            descricao:
-                "Polpa de ameixa para preparações com sabor intenso e característico.",
             imagem: imagemAmeixa,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -68,8 +60,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Cajá",
-            descricao:
-                "Polpa de cajá com sabor tropical e marcante.",
             imagem: imagemCaja,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -80,8 +70,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Cajá Umbu",
-            descricao:
-                "Uma combinação de sabores tropicais para bebidas refrescantes.",
             imagem: imagemCajaUmbu,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -92,8 +80,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Caju",
-            descricao:
-                "Polpa de caju com sabor característico e excelente para sucos e receitas.",
             imagem: imagemCaju,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -104,8 +90,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Cupuaçu",
-            descricao:
-                "Polpa de cupuaçu com sabor marcante e textura cremosa.",
             imagem: imagemCupuacu,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -116,8 +100,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Goiaba",
-            descricao:
-                "Polpa de goiaba com sabor doce e marcante.",
             imagem: imagemGoiaba,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -128,8 +110,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Graviola",
-            descricao:
-                "Polpa de graviola com sabor característico e textura cremosa.",
             imagem: imagemGraviola,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -140,8 +120,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Mamão",
-            descricao:
-                "Polpa de mamão para bebidas e preparações com sabor suave e tropical.",
             imagem: imagemMamao,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -152,8 +130,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Manga",
-            descricao:
-                "Polpa de manga com sabor doce e tropical.",
             imagem: imagemManga,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -164,8 +140,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Maracujá",
-            descricao:
-                "Polpa de maracujá com sabor intenso e marcante.",
             imagem: imagemMaracuja,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -176,8 +150,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Morango",
-            descricao:
-                "Polpa de morango para sucos, vitaminas, sobremesas e outras preparações.",
             imagem: imagemMorango,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -188,8 +160,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Sapoti",
-            descricao:
-                "Polpa de sapoti com sabor doce e característico.",
             imagem: imagemSapoti,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -200,8 +170,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Tamarindo",
-            descricao:
-                "Polpa de tamarindo com sabor marcante e levemente ácido.",
             imagem: imagemTamarindo,
             informacoes: [
                 "📦 Embalagem: 500g",
@@ -212,8 +180,6 @@ export const produtosKipolpas = [
 
         {
             nome: "Uva",
-            descricao:
-                "Polpa de uva com sabor intenso e refrescante.",
             imagem: imagemUva,
             informacoes: [
                 "📦 Embalagem: 500g",

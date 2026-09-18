@@ -46,19 +46,6 @@ test.describe("BrandProdutos — Produtos da marca", () => {
         await expect(title).not.toBeEmpty();
     });
 
-
-    test("deve apresentar a descrição do produto", async ({ page }) => {
-
-        const description = page
-            .locator(".brandProductDescription")
-            .first();
-
-        await expect(description).toBeVisible();
-
-        await expect(description).not.toBeEmpty();
-    });
-
-
     // ==================================================
     // INFORMAÇÕES
     // ==================================================
