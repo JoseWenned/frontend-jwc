@@ -11,16 +11,6 @@ export const produtosAmazon = {
 
     marca: "Amazon",
 
-
-    /* ==================================================
-       INFORMAÇÕES
-    ================================================== */
-
-    informacoes: [
-        "❄️ Conservação: manter congelado",
-    ],
-
-
     /* ==================================================
        PRODUTOS
     ================================================== */
@@ -30,8 +20,6 @@ export const produtosAmazon = {
         {
             nome: "Polpa de Açaí",
 
-            descricao:
-                "Polpa de açaí para o preparo de bebidas, cremes, vitaminas e diversas receitas.",
             informacoes: [
                 "📦 Embalagem: 500g",
                 "❄️ Conservação: manter congelado",
@@ -43,19 +31,21 @@ export const produtosAmazon = {
 
         {
             nome: "Açaí Tradicional",
-
-            descricao:
-                "Açaí tradicional com textura cremosa e sabor marcante, ideal para servir puro ou acompanhado de diferentes complementos.",
-
+            informacoes: [
+                "📦 Embalagem: 500g",
+                "❄️ Conservação: manter congelado",
+                "📅 Validade: 06 meses",
+            ],
             imagem: imagemPoteAcaiTradicional,
         },
 
         {
             nome: "Açaí + Morango",
-
-            descricao:
-                "A combinação do açaí com morango em uma opção cremosa e saborosa para diferentes ocasiões.",
-
+            informacoes: [
+                "📦 Embalagem: 500g",
+                "❄️ Conservação: manter congelado",
+                "📅 Validade: 06 meses",
+            ],
             imagem: imagemPoteAcaiMorango,
         },
 

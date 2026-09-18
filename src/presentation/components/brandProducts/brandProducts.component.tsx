@@ -74,12 +74,6 @@ export const BrandProdutos = ({
                             {produto.nome}
                         </h2>
 
-
-                        <p className="brandProductDescription">
-                            {produto.descricao}
-                        </p>
-
-
                         {/* ==================================================
                             INFORMAÇÕES
                         ================================================== */}
