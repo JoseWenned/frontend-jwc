@@ -9,7 +9,6 @@ import {
 
 interface Produto {
     nome: string;
-    descricao: string;
     imagem: string;
     informacoes?: string[];
 }
