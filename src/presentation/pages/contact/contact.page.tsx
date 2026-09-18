@@ -2,6 +2,14 @@ import "./contact.style.scss";
 import { motion } from "framer-motion";
 import { useContactForm } from "../../hooks/contact/useContactForm";
 
+//Icons
+import {
+    Mail,
+    Phone,
+    Clock3,
+    MessageCircle,
+} from "lucide-react";
+
 // Animations
 import {
     fadeLeft,
@@ -45,7 +53,7 @@ export const ContatoPage = () => {
     const phone = "5588988965616";
 
     const message =
-        "Olá! Gostaria de conhecer as soluções da JWC Distribuição.";
+        "Olá! Gostaria de conhecer as soluções da JWC Distribuição & Logística.";
 
     const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(
         message
@@ -59,7 +67,6 @@ export const ContatoPage = () => {
             ================================================== */}
 
             <Header />
-
 
             {/* ==================================================
                 HERO
@@ -81,18 +88,14 @@ export const ContatoPage = () => {
 
                 <div className="contatoHeroOverlay" />
 
-
                 <div className="contatoHeroContainer">
-
                     <div className="contatoHeroContent">
-
                         <motion.span
                             className="contatoHeroSubtitle"
                             variants={fadeLeft}
                         >
                             Fale conosco
                         </motion.span>
-
 
                         <motion.h1
                             className="contatoHeroTitle"
@@ -101,7 +104,6 @@ export const ContatoPage = () => {
                             Vamos conversar?
                         </motion.h1>
 
-
                         <motion.p
                             className="contatoHeroDescription"
                             variants={fadeLeft}
@@ -109,22 +111,16 @@ export const ContatoPage = () => {
                             Estamos prontos para entender suas necessidades
                             e encontrar as melhores soluções para o seu negócio.
                         </motion.p>
-
                     </div>
-
                 </div>
-
             </motion.section>
-
 
             {/* ==================================================
                 CONTATO
             ================================================== */}
 
             <section className="contato">
-
                 <div className="contatoContainer">
-
                     {/* ==================================================
                         INFORMAÇÕES
                     ================================================== */}
@@ -144,12 +140,10 @@ export const ContatoPage = () => {
                             Entre em contato
                         </span>
 
-
                         <h2 className="contatoInformationTitle">
                             Estamos aqui para
                             <strong> ajudar você.</strong>
                         </h2>
-
 
                         <p className="contatoInformationDescription">
                             Seja para conhecer nosso portfólio, solicitar uma
@@ -157,21 +151,20 @@ export const ContatoPage = () => {
                             equipe está pronta para atender você.
                         </p>
 
-
                         {/* ==================================================
                             DADOS
                         ================================================== */}
 
                         <div className="contatoInformationList">
-
                             <div className="contatoInformationItem">
-
-                                <div className="contatoInformationIcon">
+                                {/* <div className="contatoInformationIcon">
                                     @
+                                </div> */}
+                                <div className="contatoInformationIcon">
+                                    <Mail size={24} strokeWidth={2} />
                                 </div>
 
                                 <div className="contatoInformationItemContent">
-
                                     <span>
                                         E-mail
                                     </span>
@@ -179,20 +172,20 @@ export const ContatoPage = () => {
                                     <strong>
                                         jwcdistribuicaoelogisticaltda@gmail.com
                                     </strong>
-
                                 </div>
-
                             </div>
 
 
                             <div className="contatoInformationItem">
+                                {/* <div className="contatoInformationIcon">
+                                    ☎
+                                </div> */}
 
                                 <div className="contatoInformationIcon">
-                                    ☎
+                                    <Phone size={24} strokeWidth={2} />
                                 </div>
                                 
                                 <div className="contatoInformationItemContent">
-
                                     <span>
                                         Telefone
                                     </span>
@@ -200,20 +193,18 @@ export const ContatoPage = () => {
                                     <strong>
                                         +55 (88) 9 8896-5616
                                     </strong>
-
                                 </div>
-
                             </div>
 
-
                             <div className="contatoInformationItem">
-
-                                <div className="contatoInformationIcon">
+                                {/* <div className="contatoInformationIcon">
                                     ↗
+                                </div> */}
+                                <div className="contatoInformationIcon">
+                                    <Clock3 size={24} strokeWidth={2} />
                                 </div>
 
                                 <div className="contatoInformationItemContent">
-
                                     <span>
                                         Atendimento
                                     </span>
@@ -221,15 +212,10 @@ export const ContatoPage = () => {
                                     <strong>
                                         Segunda a domingo, das 08h às 21h
                                     </strong>
-
                                 </div>
-
                             </div>
-
                         </div>
-
                     </motion.div>
-
 
                     {/* ==================================================
                         FORMULÁRIO
@@ -244,11 +230,9 @@ export const ContatoPage = () => {
                             amount: 0.2,
                         }}
                         variants={fadeRight}
-                        
                     >
 
                         <div className="contatoFormHeader">
-
                             <span className="contatoFormEyebrow">
                                 Atendimento
                             </span>
@@ -260,19 +244,14 @@ export const ContatoPage = () => {
                             <p className="contatoFormDescription">
                                 Preencha os campos abaixo e fale com nossa equipe.
                             </p>
-
                         </div>
-
 
                         <form 
                             className="contatoForm"
                             onSubmit={handleSubmit}
                         >
-
                             <div className="contatoFormRow">
-
                                 <div className="contatoFormField">
-
                                     <label htmlFor="nome">
                                         Nome
                                     </label>
@@ -284,12 +263,9 @@ export const ContatoPage = () => {
                                         placeholder="Seu nome"
                                         required
                                     />
-
                                 </div>
 
-
                                 <div className="contatoFormField">
-
                                     <label htmlFor="empresa">
                                         Empresa
                                     </label>
@@ -300,16 +276,11 @@ export const ContatoPage = () => {
                                         type="text"
                                         placeholder="Nome da empresa"
                                     />
-
                                 </div>
-
                             </div>
 
-
                             <div className="contatoFormRow">
-
                                 <div className="contatoFormField">
-
                                     <label htmlFor="email">
                                         E-mail
                                     </label>
@@ -321,9 +292,7 @@ export const ContatoPage = () => {
                                         placeholder="seuemail@empresa.com"
                                         required
                                     />
-
                                 </div>
-
 
                                 <div className="contatoFormField">
 
@@ -339,9 +308,7 @@ export const ContatoPage = () => {
                                     />
 
                                 </div>
-
                             </div>
-
 
                             <div className="contatoFormField">
 
@@ -379,7 +346,6 @@ export const ContatoPage = () => {
                                 </select>
 
                             </div>
-
 
                             <div className="contatoFormField">
 
@@ -423,13 +389,9 @@ export const ContatoPage = () => {
                                         : "→"}
                                 </strong>
                             </button>
-
                         </form>
-
                     </motion.div>
-
                 </div>
-
             </section>
 
             {/* ==================================================
@@ -465,24 +427,16 @@ export const ContatoPage = () => {
                             }}
                         >
                             <span className="contatoWhatsappButtonIcon">
-                                ☎
+                                <MessageCircle size={23} strokeWidth={2.2} />
                             </span>
 
                             <span className="contatoWhatsappButtonText">
                                 Fale pelo WhatsApp
                             </span>
-
-                            {/* <span className="contatoWhatsappButtonArrow">
-                                ↗
-                            </span> */}
                         </button>
-
                     </div>
-
                 </div>
-
             </section>
-
 
             {/* ==================================================
                 FOOTER
@@ -490,13 +444,11 @@ export const ContatoPage = () => {
 
             <Footer />
 
-
             {/* ==================================================
                 WHATSAPP
             ================================================== */}
 
             <ButtonWhatsApp />
-
         </>
     );
 };
