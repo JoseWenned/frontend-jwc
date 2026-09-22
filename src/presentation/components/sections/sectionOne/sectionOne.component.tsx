@@ -55,13 +55,13 @@ export const SectionOne = () => {
                 </motion.div>
 
                 <motion.div
-                    className="sectionOneItem sectionOneItemAmazon"
+                    className="sectionOneItem sectionOneItemBelloFruto"
                     variants={fadeUp}
                 >
                     <img
                         className="sectionOneImage"
                         src={slogBelloFruto}
-                        alt="Açaí Bello Fruto"
+                        alt="Bello Fruto"
                     />
                 </motion.div>
 
