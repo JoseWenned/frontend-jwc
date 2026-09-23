@@ -322,7 +322,7 @@ describe("Footer", () => {
 
         expect(
             screen.getByText(
-                "© 2026 JWC Distribuição e Logística. Todos os direitos reservados."
+                "© 2026 JWC Distribuição & Logística. Todos os direitos reservados."
             )
         ).toBeInTheDocument();
 

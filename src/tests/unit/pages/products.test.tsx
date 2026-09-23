@@ -214,7 +214,7 @@ describe("ProdutosPage", () => {
 
         expect(
             screen.getByText(
-                /Conheça as marcas e produtos que fazem parte do portfólio da JWC Distribuição\./i
+                /Conheça as marcas e produtos que fazem parte do portfólio da JWC Distribuição & Logística\./i
             )
         ).toBeInTheDocument();
     });
@@ -286,7 +286,7 @@ describe("ProdutosPage", () => {
         expect(
             screen.getByRole("heading", {
                 level: 2,
-                name: "Amazon",
+                name: "Bello Fruto",
             })
         ).toBeInTheDocument();
 
@@ -296,25 +296,16 @@ describe("ProdutosPage", () => {
                 name: "Peterfrut",
             })
         ).toBeInTheDocument();
-
-        expect(
-            screen.getByRole("heading", {
-                level: 2,
-                name: "Palamaz",
-            })
-        ).toBeInTheDocument();
     });
 
-
-
-    it("deve renderizar cinco seções de marcas", () => {
+    it("deve renderizar quatro seções de marcas", () => {
         renderProdutosPage();
 
         const marcas = screen.getAllByTestId(
             "brand-produtos"
         );
 
-        expect(marcas).toHaveLength(5);
+        expect(marcas).toHaveLength(4);
     });
 
 
@@ -337,17 +328,13 @@ describe("ProdutosPage", () => {
         ).toBeInTheDocument();
     });
 
-
-
-    it("deve renderizar a marca Amazon", () => {
+    it("deve renderizar a marca Bello Fruto", () => {
         renderProdutosPage();
 
         expect(
-            screen.getByTestId("produtos-Amazon")
+            screen.getByTestId("produtos-Bello Fruto")
         ).toBeInTheDocument();
     });
-
-
 
     it("deve renderizar a marca Peterfrut", () => {
         renderProdutosPage();
@@ -356,18 +343,6 @@ describe("ProdutosPage", () => {
             screen.getByTestId("produtos-Peterfrut")
         ).toBeInTheDocument();
     });
-
-
-
-    it("deve renderizar a marca Palamaz", () => {
-        renderProdutosPage();
-
-        expect(
-            screen.getByTestId("produtos-Palamaz")
-        ).toBeInTheDocument();
-    });
-
-
 
     // ==================================================
     // SEÇÃO DE PEDIDO

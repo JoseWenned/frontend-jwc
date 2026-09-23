@@ -7,15 +7,13 @@ import {
     zoomIn,
     fadeUp,
     fadeDown,
-    fadeLeft,
     fadeRight,
 } from "../../../../presentation/animations";
 
 // Imagens
 import slogKipolpas from "../../../../assets/images/slog/PERFIL 04.png";
-import slogAmazon from "../../../../assets/images/slog/amazon-acai.png";
+import slogBelloFruto from "../../../../assets/images/slog/Slogan_Açaí_Bello_Fruto.png"
 import slogPeterFrut from "../../../../assets/images/slog/slogan-perterfrut.png";
-import slogPalamaz from "../../../../assets/images/slog/images__2_-removebg-preview.png";
 import slogPuroSabor from "../../../../assets/images/slog/ChatGPT_Image_10_de_ago._de_2026__15_04_09-removebg-preview.png";
 
 export const SectionOne = () => {
@@ -57,13 +55,13 @@ export const SectionOne = () => {
                 </motion.div>
 
                 <motion.div
-                    className="sectionOneItem sectionOneItemAmazon"
+                    className="sectionOneItem sectionOneItemBelloFruto"
                     variants={fadeUp}
                 >
                     <img
                         className="sectionOneImage"
-                        src={slogAmazon}
-                        alt="Amazon Açaí"
+                        src={slogBelloFruto}
+                        alt="Bello Fruto"
                     />
                 </motion.div>
 
@@ -75,17 +73,6 @@ export const SectionOne = () => {
                         className="sectionOneImage"
                         src={slogPeterFrut}
                         alt="Peter Frut"
-                    />
-                </motion.div>
-
-                <motion.div
-                    className="sectionOneItem sectionOneItemPalamaz"
-                    variants={fadeLeft}
-                >
-                    <img
-                        className="sectionOneImage"
-                        src={slogPalamaz}
-                        alt="Palamaz"
                     />
                 </motion.div>
 

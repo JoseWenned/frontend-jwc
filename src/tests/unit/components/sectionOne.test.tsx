@@ -140,14 +140,14 @@ describe("SectionOne", () => {
 
 
     /* ==================================================
-       LOGO AMAZON AÇAÍ
+       LOGO Bello Fruto
     ================================================== */
 
-    it("deve renderizar o logo da Amazon Açaí corretamente", () => {
+    it("deve renderizar o logo da Bello Fruto corretamente", () => {
 
         renderSectionOne();
 
-        const image = screen.getByAltText("Amazon Açaí");
+        const image = screen.getByAltText("Bello Fruto");
 
         expect(image).toBeInTheDocument();
 
@@ -176,37 +176,17 @@ describe("SectionOne", () => {
 
     });
 
-
-    /* ==================================================
-       LOGO PALAMAZ
-    ================================================== */
-
-    it("deve renderizar o logo da Palamaz corretamente", () => {
-
-        renderSectionOne();
-
-        const image = screen.getByAltText("Palamaz");
-
-        expect(image).toBeInTheDocument();
-
-        expect(image).toHaveClass(
-            "sectionOneImage"
-        );
-
-    });
-
-
     /* ==================================================
        QUANTIDADE DE LOGOS
     ================================================== */
 
-    it("deve renderizar exatamente cinco logos", () => {
+    it("deve renderizar exatamente quatro logos", () => {
 
         renderSectionOne();
 
         const images = screen.getAllByRole("img");
 
-        expect(images).toHaveLength(5);
+        expect(images).toHaveLength(4);
 
     });
 
@@ -221,7 +201,7 @@ describe("SectionOne", () => {
 
         const images = screen.getAllByRole("img");
 
-        expect(images).toHaveLength(5);
+        expect(images).toHaveLength(4);
 
         images.forEach((image) => {
 
@@ -251,15 +231,11 @@ describe("SectionOne", () => {
         ).toBeInTheDocument();
 
         expect(
-            screen.getByAltText("Amazon Açaí")
+            screen.getByAltText("Bello Fruto")
         ).toBeInTheDocument();
 
         expect(
             screen.getByAltText("Peter Frut")
-        ).toBeInTheDocument();
-
-        expect(
-            screen.getByAltText("Palamaz")
         ).toBeInTheDocument();
 
     });
@@ -269,7 +245,7 @@ describe("SectionOne", () => {
        CARDS / ITEMS
     ================================================== */
 
-    it("deve renderizar exatamente cinco itens de marcas", () => {
+    it("deve renderizar exatamente quatro itens de marcas", () => {
 
         renderSectionOne();
 
@@ -277,7 +253,7 @@ describe("SectionOne", () => {
             ".sectionOneItem"
         );
 
-        expect(items).toHaveLength(5);
+        expect(items).toHaveLength(4);
 
     });
 
@@ -328,12 +304,12 @@ describe("SectionOne", () => {
        AMAZON ITEM
     ================================================== */
 
-    it("deve aplicar a classe correta ao item Amazon", () => {
+    it("deve aplicar a classe correta ao item Bello Fruto", () => {
 
         renderSectionOne();
 
         const item = document.querySelector(
-            ".sectionOneItemAmazon"
+            ".sectionOneItemBelloFruto"
         );
 
         expect(item).toBeInTheDocument();
@@ -355,27 +331,6 @@ describe("SectionOne", () => {
 
         const item = document.querySelector(
             ".sectionOneItemPeterfrut"
-        );
-
-        expect(item).toBeInTheDocument();
-
-        expect(item).toHaveClass(
-            "sectionOneItem"
-        );
-
-    });
-
-
-    /* ==================================================
-       PALAMAZ ITEM
-    ================================================== */
-
-    it("deve aplicar a classe correta ao item Palamaz", () => {
-
-        renderSectionOne();
-
-        const item = document.querySelector(
-            ".sectionOneItemPalamaz"
         );
 
         expect(item).toBeInTheDocument();

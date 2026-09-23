@@ -3,7 +3,6 @@
    CONTATO PAGE
 ================================================== */
 
-
 /* ==================================================
    HERO
 ================================================== */
@@ -11,8 +10,10 @@
 .contatoHero {
     position: relative;
 
-    width: 100%;
+    width: calc(100% - 12px);
     min-height: 480px;
+
+    margin: 0 auto;
 
     display: flex;
     align-items: center;

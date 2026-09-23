@@ -20,13 +20,12 @@ import { ButtonWhatsApp } from "../../fragments/buttons/buttonWhatsApp/buttonWha
 
 //Database
 import { produtosKipolpas }  from "../../../data/kipolpas";
-import { produtosAmazon }  from "../../../data/amazon";
-import { produtosPeterfrut } from "../../../data/peterfrut";
-import { produtosPalamaz } from "../../../data/palamaz";
 import { produtosPuroSabor } from "../../../data/puroSaber";
+import { produtosBelloFruto }  from "../../../data/belloFruto";
+import { produtosPeterfrut } from "../../../data/peterfrut";
 
 // Banner
-import bannerProdutos from "../../../assets/images/Banners/filantropia-corporativa-apoia-os-esforcos-locais-do-banco-de-alimentos-para-aliviar-a-fome_38013-94227.avif";
+import bannerProdutos from "../../../assets/images/Banners/Banner Produtos.png";
 import { SectionOne } from "../../components/sections/sectionOne/sectionOne.component";
 
 export const ProdutosPage = () => {
@@ -126,12 +125,12 @@ export const ProdutosPage = () => {
             />
 
             {/* ==================================================
-                AMAZON
+                BELLO FRUTO
             ================================================== */}
 
             <BrandProdutos
-                marca="Amazon"
-                produtos={produtosAmazon.produtos}
+                marca="Bello Fruto"
+                produtos={produtosBelloFruto.produtos}
             />
 
             {/* ==================================================
@@ -141,15 +140,6 @@ export const ProdutosPage = () => {
             <BrandProdutos
                 marca="Peterfrut"
                 produtos={produtosPeterfrut.produtos}
-            />
-
-            {/* ==================================================
-                PALAMAZ
-            ================================================== */}
-
-            <BrandProdutos
-                marca="Palamaz"
-                produtos={produtosPalamaz.produtos}
             />
 
             {/* ==================================================
