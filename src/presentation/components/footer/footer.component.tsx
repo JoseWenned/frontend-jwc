@@ -64,7 +64,7 @@ export const Footer = () => {
             </section>
             <section className="containerFooterContentBottom">
                 <div className="containerFooterBarraTextFooter">
-                    <p className="textFooter">© 2026 JWC Distribuição e Logística. Todos os direitos reservados.</p>
+                    <p className="textFooter">© 2026 JWC Distribuição & Logística. Todos os direitos reservados.</p>
                 </div>
             </section>
         </footer>
