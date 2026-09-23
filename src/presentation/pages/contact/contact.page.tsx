@@ -25,7 +25,7 @@ import { Footer } from "../../components/footer/footer.component";
 import { ButtonWhatsApp } from "../../fragments/buttons/buttonWhatsApp/buttonWhatsApp.component";
 
 // Banner
-import bannerContato from "../../../assets/images/Banners/filantropia-corporativa-apoia-os-esforcos-locais-do-banco-de-alimentos-para-aliviar-a-fome_38013-94227.avif";
+import bannerContato from "../../../assets/images/Banners/Banner Contatos.png";
 
 export const ContatoPage = () => {
     const {

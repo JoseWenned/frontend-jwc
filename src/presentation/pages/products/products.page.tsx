@@ -25,7 +25,7 @@ import { produtosBelloFruto }  from "../../../data/belloFruto";
 import { produtosPeterfrut } from "../../../data/peterfrut";
 
 // Banner
-import bannerProdutos from "../../../assets/images/Banners/filantropia-corporativa-apoia-os-esforcos-locais-do-banco-de-alimentos-para-aliviar-a-fome_38013-94227.avif";
+import bannerProdutos from "../../../assets/images/Banners/Banner Produtos.png";
 import { SectionOne } from "../../components/sections/sectionOne/sectionOne.component";
 
 export const ProdutosPage = () => {
