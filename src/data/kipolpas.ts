@@ -1,5 +1,5 @@
 // Produtos Kipolpas
-import imagemAbacaxi from "../assets/images/produtos/kipolpas/Pacote Polpa de Abacaxi.png.png";
+import imagemAbacaxi from "../assets/images/produtos/kipolpas/Pacote de Polpa de Abacaxi.png.png";
 import imagemAbacaxicomhortela from "../assets/images/produtos/kipolpas/Pacote Polpa de Abacaxi com Hortelã.png.png";
 import imagemAcerola from "../assets/images/produtos/kipolpas/Polpas-de-Acerola.png.png";
 import imagemAmeixa from "../assets/images/produtos/kipolpas/Pacote Polpa de Ameixa.png.png";
@@ -10,8 +10,8 @@ import imagemCupuacu from "../assets/images/produtos/kipolpas/Pacote Polpa de Cu
 import imagemGoiaba from "../assets/images/produtos/kipolpas/Pacote Polpa de Goiaba.png.png";
 import imagemGraviola from "../assets/images/produtos/kipolpas/Pacote Polpa de Graviola.png.png";
 import imagemMamao from "../assets/images/produtos/kipolpas/Pacote Polpa de Mamão.png.png";
-import imagemManga from "../assets/images/produtos/kipolpas/Pacote Polpa de Manga.png.png";
-import imagemMaracuja from "../assets/images/produtos/kipolpas/Pacote Polpa de Maracuja.png.png";
+import imagemManga from "../assets/images/produtos/kipolpas/Pacote de Polpa de Manga.png.png";
+import imagemMaracuja from "../assets/images/produtos/kipolpas/Pacote de Polpa Maracujá.png.png";
 import imagemMorango from "../assets/images/produtos/kipolpas/Pacote Polpa de Morango.png.png";
 import imagemSapoti from "../assets/images/produtos/kipolpas/Pacote Polpa de Sapoti.png.png";
 import imagemTamarindo from "../assets/images/produtos/kipolpas/Pacote Polpa de Tamarindo.png.png";

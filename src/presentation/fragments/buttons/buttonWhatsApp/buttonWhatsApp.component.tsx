@@ -6,7 +6,7 @@ export const ButtonWhatsApp = () => {
     const phone = "5588988965616";
 
     const message =
-        "Olá! Gostaria de conhecer as soluções da JWC Distribuição.";
+        "Olá! Gostaria de conhecer as soluções da JWC Distribuição & Logística.";
 
     const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(
         message

@@ -353,7 +353,7 @@ describe("SobreNosPage", () => {
         expect(
             mockNavigate
         ).toHaveBeenCalledWith(
-            "/produtos#marcas"
+            "/produtos"
         );
     });
 
