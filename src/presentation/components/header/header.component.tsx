@@ -138,6 +138,7 @@ export const Header = () => {
                         <li>
                             <a
                                 href="https://www.facebook.com/profile.php?id=61594291260407&locale=pt_BR"
+                                target="blank"
                                 className="socialLink"
                                 aria-label="Facebook"
                             >
@@ -153,6 +154,7 @@ export const Header = () => {
                         <li>
                             <a
                                 href="https://www.linkedin.com/company/jwc-log/?viewAsMember=true"
+                                target="blank"
                                 className="socialLink"
                                 aria-label="LinkedIn"
                             >

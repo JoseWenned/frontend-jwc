@@ -162,7 +162,7 @@ describe("ButtonWhatsApp", () => {
         const href = button.getAttribute("href");
 
         const message =
-            "Olá! Gostaria de conhecer as soluções da JWC Distribuição.";
+            "Olá! Gostaria de conhecer as soluções da JWC Distribuição & Logística.";
 
         const encodedMessage = encodeURIComponent(message);
 
@@ -186,7 +186,7 @@ describe("ButtonWhatsApp", () => {
         });
 
         const message =
-            "Olá! Gostaria de conhecer as soluções da JWC Distribuição.";
+            "Olá! Gostaria de conhecer as soluções da JWC Distribuição & Logística.";
 
         const expectedUrl =
             `https://wa.me/5588988965616?text=${encodeURIComponent(

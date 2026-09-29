@@ -219,18 +219,6 @@ describe("ProdutosPage", () => {
         ).toBeInTheDocument();
     });
 
-
-
-    it("deve renderizar o hero com o id marcas", () => {
-        renderProdutosPage();
-
-        expect(
-            document.getElementById("marcas")
-        ).toBeInTheDocument();
-    });
-
-
-
     it("deve renderizar a imagem de fundo do hero", () => {
         renderProdutosPage();
 
@@ -416,7 +404,7 @@ describe("ProdutosPage", () => {
         ).toHaveBeenCalledWith(
             expect.stringContaining(
                 encodeURIComponent(
-                    "Olá! Gostaria de conhecer as soluções da JWC Distribuição."
+                    "Olá! Gostaria de solicitar orçamento do meu pedido."
                 )
             )
         );

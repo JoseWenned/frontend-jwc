@@ -107,6 +107,13 @@ export const SobreNosPage = () => {
                             whileTap={{
                                 scale: .95,
                             }}
+                            onClick={() =>
+                                window.open(
+                                    "https://www.linkedin.com/company/jwc-log/?viewAsMember=true",
+                                    "_blank",
+                                    "noopener,noreferrer"
+                                )
+                            }
                         >
                             <span className="sobreNosPresentationButtonText">
                                 Conheça a JWC no LinkedIn
@@ -196,7 +203,7 @@ export const SobreNosPage = () => {
                             whileTap={{
                                 scale: .95,
                             }}
-                            onClick={() => navigate("/produtos#marcas")}
+                            onClick={() => navigate("/produtos")}
                         >
                             <span className="comercialContentButtonText">
                                 Conheça nossas marcas e parceiros
