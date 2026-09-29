@@ -33,7 +33,7 @@ export const ProdutosPage = () => {
     const phone = "5588988965616";
 
     const message =
-        "Olá! Gostaria de conhecer as soluções da JWC Distribuição.";
+        "Olá! Gostaria de solicitar orçamento do meu pedido.";
 
     const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(
         message
@@ -54,7 +54,6 @@ export const ProdutosPage = () => {
             ================================================== */}
 
             <motion.section
-                id="marcas"
                 className="produtosHero"
                 variants={staggerContainer}
                 initial="hidden"
